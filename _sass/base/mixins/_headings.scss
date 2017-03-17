@@ -63,16 +63,16 @@
   font-size: $h8Px;
 }
 
-@mixin h8Cap {
-  font-size: $h8Px;
-  text-transform: uppercase; 
-  letter-spacing: .05em;
-  font-weight: bold;
-  line-height: 1em;
-}
-
 @mixin h9 {
   font-size: $h9Em;
+}
+
+@mixin h9Cap {
+  font-size: $h9Px;
+  text-transform: uppercase; 
+  letter-spacing: .2em;
+  font-weight: bold;
+  line-height: 1em;
 }
 
 @mixin h10 {

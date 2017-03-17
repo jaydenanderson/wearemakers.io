@@ -1,22 +1,7 @@
 .h {
   display: block;
-  margin: 1em 0;
   position: relative;
   line-height: 1.1em;
-}
-
-// headings with icons
-.h-icon {
-  i {
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    @include transform(translate(0,-50%));
-    font-size: 24px;
-    color: $accentColor;
-    display: block;
-    margin: 2px $gridGutterPX 0 0;
-  }
 }
 
 .h1,
@@ -73,10 +58,26 @@
   @include h10;
 }
 
+.text-europa {
+  font-family: $fontFamily;
+}
+
 .text-rift {
   font-family: $fontFamilyHeading;
 }
 
 .text-tundra {
   font-family: $fontFamilyText;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-thin {
+  font-weight: 100;
 }

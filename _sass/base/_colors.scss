@@ -1,9 +1,10 @@
 .accent-color    { color: $accentColor; }
 .accent-bg       { background-color: $accentColor; }
-.black-color     { color: $accentColor; }
-.black-bg        { background-color: $accentColor; }
+.black-color     { color: $black; }
+.black-bg        { background-color: $black; }
+.white-color     { color: $white; }
+.white-bg        { background-color: $white; }
 
-// default bg colors
 .mint-color       { color: $mint !important; }
 .mint-bg          { background-color: $mint !important; }
 .ice-color        { color: $ice !important; }

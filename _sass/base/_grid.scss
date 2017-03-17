@@ -8,12 +8,12 @@
 .grid {
   @include clearfix;
   display: block;
-  padding: 0 $gridGutterHalfPX;
+  padding: $gridGutterHalfPX;
   max-width: 1440px;
   margin: 0 auto;
 
   @include breakpoint(WXS) {
-    padding: 0 $gridGutterQuarterPX;
+    padding: $gridGutterQuarterPX;
   }
 }
 
@@ -26,20 +26,20 @@
 
 .grid-nested {
   padding: 0;
-  margin: 0 (-$gridGutterHalfPX);
+  margin: (-$gridGutterHalfPX);
 
   @include breakpoint(WXS) {
-    margin: 0 (-$gridGutterQuarterPX);
+    margin: (-$gridGutterQuarterPX);
   }
 }
 
 .col, [class^="col-"], [class*=" col-"] {
   display: block;
   float: left;
-  padding: 0 $gridGutterHalfPX;
+  padding: $gridGutterHalfPX;
 
   @include breakpoint(WXS) {
-    padding: 0 $gridGutterQuarterPX;
+    padding: $gridGutterQuarterPX;
   }
 }
 
