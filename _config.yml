@@ -2,7 +2,8 @@
 title: We Are Makers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.wearemakers.io" # the base hostname & protocol for your site
+# url: "https://www.wearemakers.io" # the base hostname & protocol for your site
+url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
