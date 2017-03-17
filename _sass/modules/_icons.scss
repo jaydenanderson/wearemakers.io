@@ -1,0 +1,281 @@
+.icon {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1em;
+  letter-spacing: 0;
+  font-style: normal;
+}
+
+.icon-radio,
+.icon-checkbox,
+.icon-circle,
+.icon-square {
+  margin-top: -6px;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  height: 16px;
+  width: 16px;
+
+  .is-selected &,
+  .is-selected:hover &,
+  .is-selected:active & {
+    background: $black;
+    border-color: $black;
+  }
+}
+
+.icon-circle,
+.icon-square {
+  height: 24px;
+  width: 24px;
+  line-height: 20px;
+  margin: 0 2px;
+  
+  &.is-selected {
+    color: $black;
+    background: #fff;
+    border-color: #fff;
+  }
+  
+  .tabs-link:hover & {
+    border-color: $black;
+    
+    &.is-selected {
+      background: $black;
+      color: #fff;
+    }
+  }
+}
+
+.icon-square {
+  border-radius: 2px;
+}
+
+.icon-checkbox {
+  border-radius: 2px;
+}
+
+.icon-small {
+  font-size: 12px;
+}
+
+.icon-large {
+  font-size: 24px;
+}
+
+
+.icon-hamburger {
+  display: inline-block;
+  height: 2px;
+  background: #fff;
+  width: 16px;
+  border-radius: 2px;
+  vertical-align: middle;
+  transition: all .4s linear;
+  margin: -4px 12px 0 4px;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    margin-top: -6px;
+    position: absolute;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    width: 16px;
+    transition: all .4s linear;
+  }
+
+  &:after {
+    margin-top: 6px;
+  }
+
+
+  .is-nav-side-active & {
+    background: transparent;
+    &:before {
+      margin: 0;
+      transition: all .4s linear;
+      @include transform(rotate(45deg));
+    }
+
+    &:after {
+      margin: 0;
+      transition: all .4s linear;
+      @include transform(rotate(-45deg));
+    }
+
+  }
+
+}
+
+
+.icon-spoke {
+  height: 24px;
+  width: 24px;
+  @include animation(spin 1s infinite linear);
+  @include transform-origin(center);
+  &.dark .spoke:after {
+    background: $black;
+  }
+
+  .spoke {
+    display: block;
+    width: 2px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px 0 0 -1px;
+    
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      display: block;
+      height: 6px;
+      background: #fff;
+      border-radius: 1000px;
+    }
+
+    
+    &:nth-child(2) {
+      opacity: .8;
+      @include transform(rotate(30deg));
+    }
+
+    
+    &:nth-child(3) {
+      opacity: .16;
+      @include transform(rotate(60deg));
+    }
+
+    
+    &:nth-child(4) {
+      opacity: .24;
+      @include transform(rotate(90deg));
+    }
+
+    
+    &:nth-child(5) {
+      opacity: .32;
+      @include transform(rotate(120deg));
+    }
+
+    
+    &:nth-child(6) {
+      opacity: .40;
+      @include transform(rotate(150deg));
+    }
+
+    
+    &:nth-child(7) {
+      opacity: .50;
+      @include transform(rotate(180deg));
+    }
+
+    
+    &:nth-child(8) {
+      opacity: .60;
+      @include transform(rotate(210deg));
+    }
+
+    
+    &:nth-child(9) {
+      opacity: .60;
+      @include transform(rotate(240deg));
+    }
+
+    
+    &:nth-child(10) {
+      opacity: .70;
+      @include transform(rotate(270deg));
+    }
+
+    
+    &:nth-child(11) {
+      opacity: .8;
+      @include transform(rotate(300deg));
+    }
+
+    
+    &:nth-child(12) {
+      opacity: .9;
+      @include transform(rotate(330deg));
+    }
+
+  }
+
+}
+
+
+.icon-ellipsis,
+.icon-more {
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  background: $black;
+  border-radius: 2px;
+  top: -4px;
+  margin: 0 !important;
+
+  &:before,
+  &:after {
+    content:"";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    background: $black;
+    border-radius: 2px;
+    left: -6px;
+  }
+
+  &:after {
+    left: auto;
+    right: -6px;
+  }
+
+  
+  &.white-color {
+    background: #fff;
+    
+    &:before,
+    &:after {
+      background: #fff;
+    }
+
+  }
+
+}
+
+
+.icon-more {
+  top: -2px;
+  &:before,
+  &:after {
+    left: auto;
+    right: auto;
+    top: -6px;
+  }
+
+  &:after {
+    top: auto;
+    bottom: -6px;
+  }
+
+
+  .button:hover & {
+    background: #fff;
+    &:before,
+    &:after {
+      background: #fff;
+    }
+
+  }
+
+}

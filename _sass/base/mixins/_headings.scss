@@ -1,0 +1,84 @@
+@mixin h1 {
+  font-size: $h1Em;
+  letter-spacing: -.02em;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  @include breakpoint(WXL) {
+    font-size: $h2Em;
+  }
+  @include breakpoint(WM) {
+    font-size: $h3Em;
+    letter-spacing: 0;
+  }
+}
+
+@mixin h2 {
+  font-size: $h2Em;
+  letter-spacing: -.02em;
+  text-rendering: optimizeLegibility;
+  font-weight: 300;
+  @include breakpoint(WM) {
+    font-size: $h4Em;
+    letter-spacing: 0;
+    font-weight: 600;
+  }
+}
+
+@mixin h3 {
+  font-size: $h3Em;
+  font-weight: 300;
+  @include breakpoint(WM) {
+    font-size: $h5Em;
+    font-weight: 600;
+  }
+}
+
+@mixin h4 {
+  font-size: $h4Em;
+  font-weight: 300;
+  @include breakpoint(WM) {
+    font-size: $h6Em;
+    font-weight: 600;
+  }
+}
+
+@mixin h5 {
+  font-size: $h5Em;
+  font-weight: 400;
+
+  @include breakpoint(WM) {
+    font-size: $h6Em;
+  }
+}
+
+@mixin h6 {
+  font-size: $h6Em;
+}
+
+@mixin h7 {
+  font-size: $h7Px;
+}
+
+@mixin h8 {
+  font-size: $h8Px;
+}
+
+@mixin h8Cap {
+  font-size: $h8Px;
+  text-transform: uppercase; 
+  letter-spacing: .05em;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+@mixin h9 {
+  font-size: $h9Em;
+}
+
+@mixin h10 {
+  font-size: $h10Px;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 1em;
+}

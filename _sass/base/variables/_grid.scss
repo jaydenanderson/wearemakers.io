@@ -1,0 +1,16 @@
+$gridGutterValue: 36;
+
+$gridGutterPX: $gridGutterValue+px;
+$gridGutterEM: ($fontSizeValue/$gridGutterValue)+em;
+
+$gridGutterDoublePX: ($gridGutterValue*2)+px;
+$gridGutterDoubleEM: ($fontSizeValue/$gridGutterValue*2)+em;
+
+$gridGutterTriplePX: ($gridGutterValue*3)+px;
+$gridGutterTripleEM: ($fontSizeValue/$gridGutterValue*3)+em;
+
+$gridGutterHalfPX: ($gridGutterValue/2)+px;
+$gridGutterHalfEM: ($fontSizeValue/$gridGutterValue/2)+em;
+
+$gridGutterQuarterPX: ($gridGutterValue/4)+px;
+$gridGutterQuarterEM: ($fontSizeValue/$gridGutterValue/4)+em;

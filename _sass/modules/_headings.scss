@@ -1,0 +1,82 @@
+.h {
+  display: block;
+  margin: 1em 0;
+  position: relative;
+  line-height: 1.1em;
+}
+
+// headings with icons
+.h-icon {
+  i {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    @include transform(translate(0,-50%));
+    font-size: 24px;
+    color: $accentColor;
+    display: block;
+    margin: 2px $gridGutterPX 0 0;
+  }
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.h9,
+.h10 {
+  font-weight: 400;
+}
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+}
+
+.h5 {
+  @include h5;
+}
+
+.h6 {
+  @include h6;
+}
+
+.h7 {
+  @include h7;
+  line-height: 1.7em;
+}
+
+.h8 {
+  @include h8;
+}
+
+.h9 {
+  @include h9;
+}
+
+.h10 {
+  @include h10;
+}
+
+.text-rift {
+  font-family: $fontFamilyHeading;
+}
+
+.text-tundra {
+  font-family: $fontFamilyText;
+}

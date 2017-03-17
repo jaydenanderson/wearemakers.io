@@ -1,0 +1,40 @@
+$fontFamily:            'europa', 'Helvetica Neue', 'Arial', sans-serif;
+$fontFamilyHeading:     'rift-soft', 'Helvetica Neue', 'Arial', sans-serif;
+$fontFamilyText:        'ff-tundra-web', 'Georgia', serif;
+
+$fontSizeValue:   18;
+$fontSizePx:      $fontSizeValue+px;
+$fontSizeEm:      ($fontSizeValue/16)+em;
+
+$h1Value:         72;
+$h2Value:         60;
+$h3Value:         48;
+$h4Value:         32;
+$h5Value:         24;
+$h6Value:         18;
+$h7Value:         16;
+$h8Value:         14;
+$h9Value:         12;
+$h10Value:        10;
+
+$h1Px:            $h1Value+px;
+$h2Px:            $h2Value+px;
+$h3Px:            $h3Value+px;
+$h4Px:            $h4Value+px;
+$h5Px:            $h5Value+px;
+$h6Px:            $h6Value+px;
+$h7Px:            $h7Value+px;
+$h8Px:            $h8Value+px;
+$h9Px:            $h9Value+px;
+$h10Px:           $h10Value+px;
+
+$h1Em:            ($h1Value/$fontSizeValue)+em;
+$h2Em:            ($h2Value/$fontSizeValue)+em;
+$h3Em:            ($h3Value/$fontSizeValue)+em;
+$h4Em:            ($h4Value/$fontSizeValue)+em;
+$h5Em:            ($h5Value/$fontSizeValue)+em;
+$h6Em:            ($h6Value/$fontSizeValue)+em;
+$h7Em:            ($h7Value/$fontSizeValue)+em;
+$h8Em:            ($h8Value/$fontSizeValue)+em;
+$h9Em:            ($h9Value/$fontSizeValue)+em;
+$h10Em:           ($h10Value/$fontSizeValue)+em;

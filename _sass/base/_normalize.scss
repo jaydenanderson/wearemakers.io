@@ -1,0 +1,374 @@
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  font: 400 $fontSizeEm/1.5em $fontFamily;
+  color: $textColor;
+  background-color: $backgroundColor;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: darken($accentColor, 10%);
+  color: #fff;
+  text-shadow: none;
+}
+
+@include breakpoint(WM) {
+  body,
+  input,
+  textarea,
+  button {
+    font: 400 1em/1.5em $fontFamily;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  &:hover {
+    color: darken($linkColor, 10%);
+  }
+}
+
+.b {
+  font-weight: bold !important;
+}
+
+.i {
+  font-style: italic !important;
+}
+
+.text-normal {
+  font-weight: normal !important;
+}
+
+.text-body {
+  line-height: 1.5em;
+
+  &-boombox {
+  color: rgba(107, 120, 133, .5);
+  }
+}
+
+.text-track {
+  letter-spacing: .05em;
+}
+
+.text-left-small {
+  @include breakpoint (WM) {
+    text-align: left;
+  }
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.blockquote {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 18px;
+  position: relative;
+
+  &:before {
+    content: "\201C";
+    position: absolute;
+    top: -66px;
+    left: -32px;
+    opacity: .1;
+    font: 600 360px/1em "Helvetica Neue", sans-serif;
+
+    @include breakpoint(WM) {
+      top: -54px;
+      left: 0;
+      font-size: 180px;
+    }
+  }
+}
+
+.blockquote-source {
+  padding: $gridGutterEM 0 0 $gridGutterEM;
+}
+
+.blockquote-source-company {
+  color: $black;
+} 
+
+.hyphenate {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+@if $normalize == true {
+  em,
+  i {
+    font-style:italic;
+  }
+
+  strong,
+  b {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  blockquote {
+    color: $black;
+    border-left: 2px solid $black;
+    padding-left: $gridGutterHalfEM;
+    font-style: italic;
+  }
+
+  big {
+    @include h4;
+  }
+
+  small {
+    @include h10;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  ul {
+    margin: .5em 0;
+    list-style: disc;
+  }
+
+  ol {
+    margin: .5em 0;
+    list-style: decimal;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    opacity: .5;
+  }
+
+  hr {
+    margin: 1em 0;
+    border-top: 1px solid $black;
+  }
+
+  h1 {
+    @include h1;
+  }
+
+  h2 {
+    @include h2;
+  }
+
+  h3 {
+    @include h3;
+  }
+
+  h4 {
+    @include h4;
+  }
+
+  h5 {
+    @include h5;
+  }
+
+  h6 {
+    @include h6;
+  }
+
+  hr {
+    border-style: solid;
+    border: none;
+    border-top: 2px solid $black;
+    opacity:.3;
+    clear:both;
+    width: 100px;
+    margin: 36px auto;
+  }
+
+  table {
+  }
+
+  td {
+    border-right: 1px solid $black;
+  }
+
+  th {
+    @include h10;
+    line-height: 1em;
+    color: $black;
+  }
+}
+
+.is-formatted,
+.single-post .post {
+  font-size: 1.3333em;
+  line-height: 1.5em;
+
+  @include breakpoint(WM) {
+    font-size: 1em;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin: .5em auto;
+  }
+  hr {
+    border-style: solid;
+    border: none;
+    border-top: 2px solid $black;
+    opacity:.3;
+    clear:both;
+    width: 100px;
+    margin: 36px auto;
+  }
+  em,
+  i {
+    font-style:italic;
+  }
+
+  strong,
+  b,
+  .b {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+
+  blockquote {
+    color: $black;
+    border-left: 2px solid $black;
+    padding-left: $gridGutterEM;
+    font-style: italic;
+  }
+
+  big {
+    @include h4;
+  }
+
+  small {
+    @include h10;
+  }
+
+  del {
+    text-decoration: line-through;
+  }
+
+  ul {
+    margin: .5em 0 .5em 1.5em;
+    list-style: disc;
+  }
+
+  ol {
+    margin: .5em 0 .5em 1.5em;
+    list-style: decimal;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+
+  dd {
+    opacity: .5;
+  }
+
+  hr {
+    margin: 1em 0;
+    border-top: 1px solid $black;
+  }
+
+  h1 {
+    @include h1;
+  }
+
+  h2 {
+    @include h2;
+  }
+
+  h3 {
+    @include h3;
+  }
+
+  h4 {
+    @include h4;
+  }
+
+  h5 {
+    @include h5;
+  }
+
+  h6 {
+    @include h6;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2em;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td {
+    display: table-cell !important;
+    float: none !important;
+    text-align: left;
+    padding: $gridGutterHalfPX;
+    border-top: 1px solid lighten($black, 80%);
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  th {
+    float: none !important;
+    display: table-cell !important;
+    @include h8Cap;
+    text-align: left;
+    line-height: 1em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  a {
+    border-bottom: 1px solid rgba(34,36,38,.1);
+    color: $accentColor !important;
+
+    &:hover {
+      color: darken($accentColor,10%) !important;
+      border-color: darken($accentColor,10%) !important;
+    }
+  }
+}
+
+input,
+textarea,
+button {
+  font-size: 1em;
+}

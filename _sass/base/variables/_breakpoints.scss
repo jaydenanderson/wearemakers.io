@@ -1,0 +1,61 @@
+// Width breakpoints in pixels
+$breakpointWidthXXSValue:     300;
+$breakpointWidthXSValue:      400;
+$breakpointWidthSValue:       500;
+$breakpointWidthMValue:       640;
+$breakpointWidthLValue:       700;
+$breakpointWidthXLValue:      800;
+$breakpointWidthXXLValue:     1000;
+$breakpointWidthXXXLValue:    1200;
+$breakpointWidthXXXXLValue:   1600;
+
+// Height breakpoints in pixels
+$breakpointHeightXXSValue:    330;
+$breakpointHeightXSValue:     400;
+$breakpointHeightSValue:      500;
+$breakpointHeightMValue:      600;
+$breakpointHeightLValue:      700;
+$breakpointHeightXLValue:     800;
+$breakpointHeightXXLValue:    1000;
+$breakpointHeightXXXLValue:   1200;
+$breakpointHeightXXXXLValue:  1600;
+
+// Calculates breakpoints in em
+// DON'T CHANGE THESE. CHANGE VALUES ABOVE.
+// $breakpointWidthXXS:          ($breakpointWidthXXSValue/$fontSizeValue)+em;
+// $breakpointWidthXS:           ($breakpointWidthXSValue/$fontSizeValue)+em;
+// $breakpointWidthS:            ($breakpointWidthSValue/$fontSizeValue)+em;
+// $breakpointWidthM:            ($breakpointWidthMValue/$fontSizeValue)+em;
+// $breakpointWidthXL:           ($breakpointWidthXLValue/$fontSizeValue)+em;
+// $breakpointWidthXXL:          ($breakpointWidthXXLValue/$fontSizeValue)+em;
+// $breakpointWidthXXXL:         ($breakpointWidthXXXLValue/$fontSizeValue)+em;
+// $breakpointWidthXXXXL:        ($breakpointWidthXXXXLValue/$fontSizeValue)+em;
+
+// $breakpointHeightXXS:         ($breakpointHeightXXSValue/$fontSizeValue)+em;
+// $breakpointHeightXS:          ($breakpointHeightXSValue/$fontSizeValue)+em;
+// $breakpointHeightS:           ($breakpointHeightSValue/$fontSizeValue)+em;
+// $breakpointHeightM:           ($breakpointHeightMValue/$fontSizeValue)+em;
+// $breakpointHeightXL:          ($breakpointHeightXLValue/$fontSizeValue)+em;
+// $breakpointHeightXXL:         ($breakpointHeightXXLValue/$fontSizeValue)+em;
+// $breakpointHeightXXXL:        ($breakpointHeightXXXLValue/$fontSizeValue)+em;
+// $breakpointHeightXXXXL:       ($breakpointHeightXXXXLValue/$fontSizeValue)+em;
+
+$breakpointWidthXXS:          ($breakpointWidthXXSValue)+px;
+$breakpointWidthXS:           ($breakpointWidthXSValue)+px;
+$breakpointWidthS:            ($breakpointWidthSValue)+px;
+$breakpointWidthM:            ($breakpointWidthMValue)+px;
+$breakpointWidthL:            ($breakpointWidthLValue)+px;
+$breakpointWidthXL:           ($breakpointWidthXLValue)+px;
+$breakpointWidthXXL:          ($breakpointWidthXXLValue)+px;
+$breakpointWidthXXXL:         ($breakpointWidthXXXLValue)+px;
+$breakpointWidthXXXXL:        ($breakpointWidthXXXXLValue)+px;
+
+$breakpointHeightXXS:         ($breakpointHeightXXSValue)+px;
+$breakpointHeightXS:          ($breakpointHeightXSValue)+px;
+$breakpointHeightS:           ($breakpointHeightSValue)+px;
+$breakpointHeightM:           ($breakpointHeightMValue)+px;
+$breakpointHeightL:           ($breakpointHeightLValue)+px;
+$breakpointHeightXL:          ($breakpointHeightXLValue)+px;
+$breakpointHeightXXL:         ($breakpointHeightXXLValue)+px;
+$breakpointHeightXXXL:        ($breakpointHeightXXXLValue)+px;
+$breakpointHeightXXXXL:       ($breakpointHeightXXXXLValue)+px;
