@@ -3,6 +3,10 @@
   outline: none !important;
 }
 
+html {
+  font-size: 12px;
+}
+
 body {
   font: 400 $fontSizeEm/1.5em $fontFamily;
   color: $textColor;

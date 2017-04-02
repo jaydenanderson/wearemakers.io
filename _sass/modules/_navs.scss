@@ -1,0 +1,109 @@
+.nav {
+  @include align-items(center);
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include h9Cap;
+  padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
+  height: ($gridGutterValue * 4)+px;
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding: 0 $gridGutterHalfPX;
+  }
+  @media (max-width: 1000px) {
+    @include justify-content(center);
+    height: 8rem;
+  }
+  @media (max-width: 800px) {
+    @include justify-content(space-between);
+    height: 5rem;
+  }
+
+  &-logo {
+    color: rgba(0,0,0,.0);
+    background: url('/images/logo.png') 0 0 / cover no-repeat;
+    width: 256px;
+    height: 59px;
+    margin: 0 $gridGutterHalfPX;
+    @include flex-shrink(0);
+    @media (max-width: 1000px) {
+      width: 168px;
+      height: 38px;
+      margin-top: 4px;
+    }
+    @media (max-width: 800px) {
+      margin: -4px 0 0;
+    }
+  }
+
+  &-list {
+    z-index: 2;
+    @include display(flex);
+    @include flex-grow(1000);
+    @include justify-content(flex-end);
+
+    @media (max-width: 1000px) {
+      width: 100%;
+      @include justify-content(center);
+    }
+    @media (max-width: 800px) {
+      overflow: hidden;
+      max-height: 0;
+      width: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+    .is-active & {
+      max-height: 1000px;
+      display: block;
+      background: $white;
+      padding: $gridGutterHalfPX;
+    }
+
+    &-item {
+      position: relative;
+
+      &-link {
+        display: block;
+        padding: $gridGutterHalfPX;
+        color: $black;
+        opacity: .5;
+        &:hover {
+          opacity: .7;
+          color: $black;
+        }
+        &:active {
+          opacity: .9;
+        }
+        &.is-acitve {
+          opacity: 1;
+        }
+
+        &-primary {
+          color: $ice;
+          opacity: 1;
+          &:hover {
+            color: darken($ice,10%);
+            opacity: 1;
+          }
+          &:active {
+            color: darken($ice,20%);
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+
+  &-trigger {
+    display: none;
+    z-index: 3;
+
+    @media (max-width: 800px) {
+      display: block;
+      padding-right: 6px;
+    }
+  }
+}
