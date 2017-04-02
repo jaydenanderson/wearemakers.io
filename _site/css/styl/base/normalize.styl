@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+body {
+  font: 400 $fontSizeEm/1.5em $fontFamily;
+  color: $textColor;
+  background-color: $backgroundColor;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: darken($accentColor, 10%);
+  color: #fff;
+  text-shadow: none;
+}
+
+@include breakpoint(WM) {
+  body,
+  input,
+  textarea,
+  button {
+    font: 400 1em/1.5em $fontFamily;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+  &:hover {
+    color: darken($linkColor, 10%);
+  }
+}
+
+.b {
+  font-weight: bold !important;
+}
+
+.i {
+  font-style: italic !important;
+}
+
+.text-normal {
+  font-weight: normal !important;
+}
+
+.text-body {
+  line-height: 1.5em;
+
+  &-boombox {
+  color: rgba(107, 120, 133, .5);
+  }
+}
+
+.text-track {
+  letter-spacing: .05em;
+}
+
+.text-left-small {
+  @include breakpoint (WM) {
+    text-align: left;
+  }
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.blockquote {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 18px;
+  position: relative;
+
+  &:before {
+    content: "\201C";
+    position: absolute;
+    top: -66px;
+    left: -32px;
+    opacity: .1;
+    font: 600 360px/1em "Helvetica Neue", sans-serif;
+
+    @include breakpoint(WM) {
+      top: -54px;
+      left: 0;
+      font-size: 180px;
+    }
+  }
+}
+
+.blockquote-source {
+  padding: $gridGutterEM 0 0 $gridGutterEM;
+}
+
+.blockquote-source-company {
+  color: $black;
+} 
+
+.hyphenate {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+input,
+textarea,
+button {
+  font-size: 1em;
+}

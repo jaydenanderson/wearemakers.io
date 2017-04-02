@@ -1,0 +1,62 @@
+@mixin breakpoint($point) {
+  // Width
+  @if $point == WXXS {
+    @media (max-width: $breakpointWidthXXS) { @content; }
+  }
+  @else if $point == WXS {
+    @media (max-width: $breakpointWidthXS) { @content; }
+  }
+  @else if $point == WS {
+    @media (max-width: $breakpointWidthS) { @content; }
+  }
+  @else if $point == WM {
+    @media (max-width: $breakpointWidthM) { @content; }
+  }
+  @else if $point == WL {
+    @media (max-width: $breakpointWidthXL) { @content; }
+  }
+  @else if $point == WXL {
+    @media (max-width: $breakpointWidthXXL) { @content; }
+  }
+  @else if $point == WXXL {
+    @media (max-width: $breakpointWidthXXL) { @content; }
+  }
+  @else if $point == WXXXL {
+    @media (max-width: $breakpointWidthXXXL) { @content; }
+  }
+  @else if $point == WXXXL {
+    @media (max-width: $breakpointWidthXXXXL) { @content; }
+  }
+}
+
+
+@mixin vert-breakpoint($vert-point) {
+  // Height
+  @if $vert-point == HXXS {
+    @media (max-height: $breakpointHeightXXS) { @content; }
+  }
+  @else if $vert-point == HXS {
+    @media (max-height: $breakpointHeightXS) { @content; }
+  }
+  @else if $vert-point == HS {
+    @media (max-height: $breakpointHeightS) { @content; }
+  }
+  @else if $vert-point == HM {
+    @media (max-height: $breakpointHeightM) { @content; }
+  }
+  @else if $vert-point == HL {
+    @media (max-height: $breakpointHeightL) { @content; }
+  }
+  @else if $vert-point == HXL {
+    @media (max-height: $breakpointHeightXL) { @content; }
+  }
+  @else if $vert-point == HXXL {
+    @media (max-height: $breakpointHeightXXL) { @content; }
+  }
+  @else if $vert-point == HXXXL {
+    @media (max-height: $breakpointHeightXXXL) { @content; }
+  }
+  @else if $vert-point == HXXXL {
+    @media (max-height: $breakpointHeightXXXXL) { @content; }
+  }
+}

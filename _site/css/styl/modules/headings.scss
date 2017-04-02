@@ -1,0 +1,83 @@
+.h {
+  display: block;
+  position: relative;
+  line-height: 1.1em;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.h9,
+.h10 {
+  font-weight: 400;
+}
+
+.h1 {
+  @include h1;
+}
+
+.h2 {
+  @include h2;
+}
+
+.h3 {
+  @include h3;
+}
+
+.h4 {
+  @include h4;
+}
+
+.h5 {
+  @include h5;
+}
+
+.h6 {
+  @include h6;
+}
+
+.h7 {
+  @include h7;
+  line-height: 1.7em;
+}
+
+.h8 {
+  @include h8;
+}
+
+.h9 {
+  @include h9;
+}
+
+.h10 {
+  @include h10;
+}
+
+.text-europa {
+  font-family: $fontFamily;
+}
+
+.text-rift {
+  font-family: $fontFamilyHeading;
+}
+
+.text-tundra {
+  font-family: $fontFamilyText;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-thin {
+  font-weight: 100;
+}
