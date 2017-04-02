@@ -4,62 +4,39 @@
   @include flex-wrap(wrap);
   @include h9Cap;
   padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
-  height: ($gridGutterValue * 4)+px;
+  height: 5rem;
   position: relative;
-
-  @media (max-width: 1200px) {
-    padding: 0 $gridGutterHalfPX;
-  }
-  @media (max-width: 1000px) {
-    @include justify-content(center);
-    height: 8rem;
-  }
-  @media (max-width: 800px) {
-    @include justify-content(space-between);
-    height: 5rem;
-  }
+  transition: all .2s ease;
 
   &-logo {
-    color: rgba(0,0,0,.0);
+    @include flex-shrink(0);
     background: url('/images/logo.png') 0 0 / cover no-repeat;
-    width: 256px;
+    color: rgba(0,0,0,.0);
     height: 59px;
     margin: 0 $gridGutterHalfPX;
-    @include flex-shrink(0);
+    transition: all .2s ease;
+    width: 256px;
+    .is-scrolled & {
+      width: 168px;
+      height: 38px;
+      margin-top: 4px;
+    }
     @media (max-width: 1000px) {
       width: 168px;
       height: 38px;
       margin-top: 4px;
     }
     @media (max-width: 800px) {
-      margin: -4px 0 0;
+      margin: -4px 0 0 !important;
     }
   }
 
   &-list {
-    z-index: 2;
+    z-index: 3;
     @include display(flex);
     @include flex-grow(1000);
     @include justify-content(flex-end);
-
-    @media (max-width: 1000px) {
-      width: 100%;
-      @include justify-content(center);
-    }
-    @media (max-width: 800px) {
-      overflow: hidden;
-      max-height: 0;
-      width: 100%;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-    .is-active & {
-      max-height: 1000px;
-      display: block;
-      background: $white;
-      padding: $gridGutterHalfPX;
-    }
+    transition: all .2s ease;
 
     &-item {
       position: relative;
@@ -69,6 +46,7 @@
         padding: $gridGutterHalfPX;
         color: $black;
         opacity: .5;
+        cursor: pointer;
         &:hover {
           opacity: .7;
           color: $black;
@@ -76,7 +54,7 @@
         &:active {
           opacity: .9;
         }
-        &.is-acitve {
+        &.is-active {
           opacity: 1;
         }
 
@@ -99,11 +77,74 @@
 
   &-trigger {
     display: none;
-    z-index: 3;
+    z-index: 4;
 
-    @media (max-width: 800px) {
-      display: block;
-      padding-right: 6px;
+  }
+}
+
+.nav-header {
+  height: 12rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: rgba(255,255,255,.95);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+  .is-scrolled & {
+    height: 6rem;
+  }
+
+  @media (max-width: 1200px) {
+    padding: 0 $gridGutterHalfPX;
+  }
+  @media (max-width: 1000px) {
+    @include justify-content(center);
+    height: 8rem;
+    .is-scrolled & {
+      height: 8rem;
+    }
+  }
+  @media (max-width: 800px) {
+    @include justify-content(space-between);
+    height: auto;
+    padding: .5rem 1.5rem;
+    .is-scrolled & {
+      height: auto;
+    }
+  }
+
+  &.is-active {
+    .nav-list{
+      max-height: 1000px;
+      padding: $gridGutterHalfPX;
+    }
+  }
+
+  .nav {
+    &-list {
+      @media (max-width: 1000px) {
+        width: 100%;
+        @include justify-content(center);
+      }
+      @media (max-width: 800px) {
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        width: 100%;
+        top: 5rem;
+        left: 0;
+      }
+    }
+
+
+    &-trigger {
+      @media (max-width: 800px) {
+        display: block;
+        padding-right: 6px;
+      }
     }
   }
 }

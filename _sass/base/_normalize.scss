@@ -13,6 +13,13 @@ body {
   background-color: $backgroundColor;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  padding-top: 12rem;
+  @media (max-width: 1000px) {
+    padding-top: 8rem;
+  }
+  @media (max-width: 800px) {
+    padding-top: 5rem;
+  }
 }
 
 ::selection {

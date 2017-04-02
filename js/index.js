@@ -9,3 +9,22 @@ dropdownArray.forEach(function(el){
     event.preventDefault();
   };
 })
+
+// // Nav class change
+// window.onscroll = function() {
+//     var nav = document.querySelectorAll('.nav-header');
+//     if ( window.pageYOffset > 100 ) {
+//       nav.classList.add("is-scrolled");
+//     }
+//     else {
+//       nav.classList.remove("is-scrolled");
+//     }
+// }
+
+window.onscroll = function() {
+    if ( window.pageYOffset > 100 ) {
+        document.body.classList.add("is-scrolled");
+    } else {
+        document.body.classList.remove("is-scrolled");
+    }
+}

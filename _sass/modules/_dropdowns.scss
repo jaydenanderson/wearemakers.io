@@ -1,12 +1,64 @@
 .dropdown {
   position: relative;
   
+  &-trigger {
+    .is-active & {
+      opacity: 1;
+    }
+  }
+
   &-menu {
     opacity: 0;
-    height: 0;
-    width: 0;
+    max-height: 0;
+    max-width: 0;
     overflow: hidden;
     position: absolute;
     top: 100%;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 15px 30px rgba(30,36,41,.1);
+    border-radius: 4px;
+    transition: all .2s ease;
+    &-item {
+      &-link {
+        padding: 1.5rem;
+        display: block;
+        color: $black;
+        opacity: .5;
+        &:hover {
+          opacity: .7;
+          color: $black;
+        }
+        &:active {
+          opacity: .9;
+        }
+        &.is-active {
+          opacity: 1;
+        }
+
+      }
+    }
+  }
+
+  &.is-active {
+    .dropdown-menu {
+      opacity: 1;
+      max-height: 1000px;
+      max-width: 200px;      
+    }
+  }
+}
+
+.dropdown-students {
+  @media (max-width: 800px) {
+    &.is-active {
+      .dropdown-menu {
+        position: relative;
+        box-shadow: none;
+        background: none;
+        padding-left: 1.5rem;
+      }
+    }
   }
 }
