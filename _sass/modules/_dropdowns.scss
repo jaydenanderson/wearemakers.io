@@ -24,11 +24,11 @@
       &-link {
         padding: 1.5rem;
         display: block;
-        color: $black;
         opacity: .5;
+        color: inherit;
         &:hover {
           opacity: .7;
-          color: $black;
+          color: inherit;
         }
         &:active {
           opacity: .9;
@@ -45,12 +45,20 @@
     .dropdown-menu {
       opacity: 1;
       max-height: 1000px;
-      max-width: 200px;      
+      max-width: 200px;
     }
   }
 }
 
 .dropdown-students {
+  .dropdown-menu {
+    .nav-dark & {
+      background: rgba(30,36,41,.90);
+    }
+    .is-scrolled & {
+      background: rgba(255,255,255,.95);
+    }
+  }
   @media (max-width: 800px) {
     &.is-active {
       .dropdown-menu {
@@ -58,6 +66,7 @@
         box-shadow: none;
         background: none;
         padding-left: 1.5rem;
+        max-height: 8rem;
       }
     }
   }

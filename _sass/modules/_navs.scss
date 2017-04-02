@@ -7,27 +7,79 @@
   height: 5rem;
   position: relative;
   transition: all .2s ease;
+  color: $black;
+
+  &.nav-dark {
+    color: $white;
+  }
+
+  &.is-active,
+  .is-scrolled & {
+    color: $black;
+  }
 
   &-logo {
     @include flex-shrink(0);
-    background: url('/images/logo.png') 0 0 / cover no-repeat;
-    color: rgba(0,0,0,.0);
-    height: 59px;
-    margin: 0 $gridGutterHalfPX;
-    transition: all .2s ease;
-    width: 256px;
-    .is-scrolled & {
-      width: 168px;
-      height: 38px;
-      margin-top: 4px;
+    position: relative;
+
+    &-text {
+      color: rgba(0,0,0,.0) !important;
+      position: absolute;
+      top: 0;
     }
-    @media (max-width: 1000px) {
-      width: 168px;
-      height: 38px;
-      margin-top: 4px;
-    }
-    @media (max-width: 800px) {
-      margin: -4px 0 0 !important;
+
+    &-image {
+      &:after,
+      &:before {
+        background: url('/images/logo.png') 0 0 / cover no-repeat;
+        content: '';
+        display: block;
+        height: 59px;
+        margin: 0 $gridGutterHalfPX;
+        transition: all .2s ease;
+        width: 256px;
+      }
+      &:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('/images/logo-white.png');
+      }
+      .nav-dark & {
+        &:before {
+          opacity: 0;
+        }
+      }
+      .is-scrolled & {
+        &:after,
+        &:before {
+          width: 168px;
+          height: 38px;
+        }
+      }
+      .is-scrolled &,
+      .is-active & {
+        &:before {
+          opacity: 1;
+        }
+        &:after {
+          opacity: 0;
+        }
+      }
+      @media (max-width: 1000px) {
+        &:after,
+        &:before {
+          width: 168px;
+          height: 38px;
+          margin-top: 4px;
+        }
+      }
+      @media (max-width: 800px) {
+        &:after,
+        &:before {
+          margin: -4px 0 0 !important;
+        }
+      }
     }
   }
 
@@ -44,12 +96,13 @@
       &-link {
         display: block;
         padding: $gridGutterHalfPX;
-        color: $black;
-        opacity: .5;
         cursor: pointer;
+        color: inherit;
+        opacity: .5;
         &:hover {
           opacity: .7;
-          color: $black;
+          transition: none;
+          color: inherit;
         }
         &:active {
           opacity: .9;
@@ -60,28 +113,25 @@
 
         &-primary {
           color: $ice;
-          opacity: 1;
+          opacity: 1 !important;
           &:hover {
             color: darken($ice,10%);
-            opacity: 1;
           }
           &:active {
             color: darken($ice,20%);
-            opacity: 1;
           }
         }
       }
     }
   }
 
-
   &-trigger {
     display: none;
     z-index: 4;
-
   }
 }
 
+// specific for header of site
 .nav-header {
   height: 12rem;
   position: fixed;
@@ -95,6 +145,9 @@
 
   .is-scrolled & {
     height: 6rem;
+    background: rgba(255,255,255,.95);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
   }
 
   @media (max-width: 1200px) {
@@ -114,10 +167,15 @@
     .is-scrolled & {
       height: auto;
     }
+    .nav-list {
+      opacity: 0;
+      transition: all .2s ease;
+    }
   }
 
   &.is-active {
     .nav-list{
+      opacity: 1;
       max-height: 1000px;
       padding: $gridGutterHalfPX;
     }
@@ -133,9 +191,6 @@
         display: block;
         overflow: hidden;
         max-height: 0;
-        width: 100%;
-        top: 5rem;
-        left: 0;
       }
     }
 
