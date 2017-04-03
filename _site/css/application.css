@@ -241,7 +241,7 @@ a {
     padding-left: 0.5em;
     font-style: italic; }
   .is-formatted big {
-    font-size: 1.77778em;
+    font-size: 1.66667em;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted big {
@@ -249,8 +249,7 @@ a {
         font-weight: 600; } }
   .is-formatted small {
     font-size: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: .1em;
     font-weight: bold;
     line-height: 1em; }
   .is-formatted del {
@@ -287,7 +286,7 @@ a {
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted h2 {
-        font-size: 1.77778em;
+        font-size: 1.66667em;
         letter-spacing: 0;
         font-weight: 600; } }
   .is-formatted h3 {
@@ -298,7 +297,7 @@ a {
         font-size: 1.33333em;
         font-weight: 600; } }
   .is-formatted h4 {
-    font-size: 1.77778em;
+    font-size: 1.66667em;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted h4 {
@@ -1666,12 +1665,6 @@ button {
   position: relative;
   line-height: 1.2em; }
 
-.h-short {
-  line-height: 1em; }
-
-.h-long {
-  line-height: 1.5em; }
-
 .h1,
 .h2,
 .h3,
@@ -1704,7 +1697,7 @@ button {
   font-weight: 300; }
   @media (max-width: 640px) {
     .h2 {
-      font-size: 1.77778em;
+      font-size: 1.66667em;
       letter-spacing: 0;
       font-weight: 600; } }
 
@@ -1717,7 +1710,7 @@ button {
       font-weight: 600; } }
 
 .h4 {
-  font-size: 1.77778em;
+  font-size: 1.66667em;
   font-weight: 300; }
   @media (max-width: 640px) {
     .h4 {
@@ -1746,10 +1739,18 @@ button {
 
 .h10 {
   font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: .1em;
   font-weight: bold;
   line-height: 1em; }
+
+.h-short {
+  line-height: 1em; }
+
+.h-tight {
+  letter-spacing: -0.05em; }
+
+.h-long {
+  line-height: 1.5em; }
 
 .text-europa {
   font-family: "europa", "Helvetica Neue", "Arial", sans-serif; }
@@ -2091,6 +2092,37 @@ button {
     .list-partners .list-item-logo {
       width: 102px; }
 
+.list-overview {
+  padding-top: 105px; }
+  .list-overview .list-item {
+    position: relative;
+    margin: calc(3rem - 7px) 0 0 calc(20% + 3rem); }
+    .list-overview .list-item-title {
+      font-size: 10px;
+      letter-spacing: .05em;
+      color: rgba(41, 50, 59, 0.5);
+      line-height: 1em;
+      margin-top: 0;
+      opacity: .5; }
+      .list-overview .list-item-title:hover {
+        opacity: 1; }
+      .list-overview .list-item-title-link {
+        color: #192129; }
+    .list-overview .list-item-icon {
+      position: absolute;
+      right: 100%;
+      margin: -6px 3rem 0 0; }
+    .list-overview .list-item-header {
+      font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif;
+      font-weight: 300;
+      line-height: 1em;
+      font-size: 30px;
+      margin-bottom: calc(2rem - 11px); }
+    .list-overview .list-item-body {
+      font-family: "ff-tundra-web", "Georgia", serif;
+      line-height: 1.666666em;
+      opacity: .5; }
+
 .dropdown {
   position: relative; }
   .is-active .dropdown-trigger {
@@ -2158,6 +2190,7 @@ button {
   margin-top: -12rem;
   padding-top: 12rem;
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2399,16 +2432,21 @@ button {
 
 .nav-header {
   height: 12rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 6;
+  margin: 0 auto;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px); }
+  .nav-header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1280px;
+    width: 100%;
+    z-index: 6; }
   .is-scrolled .nav-header {
-    height: 6rem;
+    height: 6rem; }
+  .is-scrolled .nav-header, .nav-header.is-active {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px); }
@@ -2595,3 +2633,13 @@ button {
 
 .section-details {
   margin: calc(7rem - 44px) 0; }
+.section-impact {
+  margin: calc(8rem - 41px) 0; }
+  .section-impact .section-header {
+    line-height: .833333em;
+    color: #43AAED; }
+  .section-impact .section-body {
+    width: 80%;
+    line-height: 2em;
+    opacity: .8;
+    margin: calc(3rem - 15px) 0 calc(3rem - 11px); }

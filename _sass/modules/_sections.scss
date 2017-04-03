@@ -2,4 +2,18 @@
   &-details {
     margin: calc(7rem - 44px) 0;
   }
+
+  &-impact {
+    margin: calc(8rem - 41px) 0;
+    .section-header {
+      line-height: .833333em;
+      color: $ice;
+    }
+    .section-body {
+      width: 80%;
+      line-height: 2em;
+      opacity: .8;
+      margin: calc(3rem - 15px) 0 calc(3rem - 11px);
+    }
+  }
 }

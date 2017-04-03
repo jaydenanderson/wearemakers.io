@@ -4,14 +4,6 @@
   line-height: 1.2em;
 }
 
-.h-short {
-  line-height: 1em;
-}
-
-.h-long {
-  line-height: 1.5em;
-}
-
 .h1,
 .h2,
 .h3,
@@ -64,6 +56,18 @@
 
 .h10 {
   @include h10;
+}
+
+.h-short {
+  line-height: 1em;
+}
+
+.h-tight {
+  letter-spacing: -0.05em;
+}
+
+.h-long {
+  line-height: 1.5em;
 }
 
 .text-europa {

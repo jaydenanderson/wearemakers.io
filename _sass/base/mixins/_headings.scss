@@ -77,8 +77,7 @@
 
 @mixin h10 {
   font-size: $h10Px;
-  text-transform: uppercase; 
-  letter-spacing: 2px;
+  letter-spacing: .1em;
   font-weight: bold;
   line-height: 1em;
 }
