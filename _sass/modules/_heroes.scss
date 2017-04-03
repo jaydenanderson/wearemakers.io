@@ -15,6 +15,10 @@
     bottom: 0;
     background-size: cover;
     background-position: center;
+    &-image {
+      display: block;
+      width: 100%;
+    }
   }
   &-text {
     position: relative;
@@ -73,6 +77,69 @@
       .button {
         margin-right: 3rem;
         @include flex-shrink(0);
+      }
+    }
+  }
+}
+
+.hero-courses {
+  padding: 0 1.5rem;
+  background: transparent;
+  min-height: 0;
+  color: $black;
+  .hero-bg {
+    padding: 0 1.5rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    @include flex-shrink(0);
+    opacity: .75;
+  }
+  .hero-text {
+    padding: 1.5rem;
+    width: 41.666666%;
+    margin: 0 -25% 0 8.333333%;
+    @include flex-shrink(0);
+    mix-blend-mode: multiply;
+    &-header {
+      font-size: 7rem;
+      line-height: 6rem;
+      font-weight: bold;
+      letter-spacing: -.04em;
+    }
+    &-body {
+      line-height: 2em;
+      padding: calc(4rem - 17px) 0;
+      p:first-child {
+        margin-bottom: 1em;
+      }
+    }
+    &-line {
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        top: calc(-2rem + 4px);
+        bottom: calc(-2rem + 4px);
+        right: -3rem;
+        background: $golden;
+        display: block;
+        z-index: -1;
+      }
+      &:nth-child(1) {
+        &:after {
+          left: -2rem;
+          right: -2rem;
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          left: -1rem;
+          right: -3rem;
+        }
       }
     }
   }

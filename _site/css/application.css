@@ -2274,6 +2274,9 @@ button {
     bottom: 0;
     background-size: cover;
     background-position: center; }
+    .hero-bg-image {
+      display: block;
+      width: 100%; }
   .hero-text {
     position: relative;
     z-index: 1; }
@@ -2323,6 +2326,61 @@ button {
         -moz-flex-shrink: 0;
         flex-shrink: 0;
         -ms-flex-negative: 0; }
+
+.hero-courses {
+  padding: 0 1.5rem;
+  background: transparent;
+  min-height: 0;
+  color: #192129; }
+  .hero-courses .hero-bg {
+    padding: 0 1.5rem;
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 75%;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    flex-shrink: 0;
+    -ms-flex-negative: 0;
+    opacity: .75; }
+  .hero-courses .hero-text {
+    padding: 1.5rem;
+    width: 41.666666%;
+    margin: 0 -25% 0 8.333333%;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    flex-shrink: 0;
+    -ms-flex-negative: 0;
+    mix-blend-mode: multiply; }
+    .hero-courses .hero-text-header {
+      font-size: 7rem;
+      line-height: 6rem;
+      font-weight: bold;
+      letter-spacing: -.04em; }
+    .hero-courses .hero-text-body {
+      line-height: 2em;
+      padding: calc(4rem - 17px) 0; }
+      .hero-courses .hero-text-body p:first-child {
+        margin-bottom: 1em; }
+    .hero-courses .hero-text-line {
+      display: inline-block;
+      position: relative; }
+      .hero-courses .hero-text-line:after {
+        content: '';
+        position: absolute;
+        left: -3rem;
+        top: calc(-2rem + 4px);
+        bottom: calc(-2rem + 4px);
+        right: -3rem;
+        background: #FED940;
+        display: block;
+        z-index: -1; }
+      .hero-courses .hero-text-line:nth-child(1):after {
+        left: -2rem;
+        right: -2rem; }
+      .hero-courses .hero-text-line:nth-child(2):after {
+        left: -1rem;
+        right: -3rem; }
 
 .card {
   border: 2px solid #43AAED;
@@ -2520,44 +2578,48 @@ button {
     -moz-flex-shrink: 0;
     flex-shrink: 0;
     -ms-flex-negative: 0;
-    position: relative; }
+    position: relative;
+    display: block; }
     .nav-logo-text {
       color: transparent !important;
       position: absolute;
       top: 0; }
-    .nav-logo-image:after, .nav-logo-image:before {
-      background: url("/images/logo.png") 0 0/cover no-repeat;
-      content: '';
-      display: block;
-      height: 59px;
-      margin: 0 18px;
-      transition: all .2s ease;
-      width: 256px; }
-    .nav-logo-image:after {
-      position: absolute;
-      left: 0;
-      top: 0;
-      opacity: 0;
-      background-image: url("/images/logo-white.png"); }
-    .nav-dark .nav-logo-image:before {
-      opacity: 0; }
-    .nav-dark .nav-logo-image:after {
-      opacity: 1; }
-    .is-scrolled .nav-logo-image:after, .is-scrolled .nav-logo-image:before {
-      width: 168px;
-      height: 38px; }
-    .is-scrolled .nav-logo-image:before, .is-active .nav-logo-image:before {
-      opacity: 1; }
-    .is-scrolled .nav-logo-image:after, .is-active .nav-logo-image:after {
-      opacity: 0; }
-    @media (max-width: 1000px) {
+    .nav-logo-image {
+      display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
+        background: url("/images/logo.png") 0 0/cover no-repeat;
+        content: '';
+        display: block;
+        height: 59px;
+        margin: 0 18px;
+        transition: all .2s ease;
+        width: 256px; }
+      .nav-logo-image:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        background-image: url("/images/logo-white.png"); }
+      .nav-dark .nav-logo-image:before {
+        opacity: 0; }
+      .nav-dark .nav-logo-image:after {
+        opacity: 1; }
+      .is-scrolled .nav-logo-image:after, .is-scrolled .nav-logo-image:before {
         width: 168px;
         height: 38px;
-        margin-top: 4px; } }
-    @media (max-width: 800px) {
-      .nav-logo-image:after, .nav-logo-image:before {
-        margin: -4px 0 0 !important; } }
+        margin: -4px 0 0 !important; }
+      .is-scrolled .nav-logo-image:before, .is-active .nav-logo-image:before {
+        opacity: 1; }
+      .is-scrolled .nav-logo-image:after, .is-active .nav-logo-image:after {
+        opacity: 0; }
+      @media (max-width: 1000px) {
+        .nav-logo-image:after, .nav-logo-image:before {
+          width: 168px;
+          height: 38px;
+          margin-top: 4px; } }
+      @media (max-width: 800px) {
+        .nav-logo-image:after, .nav-logo-image:before {
+          margin: -4px 0 0 !important; } }
   .nav-list {
     z-index: 8;
     display: -webkit-box;

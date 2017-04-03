@@ -16,6 +16,7 @@
   &-logo {
     @include flex-shrink(0);
     position: relative;
+    display: block;
 
     &-text {
       color: rgba(0,0,0,.0) !important;
@@ -24,6 +25,7 @@
     }
 
     &-image {
+      display: block;
       &:after,
       &:before {
         background: url('/images/logo.png') 0 0 / cover no-repeat;
@@ -54,6 +56,7 @@
         &:before {
           width: 168px;
           height: 38px;
+          margin: -4px 0 0 !important;
         }
       }
       .is-scrolled &,

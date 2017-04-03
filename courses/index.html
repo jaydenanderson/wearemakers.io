@@ -2,10 +2,15 @@
 layout: default
 ---
 
-{% include home/hero.html %}
-{% include home/description.html %}
-{% include home/pullquote.html %}
-{% include home/impact.html %}
-{% include home/stats.html %}
-{% include home/events.html %}
+{% include courses/hero.html %}
+<section class='section-courses'>
+  {% include courses/mindfulness.html %}
+  {% include courses/coding.html %}
+  {% include courses/game-design.html %}
+  {% include courses/web.html %}
+  {% include courses/it.html %}
+  {% include courses/volunteer.html %}
+</section>
+{% include courses/details.html %}
+{% include courses/campuses.html %}
 {% include cta.html %}
