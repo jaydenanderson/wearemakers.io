@@ -2761,7 +2761,7 @@ button {
       .is-scrolled .nav-logo-image:after, .is-scrolled .nav-logo-image:before {
         width: 168px;
         height: 38px;
-        margin: -4px 0 0 !important; }
+        margin: -4px 1.5rem 0; }
       .is-scrolled .nav-logo-image:before, .is-active .nav-logo-image:before {
         opacity: 1; }
       .is-scrolled .nav-logo-image:after, .is-active .nav-logo-image:after {
@@ -2770,7 +2770,7 @@ button {
         .nav-logo-image:after, .nav-logo-image:before {
           width: 168px;
           height: 38px;
-          margin-top: 4px; } }
+          margin-top: 4px !important; } }
       @media (max-width: 800px) {
         .nav-logo-image:after, .nav-logo-image:before {
           margin: -4px 0 0 !important; } }
