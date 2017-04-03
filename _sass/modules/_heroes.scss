@@ -2,21 +2,11 @@
   min-height: 100vh;
   background: #08304A;
   color: #fff;
-  margin-top: -12rem;
-  padding-top: 12rem;
   width: 100%;
   position: relative;
   @include display(flex);
   @include align-items(center);
 
-  @media (max-width: 1000px) {
-    margin-top: -8rem;
-    padding-top: 8rem;
-  }
-  @media (max-width: 800px) {
-    margin-top: -5rem;
-    padding-top: 5rem;
-  }
   &-bg {
     position: absolute;
     top: 0;
@@ -45,6 +35,16 @@
 }
 
 .hero-home {
+  margin-top: -12rem;
+  padding-top: 12rem;
+  @media (max-width: 1000px) {
+    margin-top: -8rem;
+    padding-top: 8rem;
+  }
+  @media (max-width: 800px) {
+    margin-top: -5rem;
+    padding-top: 5rem;
+  }
   .hero-text {
     margin-bottom: 110px;
     &-header {

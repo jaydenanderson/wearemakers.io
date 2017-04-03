@@ -16,4 +16,116 @@
       margin: calc(3rem - 15px) 0 calc(3rem - 11px);
     }
   }
+
+  &-our-work {
+    position: relative;
+    background-size: 40%;
+    margin: -3rem 8.333333% 7rem;
+    padding: 1.5rem;
+    z-index: 1;
+    @include display(flex);
+    @include align-items(center);
+    .section-text {
+      padding: 1.5rem;
+      width: 40%;
+      text-shadow:
+        0 2px 2px rgba(255,255,255,1),
+        0 -2px 2px rgba(255,255,255,1),
+        -2px -2px 2px rgba(255,255,255,1),
+        2px 2px 2px rgba(255,255,255,1);
+      &-header {
+        line-height: .833333em;
+        max-width: 120px;
+        color: $golden;
+        text-shadow: none;
+      }
+      &-body {
+        line-height: 2em;
+        margin: calc(3rem - 13px) 0 calc(3rem - 16px);
+      }
+      &-footer {
+        opacity: .5;
+        font-size: $h9Px;
+        line-height: 1.5em;
+        max-width: 260px;
+      }
+    }
+  }
+
+  &-events {
+    background: $black;
+    padding: 1.5rem;
+    .section-header {
+      color: $white;
+      padding: 1.5rem 1.5rem 0;
+      font-size: $h4Px;
+      font-weight: bold;
+    }
+    .section-body {
+      width: 100%;
+      @include display(flex);
+    }
+  }
+}
+
+.section-involved {
+  .section-header {
+    font-size: 12rem;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 146px 3rem -1.5rem;
+    &-label {
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(-4rem + 23px);
+        right: -4rem;
+        bottom: -7rem;
+        left: -4rem;
+        background: rgba(67,170,236,.1);
+      }
+    }
+}
+  .section-body {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.section-student {
+  text-align: center;
+  color: $white;
+  position: relative;
+  &:after {
+    background: url(/images/bg/pattern-3.png) 0 0 / 600px 600px;
+    content: '';
+    display: block;
+    width: 100%;
+    top: -12rem;
+    bottom: 0;
+    position: absolute;
+  }
+  .section-header {
+    position: relative;
+    z-index: 1;
+    padding: 6rem 3rem calc(3rem - 10px) ;
+  }
+  .section-body {
+    position: relative;
+    z-index: 1;
+  }
+  .section-footer {
+    position: relative;
+    display: block;
+    margin: 6rem 0 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .button {
+    box-shadow: 0 10px 30px -10px rgba(30,36,41,.5);
+  }
 }

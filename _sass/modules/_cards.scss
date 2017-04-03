@@ -1,5 +1,6 @@
 .card {
   border: 2px solid $ice;
+  position: relative;
   @include display(flex);
   @include flex-wrap(wrap);
   &-header,
@@ -14,6 +15,10 @@
     @include h5();
     line-height: 1em;
     font-weight: 500;
+    &-headline,
+    &-subheadline {
+      display: block;
+    }
   }
   &-body {
   }
@@ -33,5 +38,152 @@
     font-size: $h7Px;
     opacity: .5;
     padding: calc(3rem - 9px) 3rem;
+  }
+}
+
+.card-event {
+  flex: 1;
+  margin: 1.5rem;
+  background: $white;
+  color: $black;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border: 3px solid $white;
+  &:hover {
+    border-color: $ice;
+  }
+  &:before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+  }
+  .card-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: calc(2rem - 6px) calc(2rem - 3px);
+    font-family: $fontFamily;
+    line-height: 1.25em;
+    &-headline {
+      font-weight: bold;
+    }
+    &-subheadline {
+      font-weight: 100;
+      opacity: .5;
+    }
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem calc(2rem - 3px);
+    @include h9Cap();
+    &-headline {
+      display: block;
+      max-width: 150px;
+    }
+    &-subheadline {
+      &:before {
+        content: '';
+        display: block;
+        width: 36px;
+        border: 2px solid;
+        border-color: inherit;
+        margin: 18px 0;
+      }
+    }
+    &-button {
+      width: 100%;
+    }
+  }
+  &-placeholder {
+    background: transparent;
+    cursor: default;
+    pointer-events: none;
+    &:after {
+      content: '';
+      display: block;
+      width: 36px;
+      border: 2px solid;
+      border-color: inherit;
+      position: absolute;
+      height: 0;
+      left: 2rem;
+      bottom: 51px;
+    }
+  }
+}
+
+.card-action {
+  border-radius: 4px;
+  border: none;
+  background: #F4EAC3;
+  text-align: center;
+  background-size: cover;
+  transition: all .3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 60px -20px rgba(30,36,41,.5);
+  }
+
+  &:active {
+    transform: scale(.97);
+    box-shadow: none;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 220px;
+    &:active {
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+
+  .card-header {
+    color: $black;
+    font-family: $fontFamily;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    padding: calc(3rem - 7px) 3rem -1.5rem;;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    &-subheadline {
+      padding-top: calc(2rem - 7px);
+    }
+  }
+
+  &:after {
+    content: '';
+    padding-bottom: 155%;
+    display: block;
+    width: 100%;
+  }
+
+  &-donate {
+    .button {
+      box-shadow: 0 10px 30px -10px darken($ice, 20%);
+    }
+  }
+
+  &-volunteer {
+    .button {
+      box-shadow: 0 10px 30px -10px darken($golden, 20%);
+    }
+    .card-header-headline {
+      max-width: 265px;
+      margin: 0 auto;
+    }
+  }
+
+  &-hire {
+    .button {
+      box-shadow: 0 10px 30px -10px darken($rocketship, 20%);
+    }
   }
 }

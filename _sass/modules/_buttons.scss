@@ -15,7 +15,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .15s ease;
+  transition: all .2s ease;
   user-select: none;
   vertical-align: middle;
   -webkit-appearance: none;
@@ -34,6 +34,7 @@
     background: darken($black,50%);
     color: darken($ice,20%);
     border-color: darken($black,50%);
+    transform: scale(.97);
   }
   &.button-hollow {
     color: $black;
@@ -144,6 +145,27 @@
 
 .button-white-muted {
   border-color: rgba(255,255,255,.3)
+}
+
+.button-golden {
+  background: darken($golden,7%);
+  border-color: darken($golden,7%);
+  color: $white;
+  &:hover {
+    background: darken($golden,15%);
+    color: $white;
+    border-color: darken($golden,15%);
+  }
+  &:active {
+    background: darken($golden,20%);
+    border-color: darken($golden,20%);
+  }
+  &.button-hollow {
+    color: darken($golden,7%);
+    &:hover {
+      color: $white;
+    }
+  }
 }
 
 // Hollow modifier

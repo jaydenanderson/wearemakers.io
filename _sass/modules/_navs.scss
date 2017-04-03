@@ -3,7 +3,6 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include h9Cap;
-  padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
   height: 5rem;
   position: relative;
   transition: all .2s ease;
@@ -134,6 +133,7 @@
   background: rgba(255,255,255,.95);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
+  padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
   &-wrapper {
     position: fixed;
     top: 0;
@@ -211,4 +211,38 @@
 .nav-dark {
   color: $white;
   background: transparent;
+}
+
+.nav-footer {
+  font-weight: normal;
+  height: auto;
+  margin: 0 3rem;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 36px;
+    height: 40px;
+    border: .5rem solid $white;
+    background: url(/images/logo-icon.png) 0 0 / cover no-repeat;
+    z-index: 1;
+  }
+  .nav-list {
+    z-index: 0;
+    width: 100%;
+    height: 6rem;
+    @include align-items(center);
+    @include justify-content(center);
+    background: $white;
+    &:first-of-type {
+      border-bottom: 2px solid #E8EAEB;
+    }
+    &:last-of-type {
+      text-transform: none;
+      opacity: .3;
+    }
+  }
 }
