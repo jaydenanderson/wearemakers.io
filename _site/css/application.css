@@ -2537,9 +2537,12 @@ button {
       position: absolute;
       left: 0;
       top: 0;
+      opacity: 0;
       background-image: url("/images/logo-white.png"); }
     .nav-dark .nav-logo-image:before {
       opacity: 0; }
+    .nav-dark .nav-logo-image:after {
+      opacity: 1; }
     .is-scrolled .nav-logo-image:after, .is-scrolled .nav-logo-image:before {
       width: 168px;
       height: 38px; }

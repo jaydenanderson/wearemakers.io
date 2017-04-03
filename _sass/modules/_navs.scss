@@ -38,11 +38,15 @@
         position: absolute;
         left: 0;
         top: 0;
+        opacity: 0;
         background-image: url('/images/logo-white.png');
       }
       .nav-dark & {
         &:before {
           opacity: 0;
+        }
+        &:after {
+          opacity: 1;
         }
       }
       .is-scrolled & {

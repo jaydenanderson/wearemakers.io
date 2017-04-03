@@ -1,5 +1,5 @@
 <div class='nav-header-wrapper'>
-  <header class='nav nav-header nav-dark js-toggle'>
+  <header class='nav nav-header js-toggle {{include.header_color}}'>
     <h1 class='nav-logo'>
       <span class='nav-logo-text'>WeAreMakers</span>
       <a class='nav-logo-image' href=''></a>
@@ -9,29 +9,34 @@
       <i class='icon icon-menu'></i>
     </a>
     <ul class='nav-list js-toggle-menu'>
-      <li class='nav-list-item'>
-        <a href='#' class='nav-list-item-link'>Courses</a>
-      </li>
-      <li class='nav-list-item dropdown dropdown-students js-toggle'>
-        <a class='nav-list-item-link dropdown-trigger js-toggle-trigger'>Our students</a>
-        <ul class='dropdown-menu js-toggle-menu'>
-          <li class='dropdown-menu-item'>
-            <a href='#' class='dropdown-menu-item-link'>Refugees</a>
+      {% for item in site.navigation %}
+        {% assign class = nil %}
+        {% if page.url contains item.url %}
+          {% assign class = 'is-active' %}
+        {% endif %}
+        {% if item.title contains 'Donate' %}
+          {% assign class = 'nav-list-item-link-primary' %}
+        {% endif %}
+        {% if item.title contains 'Our students' %}
+          <li class='nav-list-item dropdown dropdown-students js-toggle'>
+            <a class='nav-list-item-link dropdown-trigger js-toggle-trigger'>Our students</a>
+            <ul class='dropdown-menu js-toggle-menu'>
+              <li class='dropdown-menu-item'>
+                <a href='#' class='dropdown-menu-item-link'>Refugees</a>
+              </li>
+              <li class='dropdown-menu-item'>
+                <a href='#' class='dropdown-menu-item-link'>Latinos</a>
+              </li>
+            </ul>
           </li>
-          <li class='dropdown-menu-item'>
-            <a href='#' class='dropdown-menu-item-link'>Latinos</a>
+        {% else %}
+          <li class='nav-list-item'>
+            <a href='{{ item.url }}' class='nav-list-item-link {{ primary }} {{ class }}'>
+              {{ item.title }}
+            </a>
           </li>
-        </ul>
-      </li>
-      <li class='nav-list-item'>
-        <a href='#' class='nav-list-item-link'>Broadcasts</a>
-      </li>
-      <li class='nav-list-item'>
-        <a href='#' class='nav-list-item-link'>Get involved</a>
-      </li>
-      <li class='nav-list-item'>
-        <a href='#' class='nav-list-item-link nav-list-item-link-primary'>Donate</a>
-      </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </header>
 </div>

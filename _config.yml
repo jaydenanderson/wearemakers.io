@@ -9,3 +9,15 @@ url: '' # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 gems: ['bourbon', 'github-pages']
+
+navigation:
+  - title: Courses
+    url: /courses/
+  - title: Our students
+    url: /students/
+  - title: Broadcasts
+    url: /broadcasts/
+  - title: Get involved
+    url: /get-involved/
+  - title: Donate
+    url: /donate/
