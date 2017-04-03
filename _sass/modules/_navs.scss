@@ -9,10 +9,6 @@
   transition: all .2s ease;
   color: $black;
 
-  &.nav-dark {
-    color: $white;
-  }
-
   &.is-active,
   .is-scrolled & {
     color: $black;
@@ -84,7 +80,7 @@
   }
 
   &-list {
-    z-index: 3;
+    z-index: 8;
     @include display(flex);
     @include flex-grow(1000);
     @include justify-content(flex-end);
@@ -127,7 +123,7 @@
 
   &-trigger {
     display: none;
-    z-index: 4;
+    z-index: 7;
   }
 }
 
@@ -138,7 +134,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 6;
   background: rgba(255,255,255,.95);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -202,4 +198,9 @@
       }
     }
   }
+}
+
+.nav-dark {
+  color: $white;
+  background: transparent;
 }

@@ -10,7 +10,7 @@
   font-weight: bold;
   height: auto;
   justify-content: center;
-  padding: 1rem;
+  padding: 16px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -52,10 +52,6 @@
 
 .button-large {
   padding: 22px;
-}
-
-.button-hollow {
-  background-color: transparent;
 }
 
 .button-ice {
@@ -121,7 +117,8 @@
   }
 }
 
-.button-white {
+.button-white,
+.button-white-muted {
   background: $white;
   border-color: $white;
   color: $black;
@@ -143,4 +140,13 @@
       color: $ice;
     }
   }
+}
+
+.button-white-muted {
+  border-color: rgba(255,255,255,.3)
+}
+
+// Hollow modifier
+.button-hollow {
+  background-color: transparent;
 }

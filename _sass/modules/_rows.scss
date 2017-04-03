@@ -1,0 +1,12 @@
+.row {
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include align-items(stretch);
+}
+
+.row-features {
+  position: relative;
+  z-index: 3;
+  margin: -113px 8.33333333% 0;
+}

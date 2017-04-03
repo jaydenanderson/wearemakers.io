@@ -1,0 +1,37 @@
+.card {
+  border: 2px solid $ice;
+  @include display(flex);
+  @include flex-wrap(wrap);
+  &-header,
+  &-body,
+  &-footer {
+    display: block;
+    width: 100%;
+    padding: 3rem;
+  }
+  &-header {
+    font-family: $fontFamilyHeading;
+    @include h5();
+    line-height: 1em;
+    font-weight: 500;
+  }
+  &-body {
+  }
+  &-footer {
+  }
+}
+
+.card-highlight {
+  position: relative;
+  z-index: 2;
+  margin: -1px;
+  .card-header {
+    color: $white;
+    padding: calc(3rem - 3px) 3rem;
+  }
+  .card-body {
+    font-size: $h7Px;
+    opacity: .5;
+    padding: calc(3rem - 9px) 3rem;
+  }
+}

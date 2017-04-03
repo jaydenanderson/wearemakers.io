@@ -1,7 +1,15 @@
 .h {
   display: block;
   position: relative;
-  line-height: 1.1em;
+  line-height: 1.2em;
+}
+
+.h-short {
+  line-height: 1em;
+}
+
+.h-long {
+  line-height: 1.5em;
 }
 
 .h1,
@@ -80,4 +88,8 @@
 
 .text-thin {
   font-weight: 100;
+}
+
+.text-details {
+  margin-top: -12px;
 }

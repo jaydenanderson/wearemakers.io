@@ -1,20 +1,27 @@
-.flex {
+.grid {
   @include display(flex);
   @include flex-direction(row);
   @include flex-wrap(wrap);
-  @include justify-content(center);
-}
-
-.grid {
-  @include clearfix;
-  display: block;
+  @include justify-content(flex-start);
   padding: $gridGutterHalfPX;
-  max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
 
   @include breakpoint(WXS) {
     padding: $gridGutterQuarterPX;
   }
+}
+
+.grid-center-x {
+  @include justify-content(center);
+}
+
+.grid-center-y {
+  @include align-items(center);
+}
+
+.grid-center {
+  @include justify-content(center);
+  @include align-items(center);
 }
 
 .grid-no-gutter {
@@ -35,7 +42,6 @@
 
 .col, [class^="col-"], [class*=" col-"] {
   display: block;
-  float: left;
   padding: $gridGutterHalfPX;
 
   @include breakpoint(WXS) {

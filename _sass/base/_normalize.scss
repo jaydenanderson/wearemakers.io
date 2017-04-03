@@ -13,13 +13,7 @@ body {
   background-color: $backgroundColor;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  padding-top: 12rem;
-  @media (max-width: 1000px) {
-    padding-top: 8rem;
-  }
-  @media (max-width: 800px) {
-    padding-top: 5rem;
-  }
+  background: url('/images/bg/pattern.gif') center / 500px 500px;
 }
 
 ::selection {
@@ -221,9 +215,7 @@ a {
   }
 }
 
-.is-formatted,
-.single-post .post {
-  font-size: 1.3333em;
+.is-formatted {
   line-height: 1.5em;
 
   @include breakpoint(WM) {
@@ -257,6 +249,7 @@ a {
 
   p {
     margin: 1em 0;
+    line-height: 2em;
   }
 
   blockquote {
@@ -382,4 +375,13 @@ input,
 textarea,
 button {
   font-size: 1em;
+}
+
+.opacity {
+  &-5{
+    opacity: .5;
+  }
+  &-8{
+    opacity: .8;
+  }
 }
