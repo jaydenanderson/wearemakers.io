@@ -187,3 +187,102 @@
     }
   }
 }
+
+.card-course {
+  border-width: 3px;
+  border-color: initial;
+  @include flex-direction(column);
+  .card-header {
+    padding: 0;
+    @include flex-shrink(0);
+    &-headline {
+      font-family: $fontFamilyHeading;
+      font-weight: bold;
+      line-height: 1em;
+      font-size: $h4Px;
+      padding: calc(3rem - 6px) 3rem 0;
+      max-width: 240px;
+    }
+    &-image {
+      margin: -3px -3px 0;
+      display: block;
+      width: calc(100% + 6px);
+    }
+  }
+  .card-body {
+    font-family: $fontFamilyText;
+    line-height: 2em;
+    padding: calc(3rem - 14px) 3rem 0;
+    color: $black;
+    @include flex-grow(10000);
+    p {
+      margin-top: 2em;
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+  .card-footer {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+    @include flex-shrink(0);
+    color: $black;
+    &-details {
+      @include h9Cap();
+      line-height: 1.5em;
+      &:before {
+        border-top: 3px solid $black;
+        content: '';
+        display: block;
+        width: 3rem;
+        margin-bottom: calc(3rem - 4px)
+      }
+      &-header {
+        text-transform: none;
+        font-weight: normal;
+        opacity: .5;
+      }
+      &-item {
+        display: block;
+        color: $black;
+      }
+    }
+  }
+
+  &-mindfulness {
+    color: $mint;
+    border-image: url(/images/bg/mint-bg.png) 6 repeat;
+  }
+
+  &-code {
+    color: $golden;
+    border-image: url(/images/bg/golden-bg.png) 6 repeat;
+  }
+
+  &-game {
+    color: $ice;
+    border-image: url(/images/bg/ice-bg.png) 6 repeat;
+  }
+
+  &-web {
+    color: $rocketship;
+    border-image: url(/images/bg/rocketship-bg.png) 6 repeat;
+  }
+
+  &-it {
+    color: $chill;
+    border-image: url(/images/bg/chill-bg.png) 6 repeat;
+    .card-header-headline {
+      max-width: 300px;
+    }
+  }
+
+  &-volunteer {
+    color: $charcoal;
+    border-image: url(/images/bg/charcoal-bg.png) 6 repeat;
+    .card-header-headline {
+      max-width: 180px;
+    }
+  }
+}

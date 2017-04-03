@@ -3,13 +3,25 @@ layout: default
 ---
 
 {% include courses/hero.html %}
-<section class='section-courses'>
-  {% include courses/mindfulness.html %}
-  {% include courses/coding.html %}
-  {% include courses/game-design.html %}
-  {% include courses/web.html %}
-  {% include courses/it.html %}
-  {% include courses/volunteer.html %}
+<section class='section section-courses'>
+  <article class='section-item'>
+    {% include courses/mindfulness.html %}
+  </article>
+  <article class='section-item'>
+    {% include courses/coding.html %}
+  </article>
+  <article class='section-item'>
+    {% include courses/game-design.html %}
+  </article>
+  <article class='section-item'>
+    {% include courses/web.html %}
+  </article>
+  <article class='section-item'>
+    {% include courses/it.html %}
+  </article>
+  <article class='section-item'>
+    {% include courses/volunteer.html %}
+  </article>
 </section>
 {% include courses/details.html %}
 {% include courses/campuses.html %}

@@ -105,10 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff; }
 
 .mint-color {
-  color: #68DBEA !important; }
+  color: #65E2A6 !important; }
 
 .mint-bg {
-  background-color: #68DBEA !important; }
+  background-color: #65E2A6 !important; }
 
 .ice-color {
   color: #43AAED !important; }
@@ -121,6 +121,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .rocketship-bg {
   background-color: #ED4A43 !important; }
+
+.chill-color {
+  color: #68DBEA !important; }
+
+.chill-bg {
+  background-color: #68DBEA !important; }
 
 * {
   box-sizing: border-box;
@@ -1600,18 +1606,18 @@ button {
       color: #fff; }
 
 .button-mint {
-  background: #68DBEA;
-  border-color: #68DBEA;
+  background: #65E2A6;
+  border-color: #65E2A6;
   color: #fff; }
   .button-mint:hover {
-    background: #52d6e7;
+    background: #50de9a;
     color: #fff;
-    border-color: #52d6e7; }
+    border-color: #50de9a; }
   .button-mint:active {
-    background: #25cbe1;
-    border-color: #25cbe1; }
+    background: #28d381;
+    border-color: #28d381; }
   .button-mint.button-hollow {
-    color: #68DBEA; }
+    color: #65E2A6; }
     .button-mint.button-hollow:hover {
       color: #fff; }
 
@@ -1773,7 +1779,7 @@ button {
   font-family: "europa", "Helvetica Neue", "Arial", sans-serif; }
 
 .text-rift {
-  font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif; }
+  font-family: "rift", "Helvetica Neue", "Arial", sans-serif; }
 
 .text-tundra {
   font-family: "ff-tundra-web", "Georgia", serif; }
@@ -1786,6 +1792,9 @@ button {
 
 .text-thin {
   font-weight: 100; }
+
+.text-italic {
+  font-style: italic; }
 
 .text-details {
   margin-top: -12px; }
@@ -2070,7 +2079,7 @@ button {
   display: block; }
 
 .list-partners {
-  font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif;
+  font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
@@ -2130,7 +2139,7 @@ button {
       right: 100%;
       margin: -6px 3rem 0 0; }
     .list-overview .list-item-header {
-      font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif;
+      font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
       font-weight: 300;
       line-height: 1em;
       font-size: 30px;
@@ -2184,7 +2193,7 @@ button {
       height: 7rem;
       background: #FED940;
       color: #fff;
-      font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif;
+      font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
       font-size: 30px;
       line-height: 1em;
       font-weight: bold;
@@ -2404,7 +2413,7 @@ button {
     width: 100%;
     padding: 3rem; }
   .card-header {
-    font-family: "rift-soft", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1.33333em;
     font-weight: 400;
     line-height: 1em;
@@ -2537,6 +2546,123 @@ button {
     margin: 0 auto; }
   .card-action-hire .button {
     box-shadow: 0 10px 30px -10px #b81912; }
+
+.card-course {
+  border-width: 3px;
+  border-color: initial;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column; }
+  .card-course .card-header {
+    padding: 0;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    flex-shrink: 0;
+    -ms-flex-negative: 0; }
+    .card-course .card-header-headline {
+      font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
+      font-weight: bold;
+      line-height: 1em;
+      font-size: 30px;
+      padding: calc(3rem - 6px) 3rem 0;
+      max-width: 240px; }
+    .card-course .card-header-image {
+      margin: -3px -3px 0;
+      display: block;
+      width: calc(100% + 6px); }
+  .card-course .card-body {
+    font-family: "ff-tundra-web", "Georgia", serif;
+    line-height: 2em;
+    padding: calc(3rem - 14px) 3rem 0;
+    color: #192129;
+    -webkit-flex-grow: 10000;
+    -moz-flex-grow: 10000;
+    flex-grow: 10000;
+    -ms-flex-positive: 10000; }
+    .card-course .card-body p {
+      margin-top: 2em; }
+      .card-course .card-body p:first-of-type {
+        margin-top: 0; }
+  .card-course .card-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    flex-shrink: 0;
+    -ms-flex-negative: 0;
+    color: #192129; }
+    .card-course .card-footer-details {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: bold;
+      line-height: 1em;
+      line-height: 1.5em; }
+      .card-course .card-footer-details:before {
+        border-top: 3px solid #192129;
+        content: '';
+        display: block;
+        width: 3rem;
+        margin-bottom: calc(3rem - 4px); }
+      .card-course .card-footer-details-header {
+        text-transform: none;
+        font-weight: normal;
+        opacity: .5; }
+      .card-course .card-footer-details-item {
+        display: block;
+        color: #192129; }
+  .card-course-mindfulness {
+    color: #65E2A6;
+    border-image: url(/images/bg/mint-bg.png) 6 repeat; }
+  .card-course-code {
+    color: #FED940;
+    border-image: url(/images/bg/golden-bg.png) 6 repeat; }
+  .card-course-game {
+    color: #43AAED;
+    border-image: url(/images/bg/ice-bg.png) 6 repeat; }
+  .card-course-web {
+    color: #ED4A43;
+    border-image: url(/images/bg/rocketship-bg.png) 6 repeat; }
+  .card-course-it {
+    color: #68DBEA;
+    border-image: url(/images/bg/chill-bg.png) 6 repeat; }
+    .card-course-it .card-header-headline {
+      max-width: 300px; }
+  .card-course-volunteer {
+    color: #6B777F;
+    border-image: url(/images/bg/charcoal-bg.png) 6 repeat; }
+    .card-course-volunteer .card-header-headline {
+      max-width: 180px; }
 
 .nav {
   -webkit-box-align: center;
@@ -3035,3 +3161,49 @@ button {
     z-index: 1; }
   .section-student .button {
     box-shadow: 0 10px 30px -10px rgba(30, 36, 41, 0.5); }
+
+.section-courses {
+  padding: 1.5rem;
+  margin: 0 8.3333%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -ms-flex-align: stretch; }
+  .section-courses .section-item {
+    width: 50%;
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    box-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    -ms-align-items: stretch;
+    -o-align-items: stretch;
+    align-items: stretch;
+    -ms-flex-align: stretch; }
