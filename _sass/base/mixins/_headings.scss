@@ -1,58 +1,58 @@
 @mixin h1 {
-  font-size: $h1Em;
+  font-size: $h1Px;
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300;
   @include breakpoint(WXL) {
-    font-size: $h2Em;
+    font-size: $h2Px;
   }
   @include breakpoint(WM) {
-    font-size: $h3Em;
+    font-size: $h3Px;
     letter-spacing: 0;
   }
 }
 
 @mixin h2 {
-  font-size: $h2Em;
+  font-size: $h2Px;
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300;
   @include breakpoint(WM) {
-    font-size: $h4Em;
+    font-size: $h4Px;
     letter-spacing: 0;
     font-weight: 600;
   }
 }
 
 @mixin h3 {
-  font-size: $h3Em;
+  font-size: $h3Px;
   font-weight: 300;
   @include breakpoint(WM) {
-    font-size: $h5Em;
+    font-size: $h5Px;
     font-weight: 600;
   }
 }
 
 @mixin h4 {
-  font-size: $h4Em;
+  font-size: $h4Px;
   font-weight: 300;
   @include breakpoint(WM) {
-    font-size: $h6Em;
+    font-size: $h6Px;
     font-weight: 600;
   }
 }
 
 @mixin h5 {
-  font-size: $h5Em;
+  font-size: $h5Px;
   font-weight: 400;
 
   @include breakpoint(WM) {
-    font-size: $h6Em;
+    font-size: $h6Px;
   }
 }
 
 @mixin h6 {
-  font-size: $h6Em;
+  font-size: $h6Px;
 }
 
 @mixin h7 {
@@ -64,7 +64,7 @@
 }
 
 @mixin h9 {
-  font-size: $h9Em;
+  font-size: $h9Px;
 }
 
 @mixin h9Cap {

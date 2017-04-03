@@ -143,3 +143,60 @@
     @include align-items(stretch);
   }
 }
+
+.section-course-details {
+  height: 600px;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  background-size: cover;
+  background-position: center bottom;
+  @include display(flex);
+  @include align-items(flex-end);
+  @include justify-content(flex-end);
+  .section-text {
+    width: 41.6666666%;
+    color: $white;
+    position: relative;
+    margin: 0 8.33333%;
+    padding: 0 1.5rem calc(6rem - 14px);
+    &-header {
+      line-height: 1.5em;
+      font-size: $h5Px;
+      font-weight: bold;
+      max-width: 370px;
+    }
+    &-body {
+      font-family: $fontFamilyText;
+      line-height: 2em;
+      margin-top: calc(3rem - 19px);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc(-6rem + 9px);
+      bottom: -6rem;
+      right: -4.5rem;
+      left: -6rem;
+      border: 3px solid $golden;
+    }
+  }
+}
+
+.section-campuses {
+  background-size: 500px;
+  padding: 0 1.5rem;
+  .section-header {
+    margin: 0 8.33333%;
+    padding: calc(6rem - 8px) 1.5rem  calc(1.5rem - 7px);
+  }
+  .section-body {
+    @include display(flex);
+    @include justify-content(space-between);
+    margin: 0 8.33333%;
+    padding-bottom: 4.5rem;
+    &-item {
+      width: 40%;
+      padding: 1.5rem;
+    }
+  }
+}

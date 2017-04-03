@@ -247,11 +247,11 @@ a {
     padding-left: 0.5em;
     font-style: italic; }
   .is-formatted big {
-    font-size: 1.66667em;
+    font-size: 30px;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted big {
-        font-size: 1em;
+        font-size: 18px;
         font-weight: 600; } }
   .is-formatted small {
     font-size: 10px;
@@ -274,49 +274,49 @@ a {
     margin: 1em 0;
     border-top: 1px solid #192129; }
   .is-formatted h1 {
-    font-size: 4em;
+    font-size: 72px;
     letter-spacing: -.02em;
     text-rendering: optimizeLegibility;
     font-weight: 300; }
     @media (max-width: 1000px) {
       .is-formatted h1 {
-        font-size: 3.33333em; } }
+        font-size: 60px; } }
     @media (max-width: 640px) {
       .is-formatted h1 {
-        font-size: 2.66667em;
+        font-size: 48px;
         letter-spacing: 0; } }
   .is-formatted h2 {
-    font-size: 3.33333em;
+    font-size: 60px;
     letter-spacing: -.02em;
     text-rendering: optimizeLegibility;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted h2 {
-        font-size: 1.66667em;
+        font-size: 30px;
         letter-spacing: 0;
         font-weight: 600; } }
   .is-formatted h3 {
-    font-size: 2.66667em;
+    font-size: 48px;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted h3 {
-        font-size: 1.33333em;
+        font-size: 24px;
         font-weight: 600; } }
   .is-formatted h4 {
-    font-size: 1.66667em;
+    font-size: 30px;
     font-weight: 300; }
     @media (max-width: 640px) {
       .is-formatted h4 {
-        font-size: 1em;
+        font-size: 18px;
         font-weight: 600; } }
   .is-formatted h5 {
-    font-size: 1.33333em;
+    font-size: 24px;
     font-weight: 400; }
     @media (max-width: 640px) {
       .is-formatted h5 {
-        font-size: 1em; } }
+        font-size: 18px; } }
   .is-formatted h6 {
-    font-size: 1em; }
+    font-size: 18px; }
   .is-formatted h1, .is-formatted h2, .is-formatted h3, .is-formatted h4, .is-formatted h5, .is-formatted h6 {
     line-height: 1.2em; }
   .is-formatted table {
@@ -1701,54 +1701,54 @@ button {
   font-weight: 400; }
 
 .h1 {
-  font-size: 4em;
+  font-size: 72px;
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300; }
   @media (max-width: 1000px) {
     .h1 {
-      font-size: 3.33333em; } }
+      font-size: 60px; } }
   @media (max-width: 640px) {
     .h1 {
-      font-size: 2.66667em;
+      font-size: 48px;
       letter-spacing: 0; } }
 
 .h2 {
-  font-size: 3.33333em;
+  font-size: 60px;
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300; }
   @media (max-width: 640px) {
     .h2 {
-      font-size: 1.66667em;
+      font-size: 30px;
       letter-spacing: 0;
       font-weight: 600; } }
 
 .h3 {
-  font-size: 2.66667em;
+  font-size: 48px;
   font-weight: 300; }
   @media (max-width: 640px) {
     .h3 {
-      font-size: 1.33333em;
+      font-size: 24px;
       font-weight: 600; } }
 
 .h4 {
-  font-size: 1.66667em;
+  font-size: 30px;
   font-weight: 300; }
   @media (max-width: 640px) {
     .h4 {
-      font-size: 1em;
+      font-size: 18px;
       font-weight: 600; } }
 
 .h5 {
-  font-size: 1.33333em;
+  font-size: 24px;
   font-weight: 400; }
   @media (max-width: 640px) {
     .h5 {
-      font-size: 1em; } }
+      font-size: 18px; } }
 
 .h6 {
-  font-size: 1em; }
+  font-size: 18px; }
 
 .h7 {
   font-size: 16px;
@@ -1758,7 +1758,7 @@ button {
   font-size: 14px; }
 
 .h9 {
-  font-size: 0.66667em; }
+  font-size: 12px; }
 
 .h10 {
   font-size: 10px;
@@ -2414,15 +2414,65 @@ button {
     padding: 3rem; }
   .card-header {
     font-family: "rift", "Helvetica Neue", "Arial", sans-serif;
-    font-size: 1.33333em;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1em;
     font-weight: 500; }
     @media (max-width: 640px) {
       .card-header {
-        font-size: 1em; } }
+        font-size: 18px; } }
     .card-header-headline, .card-header-subheadline {
       display: block; }
+  .card-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    -webkit-box-align: end;
+    -moz-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    -moz-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -o-align-items: flex-end;
+    align-items: flex-end;
+    -ms-flex-align: end;
+    -webkit-flex-shrink: 0;
+    -moz-flex-shrink: 0;
+    flex-shrink: 0;
+    -ms-flex-negative: 0; }
+    .card-footer-details {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: bold;
+      line-height: 1em;
+      line-height: 1.5em; }
+      .card-footer-details:before {
+        border-top: 3px solid #192129;
+        content: '';
+        display: block;
+        width: 3rem;
+        margin-bottom: calc(3rem - 4px); }
+      .card-footer-details-header {
+        text-transform: none;
+        font-weight: normal;
+        opacity: .5; }
+      .card-footer-details-item {
+        display: block;
+        color: #192129; }
 
 .card-highlight {
   position: relative;
@@ -2591,56 +2641,13 @@ button {
       .card-course .card-body p:first-of-type {
         margin-top: 0; }
   .card-course .card-footer {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-    -webkit-box-align: end;
-    -moz-box-align: end;
-    box-align: end;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -ms-align-items: flex-end;
-    -o-align-items: flex-end;
-    align-items: flex-end;
-    -ms-flex-align: end;
-    -webkit-flex-shrink: 0;
-    -moz-flex-shrink: 0;
-    flex-shrink: 0;
-    -ms-flex-negative: 0;
     color: #192129; }
     .card-course .card-footer-details {
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: .2em;
       font-weight: bold;
-      line-height: 1em;
-      line-height: 1.5em; }
-      .card-course .card-footer-details:before {
-        border-top: 3px solid #192129;
-        content: '';
-        display: block;
-        width: 3rem;
-        margin-bottom: calc(3rem - 4px); }
-      .card-course .card-footer-details-header {
-        text-transform: none;
-        font-weight: normal;
-        opacity: .5; }
-      .card-course .card-footer-details-item {
-        display: block;
-        color: #192129; }
+      line-height: 1em; }
   .card-course-mindfulness {
     color: #65E2A6;
     border-image: url(/images/bg/mint-bg.png) 6 repeat; }
@@ -2663,6 +2670,27 @@ button {
     border-image: url(/images/bg/charcoal-bg.png) 6 repeat; }
     .card-course-volunteer .card-header-headline {
       max-width: 180px; }
+    .card-course-volunteer .card-footer {
+      -webkit-box-pack: end;
+      -moz-box-pack: end;
+      box-pack: end;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+      -o-justify-content: flex-end;
+      justify-content: flex-end;
+      -ms-flex-pack: end; }
+
+.card-campus {
+  border: none;
+  background: #fff;
+  padding: 3rem;
+  margin: 0 -3rem; }
+  .card-campus .card-header {
+    padding: 0 0 3rem;
+    margin: -8px 0 -7px; }
+  .card-campus .card-footer {
+    padding: 0; }
 
 .nav {
   -webkit-box-align: center;
@@ -3207,3 +3235,87 @@ button {
     -o-align-items: stretch;
     align-items: stretch;
     -ms-flex-align: stretch; }
+
+.section-course-details {
+  height: 600px;
+  min-height: 100vh;
+  padding: 0 1.5rem;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -ms-flex-pack: end; }
+  .section-course-details .section-text {
+    width: 41.6666666%;
+    color: #fff;
+    position: relative;
+    margin: 0 8.33333%;
+    padding: 0 1.5rem calc(6rem - 14px); }
+    .section-course-details .section-text-header {
+      line-height: 1.5em;
+      font-size: 24px;
+      font-weight: bold;
+      max-width: 370px; }
+    .section-course-details .section-text-body {
+      font-family: "ff-tundra-web", "Georgia", serif;
+      line-height: 2em;
+      margin-top: calc(3rem - 19px); }
+    .section-course-details .section-text:before {
+      content: '';
+      position: absolute;
+      top: calc(-6rem + 9px);
+      bottom: -6rem;
+      right: -4.5rem;
+      left: -6rem;
+      border: 3px solid #FED940; }
+
+.section-campuses {
+  background-size: 500px;
+  padding: 0 1.5rem; }
+  .section-campuses .section-header {
+    margin: 0 8.33333%;
+    padding: calc(6rem - 8px) 1.5rem calc(1.5rem - 7px); }
+  .section-campuses .section-body {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+    margin: 0 8.33333%;
+    padding-bottom: 4.5rem; }
+    .section-campuses .section-body-item {
+      width: 40%;
+      padding: 1.5rem; }

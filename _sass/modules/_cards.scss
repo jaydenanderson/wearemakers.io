@@ -23,6 +23,30 @@
   &-body {
   }
   &-footer {
+    @include display(flex);
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+    @include flex-shrink(0);
+    &-details {
+      @include h9Cap();
+      line-height: 1.5em;
+      &:before {
+        border-top: 3px solid $black;
+        content: '';
+        display: block;
+        width: 3rem;
+        margin-bottom: calc(3rem - 4px)
+      }
+      &-header {
+        text-transform: none;
+        font-weight: normal;
+        opacity: .5;
+      }
+      &-item {
+        display: block;
+        color: $black;
+      }
+    }
   }
 }
 
@@ -223,30 +247,9 @@
     }
   }
   .card-footer {
-    @include display(flex);
-    @include justify-content(space-between);
-    @include align-items(flex-end);
-    @include flex-shrink(0);
     color: $black;
     &-details {
       @include h9Cap();
-      line-height: 1.5em;
-      &:before {
-        border-top: 3px solid $black;
-        content: '';
-        display: block;
-        width: 3rem;
-        margin-bottom: calc(3rem - 4px)
-      }
-      &-header {
-        text-transform: none;
-        font-weight: normal;
-        opacity: .5;
-      }
-      &-item {
-        display: block;
-        color: $black;
-      }
     }
   }
 
@@ -284,5 +287,22 @@
     .card-header-headline {
       max-width: 180px;
     }
+    .card-footer {
+      @include justify-content(flex-end);
+    }
+  }
+}
+
+.card-campus {
+  border: none;
+  background: $white;
+  padding: 3rem;
+  margin: 0 -3rem;
+  .card-header{
+    padding: 0 0 3rem;
+    margin: -8px 0 -7px;
+  }
+  .card-footer {
+    padding: 0;
   }
 }
