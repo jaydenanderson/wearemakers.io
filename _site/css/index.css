@@ -2288,7 +2288,7 @@ button {
     z-index: 1; }
 
 .hero-home {
-  margin-top: -12rem;
+  margin-top: -14rem;
   padding-top: 12rem; }
   @media (max-width: 1000px) {
     .hero-home {
@@ -2479,7 +2479,6 @@ button {
 .card-highlight {
   position: relative;
   z-index: 2;
-  margin: -1px;
   border: none;
   background: rgba(67, 170, 236, 0.95); }
   .card-highlight:nth-child(2) {
