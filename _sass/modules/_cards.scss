@@ -313,10 +313,15 @@
   background: $white;
   padding: 3rem;
   margin: 0 -3rem;
+  @include flex-direction(column);
   .card-header{
     padding: 0 0 3rem;
     margin: -8px 0 -7px;
     @include flex-grow(1000);
+    &-subheadline {
+      color: $ice;
+      width: 212px;
+    }
   }
   .card-footer {
     padding: 0;
