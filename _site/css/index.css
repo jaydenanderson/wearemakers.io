@@ -2288,7 +2288,7 @@ button {
     z-index: 1; }
 
 .hero-home {
-  margin-top: -14rem;
+  margin-top: -12rem;
   padding-top: 12rem; }
   @media (max-width: 1000px) {
     .hero-home {
@@ -2299,7 +2299,7 @@ button {
       margin-top: -5rem;
       padding-top: 5rem; } }
   .hero-home .hero-text {
-    margin-bottom: 110px; }
+    margin-bottom: 136px; }
     .hero-home .hero-text-header {
       opacity: .5;
       font-weight: bold;
