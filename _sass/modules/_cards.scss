@@ -258,6 +258,13 @@
     color: $black;
     &-details {
       @include h9Cap();
+      &-item {
+        padding: 8px 0;
+        &:last-item {
+          padding-bottom: 0;
+          margin-bottom: -2px;
+        }
+      }
     }
   }
 
@@ -309,8 +316,15 @@
   .card-header{
     padding: 0 0 3rem;
     margin: -8px 0 -7px;
+    @include flex-grow(1000);
   }
   .card-footer {
     padding: 0;
+    @include flex-shrink(0);
+    &-details {
+      &-items {
+        margin: 0;
+      }
+    }
   }
 }
