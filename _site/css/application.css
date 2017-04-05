@@ -136,7 +136,7 @@ html {
   font-size: 12px; }
 
 body {
-  font: 400 1.5em/1.5em "europa", "Helvetica Neue", "Arial", sans-serif;
+  font: 400 1.5em/1.5em "europa", "Europa-Regular", "Helvetica Neue", "Arial", sans-serif;
   color: #192129;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
@@ -153,7 +153,7 @@ body {
   input,
   textarea,
   button {
-    font: 400 1em/1.5em "europa", "Helvetica Neue", "Arial", sans-serif; } }
+    font: 400 1em/1.5em "europa", "Europa-Regular", "Helvetica Neue", "Arial", sans-serif; } }
 a {
   text-decoration: none;
   color: #43AAED; }
@@ -1776,7 +1776,7 @@ button {
   line-height: 1.5em; }
 
 .text-europa {
-  font-family: "europa", "Helvetica Neue", "Arial", sans-serif; }
+  font-family: "europa", "Europa-Regular", "Helvetica Neue", "Arial", sans-serif; }
 
 .text-rift {
   font-family: "rift", "Helvetica Neue", "Arial", sans-serif; }
@@ -2391,6 +2391,11 @@ button {
         left: -1rem;
         right: -3rem; }
 
+.hero-broadcasts {
+  background: transparent;
+  color: #192129;
+  border: 3px solid #192129; }
+
 .card {
   border: 2px solid #43AAED;
   position: relative;
@@ -2507,7 +2512,7 @@ button {
     left: 0;
     right: 0;
     padding: calc(2rem - 6px) calc(2rem - 3px);
-    font-family: "europa", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "europa", "Europa-Regular", "Helvetica Neue", "Arial", sans-serif;
     line-height: 1.25em; }
     .card-event .card-header-headline {
       font-weight: bold; }
@@ -2572,7 +2577,7 @@ button {
       box-shadow: 0 0 0 0 transparent; }
   .card-action .card-header {
     color: #192129;
-    font-family: "europa", "Helvetica Neue", "Arial", sans-serif;
+    font-family: "europa", "Europa-Regular", "Helvetica Neue", "Arial", sans-serif;
     font-size: 1.5rem;
     line-height: 1.5em;
     padding: calc(3rem - 7px) 3rem -1.5rem;
@@ -2650,24 +2655,24 @@ button {
       line-height: 1em; }
   .card-course-mindfulness {
     color: #65E2A6;
-    border-image: url(/images/bg/mint-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/mint-bg.png) 6 repeat; }
   .card-course-code {
     color: #FED940;
-    border-image: url(/images/bg/golden-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/golden-bg.png) 6 repeat; }
   .card-course-game {
     color: #43AAED;
-    border-image: url(/images/bg/ice-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/ice-bg.png) 6 repeat; }
   .card-course-web {
     color: #ED4A43;
-    border-image: url(/images/bg/rocketship-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/rocketship-bg.png) 6 repeat; }
   .card-course-it {
     color: #68DBEA;
-    border-image: url(/images/bg/chill-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/chill-bg.png) 6 repeat; }
     .card-course-it .card-header-headline {
       max-width: 300px; }
   .card-course-volunteer {
     color: #6B777F;
-    border-image: url(/images/bg/charcoal-bg.png) 6 repeat; }
+    border-image: url(/wearemakers.io/images/bg/charcoal-bg.png) 6 repeat; }
     .card-course-volunteer .card-header-headline {
       max-width: 180px; }
     .card-course-volunteer .card-footer {
@@ -2827,7 +2832,7 @@ button {
 .nav-header {
   height: 12rem;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   padding: 0 calc(18px + 8.33333%); }
@@ -2842,7 +2847,7 @@ button {
   .is-scrolled .nav-header {
     height: 6rem; }
   .is-scrolled .nav-header, .nav-header.is-active {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px); }
   @media (max-width: 1200px) {
@@ -2924,7 +2929,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url(/images/logo-icon.png) 0 0/cover no-repeat;
+    background: url(/wearemakers.io/images/logo-icon.png) 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     z-index: 0;
@@ -3140,34 +3145,36 @@ button {
     display: -ms-flexbox;
     display: flex; }
 
-.section-involved .section-header {
-  font-size: 12rem;
-  line-height: 1em;
-  font-weight: bold;
-  text-align: center;
-  margin: 146px 3rem -1.5rem; }
-  .section-involved .section-header-label {
-    display: inline-block;
-    position: relative; }
-    .section-involved .section-header-label:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(-4rem + 23px);
-      right: -4rem;
-      bottom: -7rem;
-      left: -4rem;
-      background: rgba(67, 170, 236, 0.1); }
-.section-involved .section-body {
-  position: relative;
-  z-index: 1; }
+.section-involved {
+  padding-top: 146px; }
+  .section-involved .section-header {
+    font-size: 12rem;
+    line-height: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 3rem -1.5rem; }
+    .section-involved .section-header-label {
+      display: inline-block;
+      position: relative; }
+      .section-involved .section-header-label:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(-4rem + 23px);
+        right: -4rem;
+        bottom: -7rem;
+        left: -4rem;
+        background: rgba(67, 170, 236, 0.1); }
+  .section-involved .section-body {
+    position: relative;
+    z-index: 1; }
 
 .section-student {
   text-align: center;
   color: #fff;
   position: relative; }
   .section-student:after {
-    background: url(/images/bg/pattern-3.png) 0 0/600px 600px;
+    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;

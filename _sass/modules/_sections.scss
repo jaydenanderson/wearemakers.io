@@ -69,12 +69,13 @@
 }
 
 .section-involved {
+  padding-top: 146px;
   .section-header {
     font-size: 12rem;
     line-height: 1em;
     font-weight: bold;
     text-align: center;
-    margin: 146px 3rem -1.5rem;
+    margin: 0 3rem -1.5rem;
     &-label {
       display: inline-block;
       position: relative;
@@ -101,7 +102,7 @@
   color: $white;
   position: relative;
   &:after {
-    background: url(/images/bg/pattern-3.png) 0 0 / 600px 600px;
+    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0 / 600px 600px;
     content: '';
     display: block;
     width: 100%;

@@ -137,7 +137,7 @@
 .nav-header {
   height: 12rem;
   margin: 0 auto;
-  background: rgba(255,255,255,.95);
+  background: rgba(255,255,255,.85);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
@@ -156,7 +156,7 @@
   }
   .is-scrolled &,
   &.is-active {
-    background: rgba(255,255,255,.95);
+    background: rgba(255,255,255,.85);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
   }
@@ -234,7 +234,7 @@
     width: 36px;
     height: 40px;
     border: .5rem solid $white;
-    background: url(/images/logo-icon.png) 0 0 / cover no-repeat;
+    background: url(/wearemakers.io/images/logo-icon.png) 0 0 / cover no-repeat;
     z-index: 1;
   }
   .nav-list {
