@@ -12,12 +12,12 @@ gems: ['bourbon', 'github-pages']
 
 navigation:
   - title: Courses
-    url: /courses/
+    url: courses/
   - title: Our students
-    url: /students/
+    url: students/
   - title: Broadcasts
-    url: /broadcasts/
+    url: broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /donate/
+    url: donate/
