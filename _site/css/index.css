@@ -2535,13 +2535,15 @@ button {
     .card-event .card-footer-headline {
       display: block;
       max-width: 150px; }
-    .card-event .card-footer-subheadline:before {
-      content: '';
-      display: block;
-      width: 36px;
-      border: 2px solid;
-      border-color: inherit;
-      margin: 18px 0; }
+    .card-event .card-footer-subheadline {
+      width: 100%; }
+      .card-event .card-footer-subheadline:before {
+        content: '';
+        display: block;
+        width: 36px;
+        border: 2px solid;
+        border-color: inherit;
+        margin: 18px 0; }
     .card-event .card-footer-button {
       width: 100%; }
   .card-event-placeholder {
