@@ -112,6 +112,7 @@
     right: 0;
     padding: 2rem calc(2rem - 3px);
     @include h9Cap();
+    @include flex-wrap(wrap);
     &-headline {
       display: block;
       max-width: 150px;

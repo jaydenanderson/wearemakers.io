@@ -2531,7 +2531,14 @@ button {
     text-transform: uppercase;
     letter-spacing: .2em;
     font-weight: bold;
-    line-height: 1em; }
+    line-height: 1em;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .card-event .card-footer-headline {
       display: block;
       max-width: 150px; }
