@@ -141,7 +141,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url("/wearemakers.io/images/bg/pattern.gif") center/500px 500px; }
+  background: url("/images/bg/pattern.gif") center/500px 500px; }
 
 ::selection {
   background-color: #1695e7;
@@ -2479,7 +2479,13 @@ button {
 .card-highlight {
   position: relative;
   z-index: 2;
-  margin: -1px; }
+  margin: -1px;
+  border: none;
+  background: rgba(67, 170, 236, 0.95); }
+  .card-highlight:nth-child(2) {
+    background: rgba(67, 170, 236, 0.9); }
+  .card-highlight:nth-child(3) {
+    background: rgba(67, 170, 236, 0.85); }
   .card-highlight .card-header {
     color: #fff;
     padding: calc(3rem - 3px) 3rem; }

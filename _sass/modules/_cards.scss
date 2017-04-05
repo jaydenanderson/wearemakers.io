@@ -54,6 +54,14 @@
   position: relative;
   z-index: 2;
   margin: -1px;
+  border: none;
+  background: rgba(67,170,236,.95);
+  &:nth-child(2) {
+    background: rgba(67,170,236,.9);
+  }
+  &:nth-child(3) {
+    background: rgba(67,170,236,.85);
+  }
   .card-header {
     color: $white;
     padding: calc(3rem - 3px) 3rem;
