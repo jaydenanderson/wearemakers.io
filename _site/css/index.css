@@ -3424,7 +3424,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url(/wearemakers.io/images/logo-icon.png) 0 0/cover no-repeat;
+    background: url("/wearemakers.io/images/logo-icon.png") 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     z-index: 0;
@@ -3666,7 +3666,7 @@ button {
   color: #fff;
   position: relative; }
   .section-student:after {
-    background: url({{site.url}}/images/bg/pattern-3.png) 0 0/600px 600px;
+    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;
