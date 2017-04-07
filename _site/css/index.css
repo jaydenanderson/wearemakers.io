@@ -3324,6 +3324,7 @@ button {
     display: none;
     z-index: 7; }
 
+specific for header of site
 .nav-header {
   height: 12rem;
   margin: 0 auto;
@@ -3331,6 +3332,7 @@ button {
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   padding: 0 calc(18px + 8.33333%); }
+  specific for header of site
   .nav-header-wrapper {
     position: fixed;
     top: 0;
@@ -3339,16 +3341,21 @@ button {
     max-width: 1280px;
     width: 100%;
     z-index: 6; }
-  .is-scrolled .nav-header {
+  .is-scrolled specific for header of site
+  .nav-header {
     height: 6rem; }
-  .is-scrolled .nav-header, .nav-header.is-active {
+  .is-scrolled specific for header of site
+  .nav-header, specific for header of site
+  .nav-header.is-active {
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px); }
   @media (max-width: 1200px) {
+    specific for header of site
     .nav-header {
       padding: 0 18px; } }
   @media (max-width: 1000px) {
+    specific for header of site
     .nav-header {
       -webkit-box-pack: center;
       -moz-box-pack: center;
@@ -3360,9 +3367,11 @@ button {
       justify-content: center;
       -ms-flex-pack: center;
       height: 8rem; }
-      .is-scrolled .nav-header {
+      .is-scrolled specific for header of site
+      .nav-header {
         height: 8rem; } }
   @media (max-width: 800px) {
+    specific for header of site
     .nav-header {
       -webkit-box-pack: justify;
       -moz-box-pack: justify;
@@ -3375,16 +3384,20 @@ button {
       -ms-flex-pack: justify;
       height: auto;
       padding: .5rem 1.5rem; }
-      .is-scrolled .nav-header {
+      .is-scrolled specific for header of site
+      .nav-header {
         height: auto; }
+      specific for header of site
       .nav-header .nav-list {
         opacity: 0;
         transition: all .2s ease; } }
+  specific for header of site
   .nav-header.is-active .nav-list {
     opacity: 1;
     max-height: 1000px;
     padding: 18px; }
   @media (max-width: 1000px) {
+    specific for header of site
     .nav-header .nav-list {
       width: 100%;
       -webkit-box-pack: center;
@@ -3397,11 +3410,13 @@ button {
       justify-content: center;
       -ms-flex-pack: center; } }
   @media (max-width: 800px) {
+    specific for header of site
     .nav-header .nav-list {
       display: block;
       overflow: hidden;
       max-height: 0; } }
   @media (max-width: 800px) {
+    specific for header of site
     .nav-header .nav-trigger {
       display: block;
       padding-right: 6px; } }
