@@ -95,6 +95,7 @@
 .grid {
   @include display(flex);
   padding: 1.5rem;
+  width: 100%;
   @media (max-width: 900px) {
     padding: .75rem;
   }
