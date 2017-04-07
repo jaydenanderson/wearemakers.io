@@ -1,6 +1,6 @@
 .button {
   @include h9Cap;
-  border: .25rem solid;
+  border: 2px solid;
   border-radius: 4px;
   box-sizing: border-box;
   color: inherit;
@@ -9,7 +9,7 @@
   font-weight: bold;
   height: auto;
   justify-content: center;
-  padding: 15px;
+  padding: 16px 18px;
   position: relative;
   text-align: center;
   text-decoration: none;

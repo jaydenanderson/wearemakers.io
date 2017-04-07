@@ -3,7 +3,7 @@
   width: 100%;
   &-input {
     font-size: $h9Px;
-    border: .25rem solid rgba(30,46,41,.3);
+    border: 2px solid rgba(30,46,41,.3);
     border-radius: 4px;
     box-sizing: border-box;
     color: inherit;
@@ -11,7 +11,7 @@
     font-weight: bold;
     height: auto;
     justify-content: center;
-    padding: 12px 15px;
+    padding: 12px 16px;
     position: relative;
     text-decoration: none;
     transition: all .2s ease;

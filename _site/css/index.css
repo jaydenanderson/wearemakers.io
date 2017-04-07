@@ -1880,7 +1880,7 @@ button {
   letter-spacing: .2em;
   font-weight: bold;
   line-height: 1em;
-  border: .25rem solid;
+  border: 2px solid;
   border-radius: 4px;
   box-sizing: border-box;
   color: inherit;
@@ -1889,7 +1889,7 @@ button {
   font-weight: bold;
   height: auto;
   justify-content: center;
-  padding: 15px;
+  padding: 16px 18px;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2034,7 +2034,7 @@ button {
   width: 100%; }
   .field-input {
     font-size: 12px;
-    border: 0.25rem solid rgba(30, 46, 41, 0.3);
+    border: 2px solid rgba(30, 46, 41, 0.3);
     border-radius: 4px;
     box-sizing: border-box;
     color: inherit;
@@ -2042,7 +2042,7 @@ button {
     font-weight: bold;
     height: auto;
     justify-content: center;
-    padding: 12px 15px;
+    padding: 12px 16px;
     position: relative;
     text-decoration: none;
     transition: all .2s ease;
@@ -3045,7 +3045,7 @@ button {
     box-shadow: none; }
   .card-action .button {
     width: 100%;
-    max-width: 220px; }
+    max-width: 20rem; }
     .card-action .button:active {
       box-shadow: 0 0 0 0 transparent; }
   .card-action .card-header {
@@ -3166,6 +3166,7 @@ button {
   background: #fff;
   padding: 3rem;
   margin: 0 -3rem;
+  width: calc(100% + 6rem);
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
@@ -3182,7 +3183,7 @@ button {
     -ms-flex-positive: 1000; }
     .card-campus .card-header-subheadline {
       color: #43AAED;
-      width: 212px; }
+      width: 240px; }
   .card-campus .card-footer {
     padding: 0;
     -webkit-flex-shrink: 0;
@@ -3241,7 +3242,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/wearemakers.io/images/logo.png") 0 0/cover no-repeat;
+        background: url("/images/logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3253,7 +3254,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/wearemakers.io/images/logo-white.png"); }
+        background-image: url("/images/logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
@@ -3424,7 +3425,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url("/wearemakers.io/images/logo-icon.png") 0 0/cover no-repeat;
+    background: url("/images/logo-icon.png") 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     z-index: 0;
@@ -3666,7 +3667,7 @@ button {
   color: #fff;
   position: relative; }
   .section-student:after {
-    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0/600px 600px;
+    background: url(/images/bg/pattern-3.png) 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;
@@ -3817,7 +3818,23 @@ button {
     padding-bottom: 4.5rem; }
     .section-campuses .section-body-item {
       width: 40%;
-      padding: 1.5rem; }
+      padding: 1.5rem;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+      -moz-box-align: stretch;
+      box-align: stretch;
+      -webkit-align-items: stretch;
+      -moz-align-items: stretch;
+      -ms-align-items: stretch;
+      -o-align-items: stretch;
+      align-items: stretch;
+      -ms-flex-align: stretch; }
 
 .section-broadcasts .section-header {
   margin: 4px 0 calc(3rem - 26px); }

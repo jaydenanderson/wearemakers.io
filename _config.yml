@@ -3,8 +3,8 @@ title: We Are Makers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://www.wearemakers.io" # the base hostname & protocol for your site
-url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
-# url: '' # the base hostname & protocol for your site
+# url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
+url: '' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -12,12 +12,12 @@ gems: ['bourbon', 'github-pages']
 
 navigation:
   - title: Courses
-    url: /wearemakers.io/courses/
+    url: /courses/
   - title: Our students
-    url: /wearemakers.io/students/
+    url: /students/
   - title: Broadcasts
-    url: /wearemakers.io/broadcasts/
+    url: /broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /wearemakers.io/donate/
+    url: /donate/
