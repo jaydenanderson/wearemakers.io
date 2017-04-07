@@ -3240,7 +3240,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/images/logo.png") 0 0/cover no-repeat;
+        background: url("{{site.url}}/images/logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3252,7 +3252,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/images/logo-white.png"); }
+        background-image: url("{{site.url}}/images/logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
