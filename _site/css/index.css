@@ -3424,7 +3424,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url({{site.url}}/images/logo-icon.png) 0 0/cover no-repeat;
+    background: url(/wearemakers.io/images/logo-icon.png) 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     z-index: 0;
