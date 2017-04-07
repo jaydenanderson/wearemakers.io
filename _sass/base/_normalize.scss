@@ -8,12 +8,18 @@ html {
 }
 
 body {
-  font: 400 $fontSizeEm/1.5em $fontFamily;
   color: $textColor;
   background-color: $backgroundColor;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url('/images/bg/pattern.gif') center / 500px 500px;
+  background: url('/wearemakers.io/images/bg/pattern.gif') center / 500px 500px;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1.5rem/1.5em $fontFamily;
 }
 
 ::selection {
@@ -22,7 +28,7 @@ body {
   text-shadow: none;
 }
 
-@include breakpoint(WM) {
+@media (max-width: 800px) {
   body,
   input,
   textarea,
@@ -53,10 +59,6 @@ a {
 
 .text-body {
   line-height: 1.5em;
-
-  &-boombox {
-  color: rgba(107, 120, 133, .5);
-  }
 }
 
 .text-track {
@@ -64,7 +66,7 @@ a {
 }
 
 .text-left-small {
-  @include breakpoint (WM) {
+  @media (max-width: 800px) {
     text-align: left;
   }
 }
@@ -87,7 +89,7 @@ a {
     opacity: .1;
     font: 600 360px/1em "Helvetica Neue", sans-serif;
 
-    @include breakpoint(WM) {
+    @media (max-width: 800px) {
       top: -54px;
       left: 0;
       font-size: 180px;
@@ -218,7 +220,7 @@ a {
 .is-formatted {
   line-height: 1.5em;
 
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: 1em;
   }
 

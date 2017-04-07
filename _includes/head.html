@@ -7,38 +7,8 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    <meta name="google-site-verification" content="ngJrM0vZIs-N5_jGR9iwd6CHVvkL2Ry_94Grr2lGq74" />
 
-    <!-- Open graph meta -->
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:site_name" content="Pollcaster.com"/>
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="fb:app_id" content="378106035711883" />
-    <meta property="og:type" content="article" />
-    <meta property="og:locale" content="en_US" />
-    <!-- <meta property="og:locale:alternate" content="fr_FR" />  -->
-    <meta property="article:author" content="https://www.facebook.com/wearemakers" />
-    <meta property="article:publisher" content="https://www.facebook.com/wearemakers" />
-    <meta property="og:image" content="https://www.wearemakers.io/images/banner-1200x630.png" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:width" content="1200" />
-
-    <!-- Twitter specific meta -->
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@wearemakers" />
-    <meta name="twitter:creator" content="@wearemakers" />
-
-    <meta name="apple-mobile-web-app-title" content="We Are Makers">
-    <link rel="apple-touch-icon-precomposed" href="/images/icons/apple-touch-icon-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/images/icons/apple-touch-icon-57-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/icons/apple-touch-icon-72-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/icons/apple-touch-icon-76-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/icons/apple-touch-icon-114-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/icons/apple-touch-icon-144-precomposed.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/icons/apple-touch-icon-152-precomposed.png" />
-
-    <link rel="stylesheet" href="{{site.url}}/css/index.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/index.css">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 

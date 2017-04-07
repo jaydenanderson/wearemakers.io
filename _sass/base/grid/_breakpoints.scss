@@ -1,0 +1,202 @@
+@mixin colWidth($breakpoint) {
+  .grid-item-#{$breakpoint} {
+    @include gridWidths();
+  }
+}
+
+@media (max-width: 1300px) {
+  @include colWidth(1300);
+}
+
+@media (max-width: 1200px) {
+  @include colWidth(1200);
+}
+
+@media (max-width: 1100px) {
+  @include colWidth(1100);
+}
+
+@media (max-width: 1000px) {
+  @include colWidth(100);
+}
+
+@media (max-width: 950px) {
+  @include colWidth(950);
+}
+
+@media (max-width: 900px) {
+  @include colWidth(900);
+}
+
+@media (max-width: 850px) {
+  @include colWidth(850);
+}
+
+@media (max-width: 800px) {
+  @include colWidth(800);
+}
+
+@media (max-width: 750px) {
+  @include colWidth(750);
+}
+
+@media (max-width: 700px) {
+  @include colWidth(700);
+}
+
+@media (max-width: 650px) {
+  @include colWidth(650);
+}
+
+@media (max-width: 600px) {
+  @include colWidth(600);
+}
+
+@media (max-width: 550px) {
+  @include colWidth(550);
+}
+
+@media (max-width: 500px) {
+  @include colWidth(500);
+}
+
+@media (max-width: 475px) {
+  @include colWidth(475);
+}
+
+@media (max-width: 450px) {
+  @include colWidth(450);
+}
+
+@media (max-width: 425px) {
+  @include colWidth(425);
+}
+
+@media (max-width: 400px) {
+  @include colWidth(400);
+}
+
+@media (max-width: 375px) {
+  @include colWidth(375);
+}
+
+@media (max-width: 350px) {
+  @include colWidth(350);
+}
+
+@media (max-width: 325px) {
+  @include colWidth(325);
+}
+
+@media (max-width: 300px) {
+  @include colWidth(300);
+}
+
+@media (max-width: 275px) {
+  @include colWidth(275);
+}
+
+@media (max-width: 250px) {
+  @include colWidth(250);
+  }
+
+
+// @media (max-width: 1400px) {
+//   @import "/breakpoints/1400"
+// }
+
+// @media (max-width: 1300px) {
+//   @import "/breakpoints/1300"
+// }
+
+// @media (max-width: 1200px) {
+//   @import "/breakpoints/1200"
+// }
+
+// @media (max-width: 1100px) {
+//   @import "/breakpoints/1100"
+// }
+
+// @media (max-width: 1000px) {
+//   @import "/breakpoints/100"
+// }
+
+// @media (max-width: 950px) {
+//   @import "/breakpoints/950"
+// }
+
+// @media (max-width: 900px) {
+//   @import "/breakpoints/900"
+// }
+
+// @media (max-width: 850px) {
+//   @import "/breakpoints/850"
+// }
+
+// @media (max-width: 800px) {
+//   @import "/breakpoints/800"
+// }
+
+// @media (max-width: 750px) {
+//   @import "/breakpoints/750"
+// }
+
+// @media (max-width: 700px) {
+//   @import "/breakpoints/700"
+// }
+
+// @media (max-width: 650px) {
+//   @import "/breakpoints/650"
+// }
+
+// @media (max-width: 600px) {
+//   @import "/breakpoints/600"
+// }
+
+// @media (max-width: 550px) {
+//   @import "/breakpoints/550"
+// }
+
+// @media (max-width: 500px) {
+//   @import "/breakpoints/500"
+// }
+
+// @media (max-width: 475px) {
+//   @import "/breakpoints/475"
+// }
+
+// @media (max-width: 450px) {
+//   @import "/breakpoints/450"
+// }
+
+// @media (max-width: 425px) {
+//   @import "/breakpoints/425"
+// }
+
+// @media (max-width: 400px) {
+//   @import "/breakpoints/400"
+// }
+
+// @media (max-width: 375px) {
+//   @import "/breakpoints/375"
+// }
+
+// @media (max-width: 350px) {
+//   @import "/breakpoints/350"
+// }
+
+// @media (max-width: 325px) {
+//   @import "/breakpoints/325"
+// }
+
+// @media (max-width: 300px) {
+//   @import "/breakpoints/300"
+// }
+
+// @media (max-width: 275px) {
+//   @import "/breakpoints/275"
+// }
+
+// @media (max-width: 250px) {
+//   @import "/breakpoints/250"
+//   }

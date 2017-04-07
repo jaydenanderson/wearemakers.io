@@ -1,0 +1,60 @@
+.field {
+  @include display(flex);
+  width: 100%;
+  &-input {
+    font-size: $h9Px;
+    border: .25rem solid rgba(30,46,41,.3);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: inherit;
+    display: block;
+    font-weight: bold;
+    height: auto;
+    justify-content: center;
+    padding: 12px 15px;
+    position: relative;
+    text-decoration: none;
+    transition: all .2s ease;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-touch-callout: none;
+    overflow: hidden;
+    background: $white;
+    color: $black;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    width: 100%;
+    @include placeholder {
+      color: rgba(30,46,41,.5);
+    }
+    &:hover {
+      border-color: rgba(30,46,41,.3);
+      transition: none;
+    }
+    &:active,
+    &:focus {
+      @include placeholder {
+        color: rgba(30,46,41,.3);
+      }
+      border-color: $ice;
+    }
+  }
+}
+
+.field-inline {
+  .field-input {
+    @include flex-grow(10000);
+    border-radius: 2px 0 0 2px;
+  }
+  .field-button {
+    @include flex-shrink(0);
+    border-radius: 0 2px 2px 0;
+  }
+}
+
+.field-ice {
+  .field-input {
+    border-color: $ice;
+  }
+}

@@ -1,7 +1,6 @@
 .button {
   @include h9Cap;
-  border: 2px solid;
-  border-color: inherit;
+  border: .25rem solid;
   border-radius: 4px;
   box-sizing: border-box;
   color: inherit;
@@ -10,11 +9,10 @@
   font-weight: bold;
   height: auto;
   justify-content: center;
-  padding: 16px;
+  padding: 15px;
   position: relative;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: all .2s ease;
   user-select: none;
   vertical-align: middle;
@@ -171,4 +169,9 @@
 // Hollow modifier
 .button-hollow {
   background-color: transparent;
+}
+
+.button-full {
+  width: 100%;
+  display: block;
 }

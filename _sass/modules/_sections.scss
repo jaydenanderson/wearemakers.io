@@ -102,7 +102,7 @@
   color: $white;
   position: relative;
   &:after {
-    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0 / 600px 600px;
+    background: url({{site.url}}/images/bg/pattern-3.png) 0 0 / 600px 600px;
     content: '';
     display: block;
     width: 100%;
@@ -199,5 +199,37 @@
       width: 40%;
       padding: 1.5rem;
     }
+  }
+}
+
+.section-broadcasts {
+  .section-header {
+    margin: 4px 0 calc(3rem - 26px)
+  }
+  .section-body {
+    opacity: .5;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
+}
+
+.section-request {
+  &:before {
+    content: '';
+    display: block;
+    border-top: 3px solid $black;
+    margin: -21px 0 5rem 0;
+    width: 10rem;
+  }
+  .section-header {
+    margin-bottom: calc(3rem - 7px);
+    &-subheadline {
+      margin-top: 6px;
+      opacity: .5;
+      max-width: 285px;
+    }
+  }
+  .field {
+    margin-bottom: 1rem;
   }
 }

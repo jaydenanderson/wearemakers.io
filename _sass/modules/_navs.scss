@@ -28,7 +28,7 @@
       display: block;
       &:after,
       &:before {
-        background: url('/wearemakers.io/images/logo.png') 0 0 / cover no-repeat;
+        background: url('{{site.url}}/images/logo.png') 0 0 / cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -41,7 +41,7 @@
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url('/wearemakers.io/images/logo-white.png');
+        background-image: url('{{site.url}}/images/logo-white.png');
       }
       .nav-dark & {
         &:before {
@@ -234,7 +234,7 @@
     width: 36px;
     height: 40px;
     border: .5rem solid $white;
-    background: url(/wearemakers.io/images/logo-icon.png) 0 0 / cover no-repeat;
+    background: url({{site.url}}/images/logo-icon.png) 0 0 / cover no-repeat;
     z-index: 1;
   }
   .nav-list {

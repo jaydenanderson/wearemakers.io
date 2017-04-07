@@ -3,10 +3,10 @@
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300;
-  @include breakpoint(WXL) {
+  @media (max-width: 1200px) {
     font-size: $h2Px;
   }
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: $h3Px;
     letter-spacing: 0;
   }
@@ -17,7 +17,7 @@
   letter-spacing: -.02em;
   text-rendering: optimizeLegibility;
   font-weight: 300;
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: $h4Px;
     letter-spacing: 0;
     font-weight: 600;
@@ -27,7 +27,7 @@
 @mixin h3 {
   font-size: $h3Px;
   font-weight: 300;
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: $h5Px;
     font-weight: 600;
   }
@@ -36,7 +36,7 @@
 @mixin h4 {
   font-size: $h4Px;
   font-weight: 300;
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: $h6Px;
     font-weight: 600;
   }
@@ -46,7 +46,7 @@
   font-size: $h5Px;
   font-weight: 400;
 
-  @include breakpoint(WM) {
+  @media (max-width: 800px) {
     font-size: $h6Px;
   }
 }
