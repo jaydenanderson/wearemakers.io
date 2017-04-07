@@ -378,7 +378,8 @@ button {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  width: 100%; }
   @media (max-width: 900px) {
     .grid {
       padding: .75rem; } }
