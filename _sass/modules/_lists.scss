@@ -34,20 +34,29 @@
     padding: 1.5rem 0;
     @include display(flex);
     @include align-items(center);
-    @include flex-wrap(wrap);
+    @media (max-width: 600px) {
+      @include flex-wrap(wrap);
+      @include justify-content(center);
+      text-align: center;
+    }
     &-header {
       width: 100%;
       max-width: 164px;
       color: rgba(41,50,59,.5);
+      @include flex-shrink(0);
       @media (max-width: 600px) {
         max-width: 100%;
       }
     }
     &-logo {
       width: 102px;
+      @include flex-shrink(0);
       @media (max-width: 600px) {
         width: auto;
         margin: 1rem 1.5rem 0 0;
+        &:last-of-type {
+          margin-right: 0;
+        }
       }
     }
   }
@@ -55,6 +64,9 @@
 
 .list-overview {
   padding-top: 105px;
+  @media (max-width: 650px) {
+    padding-top: 2rem;
+  }
   .list-item{
     position: relative;
     margin: calc(3rem - 7px) 0 0 calc(20% + 3rem);

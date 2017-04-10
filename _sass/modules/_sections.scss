@@ -5,6 +5,9 @@
 
   &-impact {
     margin: calc(8rem - 41px) 0;
+    @media (max-width: 650px) {
+      margin-bottom: 1.5rem;
+    }
     .section-header {
       line-height: .833333em;
       color: $ice;
@@ -19,7 +22,7 @@
 
   &-our-work {
     position: relative;
-    background-size: 350px;
+    background-size: 500px;
     margin: -3rem 8.333333% 7rem;
     padding: 1.5rem;
     z-index: 1;
@@ -30,6 +33,7 @@
     }
     @media (max-width: 900px) {
       padding: .75rem;
+      margin-bottom: 0;
     }
     @media (max-width: 700px) {
       display: block;
@@ -78,6 +82,12 @@
       padding: 1.5rem 1.5rem 0;
       font-size: $h4Px;
       font-weight: bold;
+      @media (max-width: 900px) {
+        padding: .75rem;
+      }
+      @media (max-width: 800px) {
+        font-size: $h5Px;
+      }
     }
     .section-body {
       width: 100%;
@@ -89,6 +99,9 @@
 
 .section-involved {
   padding-top: 146px;
+  @media (max-width: 900px) {
+    padding-top: 6rem;
+  }
   .section-header {
     font-size: 12rem;
     line-height: 1em;
