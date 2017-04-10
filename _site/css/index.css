@@ -143,7 +143,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url("/wearemakers.io/images/bg/pattern.gif") center/500px 500px; }
+  background: url("/wearemakers.io/wearearemakers.io/images/bg/pattern.gif") center/500px 500px; }
 
 body,
 input,
@@ -2868,14 +2868,16 @@ button {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
       .hero-home .hero-text-footer .button {
-        margin: 0 3rem 1.5rem 0;
         -webkit-box-flex: 1;
         -moz-box-flex: 1;
         box-flex: 1;
-        -webkit-flex: 1 0 initial;
-        -moz-flex: 1 0 initial;
-        -ms-flex: 1 0 initial;
-        flex: 1 0 initial; }
+        -webkit-flex: 1 0 auto;
+        -moz-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        margin: 0 1.5rem 1.5rem 0;
+        padding-left: 0;
+        padding-right: 0; }
         @media (max-width: 650px) {
           .hero-home .hero-text-footer .button {
             width: 100%;
@@ -3370,24 +3372,24 @@ button {
           margin-bottom: -2px; }
   .card-course-mindfulness {
     color: #65E2A6;
-    border-image: url({{site.url}}/images/bg/mint-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/mint-bg.png) 6 repeat; }
   .card-course-code {
     color: #FED940;
-    border-image: url({{site.url}}/images/bg/golden-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/golden-bg.png) 6 repeat; }
   .card-course-game {
     color: #43AAED;
-    border-image: url({{site.url}}/images/bg/ice-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/ice-bg.png) 6 repeat; }
   .card-course-web {
     color: #ED4A43;
-    border-image: url({{site.url}}/images/bg/rocketship-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/rocketship-bg.png) 6 repeat; }
   .card-course-it {
     color: #68DBEA;
-    border-image: url({{site.url}}/images/bg/chill-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/chill-bg.png) 6 repeat; }
     .card-course-it .card-header-headline {
       max-width: 300px; }
   .card-course-volunteer {
     color: #6B777F;
-    border-image: url({{site.url}}/images/bg/charcoal-bg.png) 6 repeat; }
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/charcoal-bg.png) 6 repeat; }
     .card-course-volunteer .card-header-headline {
       max-width: 180px; }
     .card-course-volunteer .card-footer {
@@ -3490,7 +3492,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/images/logo.png") 0 0/cover no-repeat;
+        background: url("/wearearemakers.io/images/logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3502,7 +3504,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/images/logo-white.png"); }
+        background-image: url("/wearearemakers.io/images/logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
@@ -3671,7 +3673,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url("/images/logo-icon.png") 0 0/cover no-repeat;
+    background: url("/wearearemakers.io/images/logo-icon.png") 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     -webkit-box-align: center;
@@ -4041,7 +4043,7 @@ button {
     .section-student {
       overflow: hidden; } }
   .section-student:after {
-    background: url(/images/bg/pattern-3.png) 0 0/600px 600px;
+    background: url(/wearearemakers.io/images/bg/pattern-3.png) 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;
