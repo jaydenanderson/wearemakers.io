@@ -18,7 +18,7 @@
   text-rendering: optimizeLegibility;
   font-weight: 300;
   @media (max-width: 800px) {
-    font-size: $h4Px;
+    font-size: $h3Px;
     letter-spacing: 0;
     font-weight: 600;
   }
@@ -28,7 +28,7 @@
   font-size: $h3Px;
   font-weight: 300;
   @media (max-width: 800px) {
-    font-size: $h5Px;
+    font-size: $h4Px;
     font-weight: 600;
   }
 }
@@ -37,7 +37,7 @@
   font-size: $h4Px;
   font-weight: 300;
   @media (max-width: 800px) {
-    font-size: $h6Px;
+    font-size: $h5Px;
     font-weight: 600;
   }
 }

@@ -21,3 +21,19 @@ navigation:
     url: '#get-involved'
   - title: Donate
     url: /donate/
+
+footer-navigation:
+  - title: Home
+    url: /
+  - title: Courses
+    url: /courses/
+  - title: Our students
+    url: /students/
+  - title: Broadcasts
+    url: /broadcasts/
+  - title: Get involved
+    url: '#get-involved'
+  - title: Donate
+    url: /donate/
+  - title: Colophon
+    url: /colophon/
