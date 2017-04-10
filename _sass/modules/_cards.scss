@@ -3,6 +3,12 @@
   position: relative;
   @include display(flex);
   @include flex-wrap(wrap);
+
+  &-bg-image {
+    width: 100%;
+    display: block;
+  }
+
   &-header,
   &-body,
   &-footer {
@@ -10,6 +16,7 @@
     width: 100%;
     padding: 3rem;
   }
+
   &-header {
     font-family: $fontFamilyHeading;
     @include h5();
@@ -20,8 +27,7 @@
       display: block;
     }
   }
-  &-body {
-  }
+
   &-footer {
     @include display(flex);
     @include justify-content(space-between);
@@ -55,6 +61,14 @@
   z-index: 2;
   border: none;
   background: rgba(67,170,236,.95);
+  width: 33.33333%;
+
+  @media (max-width: 850px) {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 40rem;
+  }
+
   &:nth-child(2) {
     background: rgba(67,170,236,.9);
   }
@@ -68,16 +82,37 @@
     color: $white;
     padding: calc(3rem - 3px) 3rem;
     max-width: 335px;
+    @media (max-width: 1000px) {
+      font-size: 1.75rem;
+      padding: 2rem;
+    }
+    @media (max-width: 850px) {
+      padding-bottom: 0;
+      max-width: 100% !important;
+    }
+    @media (max-width: 350px) {
+      padding: 1rem 1rem 0;
+    }
   }
   .card-body {
     font-size: $h7Px;
     opacity: .5;
     padding: calc(3rem - 9px) 3rem;
+    line-height: 2em;
+    @media (max-width: 1000px) {
+      padding: 2rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 14px;
+    }
+    @media (max-width: 350px) {
+      padding: .5rem 1rem 1rem;
+    }
   }
 }
 
 .card-event {
-  flex: 1;
+  width: calc(25% - 3rem);
   margin: 1.5rem;
   background: $white;
   color: $black;
@@ -85,6 +120,10 @@
   border: none;
   cursor: pointer;
   border: 3px solid $white;
+  @media (max-width: 900px) {
+    margin: .75rem;
+    width: calc(50% - 1.5rem);
+  }
   &:hover {
     border-color: $ice;
   }
@@ -92,6 +131,9 @@
     content: '';
     padding-top: 100%;
     display: block;
+    @media (max-width: 900px) {
+      padding-top: 150%;
+    }
   }
   .card-header {
     position: absolute;
@@ -101,6 +143,9 @@
     padding: calc(2rem - 6px) calc(2rem - 3px);
     font-family: $fontFamily;
     line-height: 1.25em;
+    @media (max-width: 900px) {
+      padding: 1rem;
+    }
     &-headline {
       font-weight: bold;
     }
@@ -115,11 +160,15 @@
     left: 0;
     right: 0;
     padding: 2rem calc(2rem - 3px);
+    @media (max-width: 900px) {
+      padding: 1rem;
+    }
     @include h9Cap();
     @include flex-wrap(wrap);
     &-headline {
       display: block;
-      max-width: 150px;
+      width: 150px;
+      max-width: 100%;
     }
     &-subheadline {
       width: 100%;
@@ -161,10 +210,20 @@
   text-align: center;
   background-size: cover;
   transition: all .3s ease;
+  display: block;
+  background: $ice;
+  overflow: hidden;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 20px 60px -20px rgba(30,36,41,.5);
+    @media (max-width: 1200px) {
+      .button {
+        background: rgba(41,50,59,.9);
+        color: $white;
+        border-color: transparent;
+      }
+    }
   }
 
   &:active {
@@ -174,9 +233,41 @@
 
   .button {
     width: 100%;
-    max-width: 220px;
+    max-width: 20rem;
     &:active {
       box-shadow: 0 0 0 0 transparent;
+    }
+
+    @media (max-width:1200px) {
+      box-shadow: none !important;
+      background-color: transparent;
+      border-color: rgba(41,50,59,.9);
+      color: rgba(41,50,59,.9);
+    }
+  }
+
+  .card-bg {
+    position: relative;
+    @media (max-width: 1200px) {
+      overflow: hidden;
+      border-radius: 0 0 4px 4px;
+      padding-bottom: 100%;
+    }
+    @media (max-width: 800px) {
+      padding-bottom: 66%;
+    }
+    &-image {
+      border-radius: 4px;
+      @media (max-width: 1200px) {
+        position: absolute;
+        left: 0;
+        bottom: -14%;
+        right: 0;
+        border-radius: 0 0 4px 4px;
+      }
+      @media (max-width: 800px) {
+        bottom: -56%;
+      }
     }
   }
 
@@ -190,16 +281,25 @@
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
+    @media (max-width: 1200px) {
+      position: relative;
+      color: rgba(41,50,59,.9);
+    }
+    &-headline {
+      @media (max-width: 1250px) {
+        height: 4.5em;
+      }
+      @media (max-width: 800px) {
+        height: auto;
+      }
+    }
+    @media (max-width: 1050px) {
+      padding: 1.5rem;
+    }
     &-subheadline {
       padding-top: calc(2rem - 7px);
     }
-  }
-
-  &:after {
-    content: '';
-    padding-bottom: 155%;
-    display: block;
-    width: 100%;
   }
 
   &-donate {
@@ -209,18 +309,34 @@
   }
 
   &-volunteer {
+    background: $golden;
     .button {
       box-shadow: 0 10px 30px -10px darken($golden, 20%);
     }
     .card-header-headline {
       max-width: 265px;
       margin: 0 auto;
+      display: block;
+    }
+    .card-bg-image {
+      @media (max-width: 1200px) {
+        bottom: -30%;
+      }
+      @media (max-width: 800px) {
+        bottom: -112%;
+      }
     }
   }
 
   &-hire {
+    background: $rocketship;
     .button {
       box-shadow: 0 10px 30px -10px darken($rocketship, 20%);
+    }
+    .card-bg-image {
+      @media (max-width: 800px) {
+        bottom: -64%;
+      }
     }
   }
 }
@@ -275,27 +391,27 @@
 
   &-mindfulness {
     color: $mint;
-    border-image: url({{site.url}}/images/bg/mint-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/mint-bg.png) 6 repeat;
   }
 
   &-code {
     color: $golden;
-    border-image: url({{site.url}}/images/bg/golden-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/golden-bg.png) 6 repeat;
   }
 
   &-game {
     color: $ice;
-    border-image: url({{site.url}}/images/bg/ice-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/ice-bg.png) 6 repeat;
   }
 
   &-web {
     color: $rocketship;
-    border-image: url({{site.url}}/images/bg/rocketship-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/rocketship-bg.png) 6 repeat;
   }
 
   &-it {
     color: $chill;
-    border-image: url({{site.url}}/images/bg/chill-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/chill-bg.png) 6 repeat;
     .card-header-headline {
       max-width: 300px;
     }
@@ -303,7 +419,7 @@
 
   &-volunteer {
     color: $charcoal;
-    border-image: url({{site.url}}/images/bg/charcoal-bg.png) 6 repeat;
+    border-image: url({{site.url}}/wearearemakers.io/images/bg/charcoal-bg.png) 6 repeat;
     .card-header-headline {
       max-width: 180px;
     }
@@ -318,6 +434,7 @@
   background: $white;
   padding: 3rem;
   margin: 0 -3rem;
+  width: calc(100% + 6rem);
   @include flex-direction(column);
   .card-header{
     padding: 0 0 3rem;
@@ -325,7 +442,13 @@
     @include flex-grow(1000);
     &-subheadline {
       color: $ice;
-      width: 212px;
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+  &-u {
+    .card-header-subheadline {
+      max-width: 160px;
     }
   }
   .card-footer {
@@ -335,6 +458,9 @@
       &-items {
         margin: 0;
       }
+    }
+    &-action {
+      @include flex-shrink(0);
     }
   }
 }

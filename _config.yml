@@ -12,12 +12,28 @@ gems: ['bourbon', 'github-pages']
 
 navigation:
   - title: Courses
-    url: /wearemakers.io/courses/
+    url: /courses/
   - title: Our students
-    url: /wearemakers.io/students/
+    url: /students/
   - title: Broadcasts
-    url: /wearemakers.io/broadcasts/
+    url: /broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /wearemakers.io/donate/
+    url: /donate/
+
+footer-navigation:
+  - title: Home
+    url: /
+  - title: Courses
+    url: /courses/
+  - title: Our students
+    url: /students/
+  - title: Broadcasts
+    url: /broadcasts/
+  - title: Get involved
+    url: '#get-involved'
+  - title: Donate
+    url: /donate/
+  - title: Colophon
+    url: /colophon/

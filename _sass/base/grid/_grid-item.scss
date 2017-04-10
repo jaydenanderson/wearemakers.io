@@ -1,17 +1,4 @@
-@mixin gridWidths {
-  &-none {
-    display: none !important
-  }
-  &-flex {
-    display: flex !important
-  }
-  &-block {
-    display: block !important
-  }
-  &-inline-block {
-    display: inline-block !important
-  }
-
+@mixin gridWidth {
   &-1 {
     width: 8.33333333% 
   }
@@ -48,59 +35,72 @@
   &-12 {
     width: 100%
   }
+}
 
-  &-offset {
-    &-0 {
-      margin-left: 0 
-    }
-    &-1 {
-      margin-left: 8.33333333% 
-    }
-    &-2 {
-      margin-left: 16.6666667% 
-    }
-    &-3 {
-      margin-left: 25% 
-    }
-    &-4 {
-      margin-left: 33.3333333% 
-    }
-    &-5 {
-      margin-left: 41.6666666% 
-    }
-    &-6 {
-      margin-left: 50% 
-    }
-    &-7 {
-      margin-left: 58.3333333% 
-    }
-    &-8 {
-      margin-left: 66.6666666% 
-    }
-    &-9 {
-      margin-left: 75% 
-    }
-    &-10 {
-      margin-left: 83.3333333% 
-    }
-    &-11 {
-      margin-left: 91.6666666% 
-    }
-    &-12 {
-      margin-left: 100%
-    }
+@mixin gridHelpers {
+  &-none {
+    display: none !important
+  }
+  &-flex {
+    display: flex !important
+  }
+  &-block {
+    display: block !important
+  }
+  &-inline-block {
+    display: inline-block !important
+  }
+}
+
+@mixin gridOffset {
+  &-0 {
+    margin-left: 0 
+  }
+  &-1 {
+    margin-left: 8.33333333% 
+  }
+  &-2 {
+    margin-left: 16.6666667% 
+  }
+  &-3 {
+    margin-left: 25% 
+  }
+  &-4 {
+    margin-left: 33.3333333% 
+  }
+  &-5 {
+    margin-left: 41.6666666% 
+  }
+  &-6 {
+    margin-left: 50% 
+  }
+  &-7 {
+    margin-left: 58.3333333% 
+  }
+  &-8 {
+    margin-left: 66.6666666% 
+  }
+  &-9 {
+    margin-left: 75% 
+  }
+  &-10 {
+    margin-left: 83.3333333% 
+  }
+  &-11 {
+    margin-left: 91.6666666% 
+  }
+  &-12 {
+    margin-left: 100%
   }
 }
 
 .grid {
   @include display(flex);
+  @include flex-wrap(wrap);
   padding: 1.5rem;
   width: 100%;
   @media (max-width: 900px) {
     padding: .75rem;
-  }
-  @media (max-width: 350px) {
-    padding: .333333rem;
   }
 }
 
@@ -113,13 +113,18 @@
   @media (max-width: 900px) {
     padding: .75rem;
   }
-  @media (max-width: 350px) {
-    padding: .333333rem;
-  }
 }
 
 .grid {
   &-item {
-    @include gridWidths();
+    @include gridWidth();
+    &-offset {
+      @include gridOffset();
+    }
   }
+}
+
+
+.display {
+  @include gridHelpers();
 }
