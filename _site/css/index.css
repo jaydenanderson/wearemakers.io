@@ -148,7 +148,7 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url("/images/wearemakers.io/bg/pattern.gif") center/500px 500px; }
+  background: url("/wearemakers.io/images/bg/pattern.gif") center/500px 500px; }
 
 body,
 input,
@@ -2850,7 +2850,7 @@ button {
       -moz-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      background: url("/images/wearemakers.io/bg/pattern-2.png") 0 0/600px 600px; } }
+      background: url("/wearemakers.io/images/bg/pattern-2.png") 0 0/600px 600px; } }
   .hero-courses .hero-bg {
     -webkit-align-self: flex-end;
     -moz-align-self: flex-end;
@@ -2860,7 +2860,7 @@ button {
     -moz-flex-shrink: 0;
     flex-shrink: 0;
     -ms-flex-negative: 0;
-    background: url("/images/wearemakers.io/bg/pattern-2.png") 0 0/600px 600px;
+    background: url("/wearemakers.io/images/bg/pattern-2.png") 0 0/600px 600px;
     display: block;
     margin: 0 1.5rem;
     max-width: calc(75% - 3rem);
@@ -3388,26 +3388,26 @@ button {
           width: 100%; } }
   .card-course-mindfulness {
     color: #65E2A6;
-    border-image: url("/images/wearemakers.io/bg/mint-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/mint-bg.png") 6 repeat; }
     .card-course-mindfulness .card-header-headline {
       max-width: 300px; }
   .card-course-code {
     color: #FED940;
-    border-image: url("/images/wearemakers.io/bg/golden-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/golden-bg.png") 6 repeat; }
   .card-course-game {
     color: #43AAED;
-    border-image: url("/images/wearemakers.io/bg/ice-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/ice-bg.png") 6 repeat; }
   .card-course-web {
     color: #ED4A43;
-    border-image: url("/images/wearemakers.io/bg/rocketship-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/rocketship-bg.png") 6 repeat; }
   .card-course-it {
     color: #68DBEA;
-    border-image: url("/images/wearemakers.io/bg/chill-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/chill-bg.png") 6 repeat; }
     .card-course-it .card-header-headline {
       max-width: 300px; }
   .card-course-volunteer {
     color: #6B777F;
-    border-image: url("/images/wearemakers.io/bg/charcoal-bg.png") 6 repeat; }
+    border-image: url("/wearemakers.io/images/bg/charcoal-bg.png") 6 repeat; }
     .card-course-volunteer .card-header-headline {
       max-width: 180px; }
     .card-course-volunteer .card-footer {
@@ -3520,7 +3520,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/images/wearemakers.io/logo.png") 0 0/cover no-repeat;
+        background: url("/wearemakers.io/images/logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3532,7 +3532,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/images/wearemakers.io/logo-white.png"); }
+        background-image: url("/wearemakers.io/images/logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
@@ -3702,7 +3702,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url("/images/wearemakers.io/logo-icon.png") 0 0/cover no-repeat;
+    background: url("/wearemakers.io/images/logo-icon.png") 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     -webkit-box-align: center;
@@ -4074,7 +4074,7 @@ button {
     .section-student {
       overflow: hidden; } }
   .section-student:after {
-    background: url("/images/wearemakers.io/bg/pattern-3.png") 0 0/600px 600px;
+    background: url("/wearemakers.io/images/bg/pattern-3.png") 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;
