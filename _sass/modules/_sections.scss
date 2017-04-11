@@ -335,10 +335,28 @@
       opacity: 1;
     }
   }
+  &.modal {
+    &:before {
+      display: none;
+    }
+    &:after {
+      border: 3px solid $black;
+      border-radius: 4px;
+      padding: 3rem;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%,-50%);
+      max-width: 300px;
+    }
+  }
   &-body {
     transition: all .4s ease;
     .is-submitted & {
-      opacity: 0;
+      overflow: hidden;
+      opacity: 0 !important;
+    }
+    .modal.is-submitted & {
+      height: 0 !important;
     }
   }
 }
@@ -356,6 +374,10 @@
   max-height: 0;
   height: 100%;
   display: block;
+  transition: all .2s ease;
+  &.is-submitted {
+    cursor: url(/images/cursor.png), auto;
+  }
   &.is-active {
     max-height: 10000px;
     overflow: auto;

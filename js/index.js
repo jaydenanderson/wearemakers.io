@@ -1,7 +1,7 @@
 window.onload = function() {
   // Dropdown Menu
-  var dropdown = document.querySelectorAll('.js-toggle');
-  var dropdownArray = Array.prototype.slice.call(dropdown,0);
+  var dropdown = document.querySelectorAll('.js-toggle'),
+  dropdownArray = Array.prototype.slice.call(dropdown,0);
   dropdownArray.forEach(function(el){
     var button = el.querySelector('.js-toggle-trigger');
 
@@ -21,9 +21,9 @@ window.onload = function() {
 };
 
 function modalWindow(modal) {
-  var toggle = modal.getAttribute('data-modal-toggle');
-  var toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]');
-  var toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
+  var toggle = modal.getAttribute('data-modal-toggle'),
+  toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]'),
+  toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
   toggleBody.classList.add('is-active');
   document.body.classList.add('is-modal-active');
 
@@ -31,4 +31,12 @@ function modalWindow(modal) {
     toggleBody.classList.remove('is-active');
     document.body.classList.remove('is-modal-active');
   };
+};
+
+function isSubmitted(form) {
+  form.classList.add('is-submitted');
+  form.onclick = function(event) {
+    form.classList.remove('is-active');
+    document.body.classList.remove('is-modal-active');
+  }
 };

@@ -43,10 +43,12 @@
           width: 10rem;
           display: block;
           border: 3px solid $iceLight;
+          background: $white;
         }
         &:after {
           width: 8rem;
-          border-top: 0;
+          margin-top: -3px;
+          border-top: none;
         }
       }
       &-subheading {

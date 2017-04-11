@@ -16,6 +16,8 @@
   </head>
   <body>
     <div class='page'>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <iframe name="hidden_iframe2" id="hidden_iframe2" style="display:none;"></iframe>
   <div class='nav-header-wrapper'>
   <header class='nav nav-header js-toggle '>
     <h1 class='nav-logo'>
@@ -106,7 +108,7 @@
           Unlock
         </button>
       </div>
-      <a href='#' class='hero-text-body-footer'>
+      <a href='#sign-up' class='hero-text-body-footer'>
         Need access?
       </a>
     </section>
@@ -157,7 +159,7 @@
   </div>
 </section>
 
-<div class='grid'>
+<div class='grid' id='sign-up'>
   <div class='grid-item-5 grid-item-offset-1 grid-item-1200-6  grid-item-1100-8 grid-item-800-10 grid-item-700-12 grid-item-offset-700-0'>
     <section class='section section-broadcasts'>
       <h1 class='section-header'>
@@ -178,7 +180,7 @@
         <h4 class='section-header-subheadline'>Enroll in our program to get access for yourself or your students.</h4>
       </header>
 
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSek4FX39fpG5Pz2bGaeuY7FyNx6UEs27eGxrzGVSz_D6swm2w/formResponse" method="post" class='section-body form' target="hidden_iframe" onsubmit="this.classList.add('is-submitted');" data-submit-message="Request received. We'll get back to you soon." id="broadcast-form" >
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSek4FX39fpG5Pz2bGaeuY7FyNx6UEs27eGxrzGVSz_D6swm2w/formResponse" method="post" class='section-body form' target="hidden_iframe" onsubmit="isSubmitted(this);" data-submit-message="Request received. We'll get back to you soon." id="broadcast-form" >
   <div class='form-body'>
     <div class='field'>
       <input class='field-input' type="text" autocomplete="off" tabindex="0" placeholder="Your name" name="entry.804261986" value="">
@@ -281,8 +283,7 @@
 
 </script> -->
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSdl3EYRqogaCSU_jSXMSSqDMMzPTkTFJlzemPT-q3aehtMUMw/formResponse" method="POST" class='form modal' target="hidden_iframe" onsubmit="this.classList.add('is-submitted');" data-submit-message="Request received. We'll get back to you soon." data-modal-window='hire' id="hire-form">
+<form id="hire-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdl3EYRqogaCSU_jSXMSSqDMMzPTkTFJlzemPT-q3aehtMUMw/formResponse" method="POST" class='form modal' target="hidden_iframe" onsubmit='isSubmitted(this);' data-submit-message="Request received. We'll get back to you soon." data-modal-window='hire'>
   <a class='modal-close button button-hollow' data-modal-close='hire'>
     <i class='icon icon-close'></i>
   </a>
@@ -343,7 +344,7 @@
     <div class='field field-textarea'>
       <textarea class='field-input' placeholder='Tell us about your ideal candidate' name="entry.1715994781"></textarea>
     </div>
-    <button class='button button-full button-ice field-button' type="submit" form="hire-form" value="Submit">Submit</button>
+    <button data-modal-submit='hire' class='button button-full button-ice field-button' type="submit" form="hire-form" value="Submit">Submit</button>
     <input type="hidden" name="fvv" value="1">
     <input type="hidden" name="draftResponse" value="[null,null,&quot;-6893450786391367575&quot;]
     ">
@@ -352,7 +353,7 @@
   </div>
 </form>
 
-<form action="https://docs.google.com/forms/d/e/1FAIpQLSeO1rd9aJyMtCUWqKne_tmybtppefN9XbVxoMfMvn75pcvxGg/formResponse" method="POST" class='form modal' target="hidden_iframe" onsubmit="this.classList.add('is-submitted');" data-submit-message="Request received. We'll get back to you soon." id="student-form" data-modal-window='student'>
+<form id="student-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeO1rd9aJyMtCUWqKne_tmybtppefN9XbVxoMfMvn75pcvxGg/formResponse" method="POST" class='form modal' target="hidden_iframe" onsubmit='isSubmitted(this);' data-submit-message="Request received. We'll get back to you soon." data-modal-window='student'>
     <a class='modal-close button button-hollow'' data-modal-close='student'>
         <i class='icon icon-close'></i>
     </a>
@@ -412,7 +413,7 @@
     <div class='field field-textarea'>
         <textarea class='field-input' tabindex="0" placeholder='Tell us a bit about yourself' name="entry.1405234589"></textarea>
     </div>
-    <button class='button button-full button-ice field-button' type="submit" form="student-form" value="Submit">Submit</button>
+    <button data-modal-submit='student' class='button button-full button-ice field-button' type="submit" form="student-form" value="Submit">Submit</button>
     <input type="hidden" name="fvv" value="1">
     <input type="hidden" name="draftResponse" value="[null,null,&quot;-6893450786391367575&quot;]
 ">
@@ -420,8 +421,8 @@
     <input type="hidden" name="fbzx" value="-6893450786391367575">
     </div>
 </form>
-<form action='https://docs.google.com/forms/d/e/1FAIpQLScyDLZJ5StdO8vXcMCLxTfq2TRAOzwZZ0iGPDOgdZzNRqLrbA/formResponse' method="POST" class='form modal' target="hidden_iframe" onsubmit="this.classList.add('is-submitted');" data-submit-message="Request received. We'll get back to you soon." data-modal-window='volunteer'>
-    <a class='modal-close button button-hollow'' data-modal-close='volunteer'>
+<form id='volunteer-form' action='https://docs.google.com/forms/d/e/1FAIpQLScyDLZJ5StdO8vXcMCLxTfq2TRAOzwZZ0iGPDOgdZzNRqLrbA/formResponse' method="POST" class='form modal' target="hidden_iframe2" onsubmit="isSubmitted(this);" data-submit-message="Request received. We'll get back to you soon." data-modal-window='volunteer'>
+    <a class='modal-close button button-hollow' data-modal-close='volunteer'>
         <i class='icon icon-close'></i>
     </a>
     <div class='form-body modal-content'>
@@ -480,7 +481,7 @@
     <div class='field field-textarea''>
         <textarea class='field-input' tabindex="0" placeholder='Tell us a bit about yourself' name="entry.1405234589"></textarea>
     </div>
-    <button class='button button-full button-ice field-button' type="submit" form="student-form" value="Submit">Submit</button>
+    <button data-modal-submit='volunteer' class='button button-full button-ice field-button' type="submit" form="volunteer-form" value="Submit">Submit</button>
     <input type="hidden" name="fvv" value="1">
     <input type="hidden" name="draftResponse" value="[null,null,&quot;-6893450786391367575&quot;]
 ">
