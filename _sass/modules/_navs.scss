@@ -28,7 +28,7 @@
       display: block;
       &:after,
       &:before {
-        background: url('/we-are-makers.io/images//logo.png') 0 0 / cover no-repeat;
+        background: url('/wearemakers.io/images//logo.png') 0 0 / cover no-repeat;
         // background: url('/images/logo.png') 0 0 / cover no-repeat;
         content: '';
         display: block;
@@ -42,7 +42,7 @@
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url('/we-are-makers/images//logo-white.png');
+        background-image: url('/wearemakers/images//logo-white.png');
         // background-image: url('/images/logo-white.png');
       }
       .nav-dark & {
