@@ -3438,7 +3438,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/wearemakers.io/images//logo.png") 0 0/cover no-repeat;
+        background: url("/wearemakers.io/images/logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3450,7 +3450,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/wearemakers/images//logo-white.png"); }
+        background-image: url("/wearemakers/images/logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
@@ -3992,7 +3992,7 @@ button {
     .section-student {
       overflow: hidden; } }
   .section-student:after {
-    background: url(/wearemakers.io/images/bg/pattern-3.png) 0 0/600px 600px;
+    background: url("/images/bg/pattern-3.png") 0 0/600px 600px;
     content: '';
     display: block;
     width: 100%;
