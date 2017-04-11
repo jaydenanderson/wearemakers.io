@@ -3,8 +3,8 @@ title: WeAreMakers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://www.wearemakers.io" # the base hostname & protocol for your site
-# url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
-url: '' # the base hostname & protocol for your site
+url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
+# url: '' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -12,30 +12,30 @@ gems: ['bourbon', 'github-pages']
 
 navigation:
   - title: Courses
-    url: /courses/
+    url: /wearemakers.io/courses/
   - title: Our students
-    url: /students/
+    url: /wearemakers.io/students/
   - title: Broadcasts
-    url: /broadcasts/
+    url: /wearemakers.io/broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /donate/
+    url: /wearemakers.io/donate/
 
 footer-navigation:
   - title: Home
-    url: /
+    url: /wearemakers.io/
   - title: Courses
-    url: /courses/
+    url: /wearemakers.io/courses/
   - title: Our students
-    url: /students/
+    url: /wearemakers.io/students/
   - title: Broadcasts
-    url: /broadcasts/
+    url: /wearemakers.io/broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /donate/
+    url: /wearemakers.io/donate/
   - title: Contact
     url: 'mailto:info@wearemakers.io'
   - title: Colophon
-    url: /colophon/
+    url: /wearemakers.io/colophon/

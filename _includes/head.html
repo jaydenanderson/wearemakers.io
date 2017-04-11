@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="{{ site.url }}/css/index.css">
@@ -13,6 +13,7 @@
     <script src="https://use.typekit.net/fow8cvq.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
+
   <body>
     <div class='page'>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
