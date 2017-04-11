@@ -156,8 +156,6 @@
   .is-scrolled &,
   &.is-active {
     background: rgba(255,255,255,.85);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
   }
 
   @media (max-width: 1200px) {

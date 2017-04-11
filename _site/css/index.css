@@ -3591,9 +3591,7 @@ button {
   .is-scrolled .nav-header {
     height: 6rem; }
   .is-scrolled .nav-header, .nav-header.is-active {
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: saturate(180%) blur(20px);
-    -webkit-backdrop-filter: saturate(180%) blur(20px); }
+    background: rgba(255, 255, 255, 0.85); }
   @media (max-width: 1200px) {
     .nav-header {
       padding: 0 18px; } }
