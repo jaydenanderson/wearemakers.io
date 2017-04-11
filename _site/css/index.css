@@ -3438,7 +3438,7 @@ button {
     .nav-logo-image {
       display: block; }
       .nav-logo-image:after, .nav-logo-image:before {
-        background: url("/images/logo.png") 0 0/cover no-repeat;
+        background: url("/wearemakers.io//logo.png") 0 0/cover no-repeat;
         content: '';
         display: block;
         height: 59px;
@@ -3450,7 +3450,7 @@ button {
         left: 0;
         top: 0;
         opacity: 0;
-        background-image: url("/images/logo-white.png"); }
+        background-image: url("/wearemakers.io//logo-white.png"); }
       .nav-dark .nav-logo-image:before {
         opacity: 0; }
       .nav-dark .nav-logo-image:after {
@@ -3620,7 +3620,7 @@ button {
     width: 36px;
     height: 40px;
     border: 0.5rem solid #fff;
-    background: url("/images/logo-icon.png") 0 0/cover no-repeat;
+    background: url("/wearemakers.io//logo-icon.png") 0 0/cover no-repeat;
     z-index: 1; }
   .nav-footer .nav-list {
     -webkit-box-align: center;
