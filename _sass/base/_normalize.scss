@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
   outline: none !important;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
 }
 
 html {
@@ -12,7 +16,7 @@ body {
   background-color: $backgroundColor;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  background: url('/wearemakers.io/wearemakers.io/images/bg/pattern.gif') center / 500px 500px;
+  background: url('/wearemakers.io/images/bg/pattern.gif') center / 500px 500px;
 }
 
 body,

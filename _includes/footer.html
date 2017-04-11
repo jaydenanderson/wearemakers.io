@@ -1,3 +1,16 @@
+<!-- <script type="text/javascript">
+  function modalWindow() {
+    var modalClass = this.getAttribute('data-modal-trigger');
+    var modalWindow = document.querySelector('[data-modal-window="' + modalClass +'"]');
+    modalWindow.classList.add('is-active');
+  };
+
+</script> -->
+
+{% include forms/hire.html %}
+{% include forms/student.html %}
+{% include forms/volunteer.html %}
+
 <header class='nav nav-footer'>
   <ul class='nav-list'>
     {% for item in site.footer-navigation %}

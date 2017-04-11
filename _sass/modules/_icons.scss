@@ -64,14 +64,13 @@
   font-size: 24px;
 }
 
-
-.icon-menu {
+.icon-menu,
+.icon-close {
   display: inline-block;
   height: 10px;
   width: 16px;
   border-radius: 2px;
   vertical-align: middle;
-  transition: all .4s linear;
   position: relative;
   margin: -3px 0 0 3px;
 
@@ -85,7 +84,7 @@
     border-color: inherit;
     border-radius: 2px;
     width: 100%;
-    transition: all .4s linear;
+    transition: all .2s linear;
     top: 0;
     height: 0;
   }
@@ -94,191 +93,19 @@
     top: auto;
     bottom: 0;
   }
-
-  .is-active & {
-    &:before {
-      top: 50%;
-      margin-top: -1px;
-      transition: all .2s linear;
-      @include transform(rotate(45deg));
-    }
-
-    &:after {
-      bottom: 50%;
-      margin-bottom: -1px;
-      transition: all .2s linear;
-      @include transform(rotate(-45deg));
-    }
-
-  }
-
 }
 
-
-.icon-spoke {
-  height: 24px;
-  width: 24px;
-  @include animation(spin 1s infinite linear);
-  @include transform-origin(center);
-  &.dark .spoke:after {
-    background: $black;
-  }
-
-  .spoke {
-    display: block;
-    width: 2px;
-    height: 24px;
-    position: absolute;
+.is-active .icon-menu,
+.icon-close {
+  &:before {
     top: 50%;
-    left: 50%;
-    margin: -12px 0 0 -1px;
-    
-    &:after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      content: "";
-      display: block;
-      height: 6px;
-      background: #fff;
-      border-radius: 1000px;
-    }
-
-    
-    &:nth-child(2) {
-      opacity: .8;
-      @include transform(rotate(30deg));
-    }
-
-    
-    &:nth-child(3) {
-      opacity: .16;
-      @include transform(rotate(60deg));
-    }
-
-    
-    &:nth-child(4) {
-      opacity: .24;
-      @include transform(rotate(90deg));
-    }
-
-    
-    &:nth-child(5) {
-      opacity: .32;
-      @include transform(rotate(120deg));
-    }
-
-    
-    &:nth-child(6) {
-      opacity: .40;
-      @include transform(rotate(150deg));
-    }
-
-    
-    &:nth-child(7) {
-      opacity: .50;
-      @include transform(rotate(180deg));
-    }
-
-    
-    &:nth-child(8) {
-      opacity: .60;
-      @include transform(rotate(210deg));
-    }
-
-    
-    &:nth-child(9) {
-      opacity: .60;
-      @include transform(rotate(240deg));
-    }
-
-    
-    &:nth-child(10) {
-      opacity: .70;
-      @include transform(rotate(270deg));
-    }
-
-    
-    &:nth-child(11) {
-      opacity: .8;
-      @include transform(rotate(300deg));
-    }
-
-    
-    &:nth-child(12) {
-      opacity: .9;
-      @include transform(rotate(330deg));
-    }
-
-  }
-
-}
-
-
-.icon-ellipsis,
-.icon-more {
-  display: inline-block;
-  height: 3px;
-  width: 3px;
-  background: $black;
-  border-radius: 2px;
-  top: -4px;
-  margin: 0 !important;
-
-  &:before,
-  &:after {
-    content:"";
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 3px;
-    background: $black;
-    border-radius: 2px;
-    left: -6px;
+    margin-top: -1px;
+    @include transform(rotate(45deg));
   }
 
   &:after {
-    left: auto;
-    right: -6px;
+    bottom: 50%;
+    margin-bottom: -1px;
+    @include transform(rotate(-45deg));
   }
-
-  
-  &.white-color {
-    background: #fff;
-    
-    &:before,
-    &:after {
-      background: #fff;
-    }
-
-  }
-
-}
-
-
-.icon-more {
-  top: -2px;
-  &:before,
-  &:after {
-    left: auto;
-    right: auto;
-    top: -6px;
-  }
-
-  &:after {
-    top: auto;
-    bottom: -6px;
-  }
-
-
-  .button:hover & {
-    background: #fff;
-    &:before,
-    &:after {
-      background: #fff;
-    }
-
-  }
-
 }

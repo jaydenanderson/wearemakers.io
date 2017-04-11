@@ -1,10 +1,10 @@
 # Site settings
-title: We Are Makers
+title: WeAreMakers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://www.wearemakers.io" # the base hostname & protocol for your site
-url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
-# url: '' # the base hostname & protocol for your site
+# url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
+url: '' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -35,5 +35,7 @@ footer-navigation:
     url: '#get-involved'
   - title: Donate
     url: /donate/
+  - title: Contact
+    url: 'mailto:info@wearemakers.io'
   - title: Colophon
     url: /colophon/

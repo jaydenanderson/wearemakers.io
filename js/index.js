@@ -9,7 +9,7 @@ window.onload = function() {
       this.parentNode.classList.toggle('is-active');
       event.preventDefault();
     };
-  })
+  });
 
   window.onscroll = function() {
       if ( window.pageYOffset > 100 ) {
@@ -18,4 +18,17 @@ window.onload = function() {
           document.body.classList.remove("is-scrolled");
       }
   }
+};
+
+function modalWindow(modal) {
+  var toggle = modal.getAttribute('data-modal-toggle');
+  var toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]');
+  var toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
+  toggleBody.classList.add('is-active');
+  document.body.classList.add('is-modal-active');
+
+  toggleClose.onclick = function(event) {
+    toggleBody.classList.remove('is-active');
+    document.body.classList.remove('is-modal-active');
+  };
 };

@@ -1,8 +1,11 @@
 .field {
   @include display(flex);
   width: 100%;
+  letter-spacing: .075em;
+  font-size: $h9Px;
   &-input {
-    font-size: $h9Px;
+    font-size: inherit;
+    letter-spacing: inherit;
     border: 2px solid rgba(30,46,41,.3);
     border-radius: 4px;
     box-sizing: border-box;
@@ -20,9 +23,8 @@
     -webkit-appearance: none;
     -webkit-touch-callout: none;
     overflow: hidden;
-    background: $white;
+    background: transparent;
     color: $black;
-    letter-spacing: .1em;
     line-height: 1.5em;
     width: 100%;
     @include placeholder {
@@ -38,6 +40,7 @@
         color: rgba(30,46,41,.3);
       }
       border-color: $ice;
+      background: rgba(255,255,255,.8);
     }
   }
 }
@@ -56,5 +59,65 @@
 .field-ice {
   .field-input {
     border-color: $ice;
+  }
+}
+
+.field-checkbox {
+  @include display(flex);
+  @include align-items(center);
+  width: 100%;
+  overflow: auto;
+  cursor: pointer;
+  &:hover {
+    color: $ice;
+  }
+  .field-label {
+    font-weight: bold;
+    border-bottom: 2px solid rgba(30,46,41,.3);
+    line-height: 1.5rem;
+    padding: 14px 0;
+    @include flex-grow(10000);
+  }
+  .field-icon {
+    width: 4rem;
+    height: 4rem;
+    @include display(flex);
+    @include flex-shrink(0);
+    @include justify-content(center);
+    @include align-items(center);
+  }
+  .field-input {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: transparent;
+    border-color: rgba(30,46,41,.3);
+    &:hover {
+      border-color: rgba(30,46,41,.5);
+    }
+    &:active {
+      border-color: $ice;
+      background: $ice;
+    }
+    &:checked {
+      background: $ice;
+      border-color: $ice;
+    }
+  }
+}
+
+.field-heading {
+  font-weight: bold;
+}
+
+.field-group {
+  border: 2px solid rgba(30,46,41,.3);
+  border-radius: 4px;
+  .field {
+    &:last-of-type {
+      .field-label {
+        border-bottom: none;
+      }
+    }
   }
 }
