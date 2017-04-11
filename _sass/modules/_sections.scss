@@ -186,15 +186,25 @@
 
 .section-courses {
   padding: 1.5rem;
-  margin: 0 8.3333%;
   @include display(flex);
   @include flex-wrap(wrap);
   @include align-items(stretch);
+  @include justify-content(center);
+  @media (max-width: 900px) {
+    padding: .75rem;
+  }
   .section-item {
     width: 50%;
-    padding: 1.5rem;
+    max-width: 515px;
     @include display(flex);
     @include align-items(stretch);
+    padding: 1.5rem;
+    @media (max-width: 900px) {
+      padding: .75rem;
+    }
+    @media (max-width: 900px) {
+      width: 100%
+    }
   }
 }
 
@@ -213,6 +223,14 @@
     position: relative;
     margin: 0 8.33333%;
     padding: 0 1.5rem calc(6rem - 14px);
+    @media (max-width: 900px) {
+      width: 75%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0;
+      padding-bottom: 1.5rem;
+    }
     &-header {
       line-height: 1.5em;
       font-size: $h5Px;
@@ -232,6 +250,18 @@
       right: -4.5rem;
       left: -6rem;
       border: 3px solid $golden;
+      @media (max-width: 900px) {
+        bottom: -4rem;
+        left: -4rem;
+        right: -4rem;
+        top: -4rem;
+      }
+      @media (max-width: 500px) {
+        bottom: -2rem;
+        left: -.5rem;
+        right: -.5rem;
+        top: -1rem;
+      }
     }
   }
 }
@@ -239,20 +269,46 @@
 .section-campuses {
   background-size: 500px;
   padding: 0 1.5rem;
+  @media (max-width: 900px) {
+    padding: .75rem;
+  }
   .section-header {
-    margin: 0 8.33333%;
+    margin: 0 auto;
+    max-width: 1036px;
     padding: calc(6rem - 8px) 1.5rem  calc(1.5rem - 7px);
+    @media (max-width: 900px) {
+      padding: 5rem .75rem .75rem;
+    }
   }
   .section-body {
     @include display(flex);
     @include justify-content(space-between);
-    margin: 0 8.33333%;
+    margin: 0 auto;
+    max-width: 1036px;
     padding-bottom: 4.5rem;
+    @media (max-width: 850px) {
+      @include flex-direction(column);
+    }
     &-item {
       width: 40%;
       padding: 1.5rem;
       @include display(flex);
       @include align-items(stretch);
+      @media (max-width: 1000px) {
+        width: 50%;
+      }
+      @media (max-width: 900px) {
+        padding: .75rem;
+      }
+      @media (max-width: 850px) {
+        width: 75%;
+        &:last-of-type {
+          @include align-self(flex-end);
+        }
+      }
+      @media (max-width: 600px) {
+        width: 91.6666%;
+      }
     }
   }
 }

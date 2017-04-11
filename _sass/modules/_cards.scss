@@ -33,6 +33,7 @@
     @include justify-content(space-between);
     @include align-items(flex-end);
     @include flex-shrink(0);
+    @include flex-wrap(wrap);
     &-details {
       @include h9Cap();
       line-height: 1.5em;
@@ -355,6 +356,9 @@
       font-size: $h4Px;
       padding: calc(3rem - 6px) 3rem 0;
       max-width: 240px;
+      @media (max-width: 900px) {
+        padding: 1.5rem;
+      }
     }
     &-image {
       margin: -3px -3px 0;
@@ -368,6 +372,9 @@
     padding: calc(3rem - 14px) 3rem 0;
     color: $black;
     @include flex-grow(10000);
+    @media (max-width: 900px) {
+      padding: 0 1.5rem;
+    }
     p {
       margin-top: 2em;
       &:first-of-type {
@@ -377,6 +384,9 @@
   }
   .card-footer {
     color: $black;
+    @media (max-width: 900px) {
+      padding: 1.5rem;
+    }
     &-details {
       @include h9Cap();
       &-item {
@@ -387,31 +397,43 @@
         }
       }
     }
+    &-action {
+      @media (max-width: 450px) {
+        width: 100%;
+        margin-top: 1rem;
+        .button {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &-mindfulness {
     color: $mint;
-    border-image: url({{site.url}}/images/bg/mint-bg.png) 6 repeat;
+    border-image: url('/images/bg/mint-bg.png') 6 repeat;
+    .card-header-headline {
+      max-width: 300px;
+    }
   }
 
   &-code {
     color: $golden;
-    border-image: url({{site.url}}/images/bg/golden-bg.png) 6 repeat;
+    border-image: url('/images/bg/golden-bg.png') 6 repeat;
   }
 
   &-game {
     color: $ice;
-    border-image: url({{site.url}}/images/bg/ice-bg.png) 6 repeat;
+    border-image: url('/images/bg/ice-bg.png') 6 repeat;
   }
 
   &-web {
     color: $rocketship;
-    border-image: url({{site.url}}/images/bg/rocketship-bg.png) 6 repeat;
+    border-image: url('/images/bg/rocketship-bg.png') 6 repeat;
   }
 
   &-it {
     color: $chill;
-    border-image: url({{site.url}}/images/bg/chill-bg.png) 6 repeat;
+    border-image: url('/images/bg/chill-bg.png') 6 repeat;
     .card-header-headline {
       max-width: 300px;
     }
@@ -419,7 +441,7 @@
 
   &-volunteer {
     color: $charcoal;
-    border-image: url({{site.url}}/images/bg/charcoal-bg.png) 6 repeat;
+    border-image: url('/images/bg/charcoal-bg.png') 6 repeat;
     .card-header-headline {
       max-width: 180px;
     }
@@ -436,6 +458,10 @@
   margin: 0 -3rem;
   width: calc(100% + 6rem);
   @include flex-direction(column);
+  @media (max-width: 1000px) {
+    margin: 0;
+    padding: 2rem;
+  }
   .card-header{
     padding: 0 0 3rem;
     margin: -8px 0 -7px;
@@ -461,6 +487,13 @@
     }
     &-action {
       @include flex-shrink(0);
+      @media (max-width: 600px) {
+        width: 100%;
+        .button {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
     }
   }
 }

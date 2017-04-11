@@ -100,26 +100,53 @@
   background: transparent;
   min-height: 0;
   color: $black;
+  overflow: hidden;
+  @media (max-width: 700px) {
+    @include flex-wrap(wrap);
+    background: url('/images/bg/pattern-2.png') 0 0 / 600px 600px;
+  }
   .hero-bg {
-    padding: 0 1.5rem;
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 75%;
+    @include align-self(flex-end);
     @include flex-shrink(0);
+    background: url('/images/bg/pattern-2.png') 0 0 / 600px 600px;
+    display: block;
+    margin: 0 1.5rem;
+    max-width: calc(75% - 3rem);
+    position: relative;
+    width: 100%;
+    @media (max-width: 700px) {
+      max-width: calc(100% + 3rem);
+      width: calc(100% + 3rem);
+      margin: -1.5rem;
+      background: none;
+    }
   }
   .hero-text {
     padding: 1.5rem;
     width: 41.666666%;
     margin: 0 -25% 0 8.333333%;
     @include flex-shrink(0);
+    mix-blend-mode: multiply;
+    min-width: 392px;
+    @media (max-width: 800px) {
+      margin-left: 0;
+    }
+    @media (max-width: 700px) {
+      margin: 0 0 -15% 0;
+      min-width: 0;
+      width: 100%;
+    }
     &-header {
       font-size: 7rem;
       line-height: 6rem;
       font-weight: bold;
       letter-spacing: -.04em;
-      opacity: .9;
-      color: $white;
+      color: $black;
+      max-width: 362px;
+      @media (max-width: 1000px) {
+        font-size: 4rem;
+        line-height: 3rem;
+      }
     }
     &-body {
       line-height: 2em;
@@ -141,11 +168,23 @@
         background: $golden;
         display: block;
         z-index: -1;
+        @media (max-width: 700px) {
+          left: -2rem;
+          top: -1rem;
+          right: -2rem;
+          bottom: -1rem
+        }
       }
       &:nth-child(1) {
         &:after {
           left: -2rem;
           right: -2rem;
+          @media (max-width: 700px) {
+            left: -1rem;
+            top: -1rem;
+            right: -1rem;
+            bottom: -1rem
+          }
         }
       }
       &:nth-child(2) {
