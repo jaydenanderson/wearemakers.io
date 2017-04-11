@@ -1,0 +1,71 @@
+.form {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    bottom: 50%;
+    border: 3px solid $ice;
+    max-height: 0;
+    transition: all .3s ease;
+    pointer-events: none;
+    opacity: 0;
+  }
+  &:after {
+    content: attr(data-submit-message);
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 3rem;
+    right: 3rem;
+    overflow: hidden;
+    transition: all .4s ease;
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-50%);
+    text-align: center;
+    font-weight: bold;
+  }
+  &.is-submitted {
+    &:before {
+      max-height: 1000px;
+      border-color: inherit;
+      top: 0;
+      bottom: 0;
+      pointer-events: auto;
+      opacity: 1;
+    }
+    &:after {
+      max-height: 1000px;
+      opacity: 1;
+    }
+  }
+  &.modal {
+    &:before {
+      display: none;
+    }
+    &:after {
+      border: 3px solid $black;
+      border-radius: 4px;
+      padding: 3rem;
+      left: 50%;
+      right: auto;
+      transform: translate(-50%,-50%);
+      max-width: 300px;
+    }
+  }
+  &-body {
+    transition: all .4s ease;
+    .is-submitted & {
+      overflow: hidden;
+      opacity: 0 !important;
+    }
+    .modal.is-submitted & {
+      height: 0 !important;
+    }
+  }
+}
