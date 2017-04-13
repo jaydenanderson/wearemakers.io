@@ -17,6 +17,10 @@
     @include flex-shrink(0);
     position: relative;
     display: block;
+    margin-left: 8.333333%;
+    @media (max-width: 1200px) {
+      margin-left: 0;
+    }
 
     &-text {
       color: rgba(0,0,0,.0) !important;
@@ -162,9 +166,6 @@
     background: rgba(255,255,255,.85);
   }
 
-  @media (max-width: 1200px) {
-    padding: 0 $gridGutterHalfPX;
-  }
   @media (max-width: 1000px) {
     @include justify-content(center);
     height: 8rem;
@@ -195,6 +196,10 @@
 
   .nav {
     &-list {
+      margin-right: 8.333333%;
+      @media (max-width: 1200px) {
+        margin-right: 0;
+      }
       @media (max-width: 1000px) {
         width: 100%;
         @include justify-content(center);
