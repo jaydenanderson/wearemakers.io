@@ -235,6 +235,7 @@
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 20px 60px -20px rgba(30,36,41,.5);
+    color: $black;
     @media (max-width: 1200px) {
       .button {
         background: rgba(41,50,59,.9);
