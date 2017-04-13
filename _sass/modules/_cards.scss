@@ -129,6 +129,7 @@
 }
 
 .card-event {
+  display: block;
   width: calc(25% - 3rem);
   margin: 1.5rem;
   background: $white;
@@ -585,6 +586,7 @@
   border: none;
   text-align: center;
   background-size: cover;
+  display: block;
   @media (max-width: 800px) {
     width: 33.33333%
   }
