@@ -103,12 +103,12 @@
   overflow: hidden;
   @media (max-width: 700px) {
     @include flex-wrap(wrap);
-    background: url('/wearemakers.io/images/bg/pattern-2.png') 0 0 / 600px 600px;
+    background: url('/images/wearemakers.io/bg/pattern-2.png') 0 0 / 600px 600px;
   }
   .hero-bg {
     @include align-self(flex-end);
     @include flex-shrink(0);
-    background: url('/wearemakers.io/images/bg/pattern-2.png') 0 0 / 600px 600px;
+    background: url('/images/wearemakers.io/bg/pattern-2.png') 0 0 / 600px 600px;
     display: block;
     margin: 0 1.5rem;
     max-width: calc(75% - 3rem);

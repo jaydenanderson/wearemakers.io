@@ -12,38 +12,38 @@ gems: ['bourbon', 'github-pages']
 
 navigation:
   - title: Courses
-    url: /we-are-makers.io/courses/
+    url: /wearemakers.io/courses/
   - title: Our students
-    url: /we-are-makers.io/students/
+    url: /wearemakers.io/students/
   - title: Broadcasts
-    url: /we-are-makers.io/broadcasts/
+    url: /wearemakers.io/broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /we-are-makers.io/donate/
+    url: /wearemakers.io/donate/
 
 students:
   - title: Refugees
-    url: /we-are-makers.io/our-students/refugees
+    url: /wearemakers.io/our-students/refugees
   - title: Latinos
-    url: /we-are-makers.io/our-students/latinos
+    url: /wearemakers.io/our-students/latinos
   - title: Native Americans
-    url: /we-are-makers.io/our-students/native-americans
+    url: /wearemakers.io/our-students/native-americans
 
 footer-navigation:
   - title: Home
-    url: /we-are-makers.io/
+    url: /wearemakers.io/
   - title: Courses
-    url: /we-are-makers.io/courses/
+    url: /wearemakers.io/courses/
   - title: Our students
-    url: /we-are-makers.io/students/
+    url: /wearemakers.io/students/
   - title: Broadcasts
-    url: /we-are-makers.io/broadcasts/
+    url: /wearemakers.io/broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /we-are-makers.io/donate/
+    url: /wearemakers.io/donate/
   - title: Contact
     url: 'mailto:info@wearemakers.io'
   - title: Colophon
-    url: /we-are-makers.io/colophon/
+    url: /wearemakers.io/colophon/
