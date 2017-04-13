@@ -4,7 +4,6 @@ window.onload = function() {
   dropdownArray = Array.prototype.slice.call(dropdown,0);
   dropdownArray.forEach(function(el){
     var button = el.querySelector('.js-toggle-trigger');
-
     button.onclick = function(event) {
       this.parentNode.classList.toggle('is-active');
       event.preventDefault();
@@ -20,12 +19,24 @@ window.onload = function() {
   }
 };
 
-function modalWindow(modal) {
+function modalWindow(modal, check) {
   var toggle = modal.getAttribute('data-modal-toggle'),
+  check = modal.getAttribute('data-modal-auto-check'),
   toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]'),
-  toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]');
-  toggleBody.classList.add('is-active');
+  toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]'),
+  autoCheck = document.getElementById(check);
+  toggleBody.classList.add('is-active'),
+  checkbox = document.getElementsByTagName('input'),
+  checkboxArray = Array.prototype.slice.call(checkbox,0);
+
+  for(var i = 0; i < checkboxArray.length; i++){
+    checkboxArray[i].checked = false;
+  };
+
   document.body.classList.add('is-modal-active');
+  if(autoCheck != null) {
+    autoCheck.checked = true;
+  }
 
   toggleClose.onclick = function(event) {
     toggleBody.classList.remove('is-active');

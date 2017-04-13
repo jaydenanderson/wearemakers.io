@@ -17,15 +17,23 @@
         {% if item.title contains 'Donate' %}
           {% assign class = 'nav-list-item-link-primary' %}
         {% endif %}
+        {% if page.url contains 'our-students' %}
+          {% assign class-students = 'is-active' %}
+        {% endif %}
         {% if item.title contains 'Our students' %}
           <li class='nav-list-item dropdown dropdown-students js-toggle'>
-            <a class='nav-list-item-link dropdown-trigger js-toggle-trigger'>Our students</a>
+            <a class='nav-list-item-link dropdown-trigger js-toggle-trigger {{ class-students }}'>Our students</a>
             <ul class='dropdown-menu js-toggle-menu'>
-              <li class='dropdown-menu-item'>
-                <a href='/our-students/refugees' class='dropdown-menu-item-link'>Refugees</a>
-              </li>
-              <li class='dropdown-menu-item'>
-                <a href='/our-students/latinos' class='dropdown-menu-item-link'>Latinos</a>
+              <li class='nav-list-item'>
+                {% for item in site.students %}
+                  {% assign class = nil %}
+                  {% if page.url contains item.url %}
+                    {% assign class = 'is-active' %}
+                  {% endif %}
+                  <a href='{{ item.url }}' class='nav-list-item-link {{ class }}'>
+                    {{ item.title }}
+                  </a>
+                {% endfor %}
               </li>
             </ul>
           </li>
