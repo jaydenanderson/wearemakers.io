@@ -39,16 +39,16 @@
 
 @mixin gridHelpers {
   &-none {
-    display: none !important
+    display: none !important;
   }
   &-flex {
-    display: flex !important
+    display: flex !important;
   }
   &-block {
-    display: block !important
+    display: block !important;
   }
   &-inline-block {
-    display: inline-block !important
+    display: inline-block !important;
   }
 }
 
