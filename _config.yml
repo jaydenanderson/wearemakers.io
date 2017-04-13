@@ -3,8 +3,8 @@ title: WeAreMakers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "https://www.wearemakers.io" # the base hostname & protocol for your site
-url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
-# url: '' # the base hostname & protocol for your site
+# url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & protocol for your site
+url: '' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -14,38 +14,38 @@ sass:
 
 navigation:
   - title: Courses
-    url: /wearemakers.io/courses/
+    url: /courses/
   - title: Our students
-    url: /wearemakers.io/students/
+    url: /students/
   - title: Broadcasts
-    url: /wearemakers.io/broadcasts/
+    url: /broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /wearemakers.io/donate/
+    url: /donate/
 
 students:
   - title: Refugees
-    url: /wearemakers.io/our-students/refugees
+    url: /our-students/refugees
   - title: Latinos
-    url: /wearemakers.io/our-students/latinos
+    url: /our-students/latinos
   - title: Native Americans
-    url: /wearemakers.io/our-students/native-americans
+    url: /our-students/native-americans
 
 footer-navigation:
   - title: Home
-    url: /wearemakers.io/
+    url: /
   - title: Courses
-    url: /wearemakers.io/courses/
+    url: /courses/
   - title: Our students
-    url: /wearemakers.io/students/
+    url: /students/
   - title: Broadcasts
-    url: /wearemakers.io/broadcasts/
+    url: /broadcasts/
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /wearemakers.io/donate/
+    url: /donate/
   - title: Contact
     url: 'mailto:info@wearemakers.io'
   - title: Colophon
-    url: /wearemakers.io/colophon/
+    url: /colophon/
