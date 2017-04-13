@@ -14,10 +14,6 @@
         {% if page.url contains item.url %}
           {% assign class = 'is-active' %}
         {% endif %}
-        {% if item.title contains 'Donate' %}
-          {% assign class = 'nav-list-item-link-primary' %}
-          {% assign new-tab = 'target="_blank"'' %}
-        {% endif %}
         {% if page.url contains 'our-students' %}
           {% assign class-students = 'is-active' %}
         {% endif %}
@@ -37,6 +33,18 @@
                 {% endfor %}
               </li>
             </ul>
+          </li>
+        {% elsif item.title contains 'Donate' %}
+          <li class='nav-list-item'>
+            <div href='{{ item.url }}' class='nav-list-item-link nav-list-item-link-primary'>
+              <form class='form-paypal' action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="4AZG55L3R2SFQ">
+                <input class='form-paypal-submit' type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              {{ item.title }}
+            </div>
           </li>
         {% else %}
           <li class='nav-list-item'>
