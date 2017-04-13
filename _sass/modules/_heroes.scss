@@ -333,8 +333,9 @@
     padding: 12rem .75rem .75rem;
   }
   .hero-bg {
-    @media (max-width: 600px) {
+    @media (max-width: 350px) {
       opacity: .5;
+      background-position-x: 55%;
     }
   }
   .hero-text {
