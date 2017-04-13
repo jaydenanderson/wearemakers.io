@@ -2,7 +2,7 @@
 title: WeAreMakers
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: 'http://www.wearemakers.com' # the base hostname & protocol for your site
+url: 'http://www.wearemakers.io' # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
