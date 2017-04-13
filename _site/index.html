@@ -17,18 +17,21 @@
   <body>
     <div class='page'>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-  <div class='nav-header-wrapper'>
-  <header class='nav nav-header js-toggle nav-dark'>
+  <!-- This whole nav needs to be redone. Badddd code. -->
+
+<div class='nav-header-wrapper'>
+  <header class='nav nav-header js-toggle nav-dark' data-modal-window='menu'>
     <h1 class='nav-logo'>
       <span class='nav-logo-text'>WeAreMakers</span>
       <a class='nav-logo-image' href='http://www.wearemakers.io/'></a>
     </h1>
-    <a class='nav-trigger nav-list-item-link js-toggle-trigger'>
+    <a class='nav-trigger nav-list-item-link' onclick='modalWindow(this)' data-modal-toggle='menu' data-modal-switch='true'>
       Menu
       <i class='icon icon-menu'></i>
     </a>
-    <ul class='nav-list js-toggle-menu'>
+    <ul class='nav-list'>
       
+        
         
         
         
@@ -44,26 +47,27 @@
         
         
         
-          <li class='nav-list-item dropdown dropdown-students js-toggle'>
-            <a class='nav-list-item-link dropdown-trigger js-toggle-trigger '>Our students</a>
-            <ul class='dropdown-menu js-toggle-menu'>
+        
+          <li class='nav-list-item dropdown dropdown-students' data-modal-window='dropdown'>
+            <a class='nav-list-item-link dropdown-trigger' onclick='modalWindow(this)' data-modal-toggle='dropdown'>Our students</a>
+            <ul class='dropdown-menu'>
               <li class='nav-list-item'>
                 
                   
                   
-                  <a href='/our-students/refugees' class='nav-list-item-link '>
+                  <a href='/our-students/refugees' class='nav-list-item-link ' >
                     Refugees
                   </a>
                 
                   
                   
-                  <a href='/our-students/latinos' class='nav-list-item-link '>
+                  <a href='/our-students/latinos' class='nav-list-item-link ' >
                     Latinos
                   </a>
                 
                   
                   
-                  <a href='/our-students/native-americans' class='nav-list-item-link '>
+                  <a href='/our-students/native-americans' class='nav-list-item-link ' >
                     Native Americans
                   </a>
                 
@@ -72,6 +76,7 @@
           </li>
         
       
+        
         
         
         
@@ -87,13 +92,17 @@
         
         
         
+          
+        
+        
           <li class='nav-list-item'>
-            <a href='#get-involved' class='nav-list-item-link  ' >
+            <a href='#get-involved' class='nav-list-item-link  ' data-modal-close="menu">
               Get involved
             </a>
           </li>
         
       
+        
         
         
         

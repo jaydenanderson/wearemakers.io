@@ -1,14 +1,16 @@
+<!-- This whole nav needs to be redone. Badddd code. -->
+
 <div class='nav-header-wrapper'>
-  <header class='nav nav-header js-toggle {{include.header_color}}'>
+  <header class='nav nav-header js-toggle {{include.header_color}}' data-modal-window='menu'>
     <h1 class='nav-logo'>
       <span class='nav-logo-text'>WeAreMakers</span>
       <a class='nav-logo-image' href='http://www.wearemakers.io/'></a>
     </h1>
-    <a class='nav-trigger nav-list-item-link js-toggle-trigger'>
+    <a class='nav-trigger nav-list-item-link' onclick='modalWindow(this)' data-modal-toggle='menu' data-modal-switch='true'>
       Menu
       <i class='icon icon-menu'></i>
     </a>
-    <ul class='nav-list js-toggle-menu'>
+    <ul class='nav-list'>
       {% for item in site.navigation %}
         {% assign class = nil %}
         {% if page.url contains item.url %}
@@ -17,17 +19,20 @@
         {% if page.url contains 'our-students' %}
           {% assign class-students = 'is-active' %}
         {% endif %}
+        {% if item.title contains 'Get involved' %}
+          {% assign get-involved = 'data-modal-close="menu"' %}
+        {% endif %}
         {% if item.title contains 'Our students' %}
-          <li class='nav-list-item dropdown dropdown-students js-toggle'>
-            <a class='nav-list-item-link dropdown-trigger js-toggle-trigger {{ class-students }}'>Our students</a>
-            <ul class='dropdown-menu js-toggle-menu'>
+          <li class='nav-list-item dropdown dropdown-students' data-modal-window='dropdown'>
+            <a class='nav-list-item-link dropdown-trigger' onclick='modalWindow(this)' data-modal-toggle='dropdown'>Our students</a>
+            <ul class='dropdown-menu'>
               <li class='nav-list-item'>
                 {% for item in site.students %}
                   {% assign class = nil %}
                   {% if page.url contains item.url %}
                     {% assign class = 'is-active' %}
                   {% endif %}
-                  <a href='{{ item.url }}' class='nav-list-item-link {{ class }}'>
+                  <a href='{{ item.url }}' class='nav-list-item-link {{ class }}' {{ modal-close }}>
                     {{ item.title }}
                   </a>
                 {% endfor %}
@@ -48,7 +53,7 @@
           </li>
         {% else %}
           <li class='nav-list-item'>
-            <a href='{{ item.url }}' class='nav-list-item-link {{ primary }} {{ class }}' {{ new-tab }}>
+            <a href='{{ item.url }}' class='nav-list-item-link {{ primary }} {{ class }}' {{ get-involved }}>
               {{ item.title }}
             </a>
           </li>
