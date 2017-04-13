@@ -20,7 +20,9 @@ function modalWindow(modal, check) {
 
   if(modalSwitch == 'true') {
     toggleBody.classList.toggle('is-active');
-    document.body.classList.toggle('is-modal-active');
+    if(toggle != 'dropdown') {
+      document.body.classList.toggle('is-modal-active');
+    }
   }
   else {
     toggleBody.classList.add('is-active');

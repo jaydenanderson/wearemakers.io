@@ -4,6 +4,7 @@
   color: #fff;
   width: 100%;
   position: relative;
+  max-height: 1000px;
   @include display(flex);
   @include align-items(center);
 
