@@ -82,8 +82,24 @@
       margin: 0;
     }
   }
+  iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
+
 .is-modal-active {
   overflow: hidden;
   height: 100vh;
+}
+
+.modal-video {
+  .modal-close {
+    box-shadow: none;
+  }
 }

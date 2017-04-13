@@ -126,40 +126,84 @@
 </div>
 
   <section class="hero hero-student">
-  <section class='hero-bg' style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/hero/1.jpg");'></section>
-  
-  <div class='grid grid-center-y'>
-    <div class='grid-item-4 grid-item-offset-1'>
-      <aside class='hero-text'>
-        <h1 class='hero-text-header'>
-          <span class='h h-short h3 text-rift'>We develop technical prowess for refugees from over ten countries</span>
-        </h1>
-        <h3 class='hero-text-body'>
-          <span class='h h-short h3 text-rift'>Across the spectrum, refugee communities have demonstrated a strong interest in technology and motivation to learn. However, limited access and opportunity, largely due to cost, location, transportation options and knowledge of resources often prevent full use of resources available.</span>
-        </h3>
-        <a class='hero-text-footer'>
-          <span href='' class='hero-text-footer-heading'>Watch a video</span>
-          <span href='' class='hero-text-footer-subheading''>2m 34s</span>
-        </a>
-      </aside>
-      </div>
-  </div>
+  <section class='hero-bg' style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/hero.jpg");'></section>
+    <aside class='hero-text'>
+      <h1 class='hero-text-header h h3 text-rift h-short'>
+        We develop technical prowess for refugees from over ten countries
+      </h1>
+      <h3 class='hero-text-body'>
+        <span class=''>Across the spectrum, refugee communities have demonstrated a strong interest in technology and motivation to learn. However, limited access and opportunity, largely due to cost, location, transportation options and knowledge of resources often prevent full use of resources available. </span>
+      </h3>
+      <a class='hero-text-footer' data-modal-toggle='video' onClick='modalWindow(this);'>
+        <i class='hero-text-footer-icon'></i>
+        <span class='hero-class-footer-label'>
+          <span href='' class='hero-text-footer-label-heading'>Watch a video</span>
+          <span href='' class='hero-text-footer-label-subheading''>2m 34s</span>
+        </span>
+      </a>
+    </aside>
 </section>
+
+<div class='modal modal-video' data-modal-window='video'>
+  <a class='modal-close button button-hollow' onclick='stopVideo();' data-modal-close='video'>
+    <i class='icon icon-close'></i>
+  </a>
+
+  <div id="player"></div>
+
+  <script>
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        playerVars: { 'showinfo': 0, 'rel': 0 },
+        videoId: 'vC_3U1MAy5I',
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      var playButton = document.querySelector('[data-modal-toggle="video"]');
+      playButton.addEventListener("click", function() {
+        player.playVideo();
+      });
+      var pauseButton = document.querySelector('[data-modal-window="video"]');
+      pauseButton.addEventListener("click", function() {
+        player.pauseVideo();
+      });
+    }
+  </script>
+
+</div>
+
 <div class='grid section-refugee'>
-  <div class='grid-item-5 grid-item-offset-1'>
+  <div class='grid-item-5 grid-item-offset-1 grid-item-600-12 grid-item-offset-600-0'>
     <figure class='figure figure-refugee'>
-      <img class='figure-image' src='https://jaydenanderson.github.io/wearemakers.io/images/refugee/couple.png'>
+      <div class='figure-image' style='background-image: url(https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/definition.jpg)'></div>
+      <h2 class='figure-heading'>Refugee</h2>
     </figure>
   </div>
-  <div class='grid-item-4 grid-item-offset-1'>
+  <div class='grid-item-4 grid-item-offset-1 grid-item-1100-5 grid-item-600-12 grid-item-offset-600-0 section-refugee-aside'>
     <header class='section-header'>
-      <h6 class='section-header-heading'>&middot; noun</h6>
-      <p class='section-header-heading'>a person who has been forced to leave their country in order to escape war, persecution, or natural disaster.</p>
+      <h6 class='section-header-headline'>
+        <img class='section-header-image' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/pronunciation.png'>
+        &middot; noun
+      </h6>
+      <p class='section-header-subheadline'>a person who has been forced to leave their country in order to escape war, persecution, or natural disaster.</p>
     </header>
-    <footer class='section-footer grid grid-nested'>
-      <div class='grid-item-6'>
+    <footer class='section-footer'>
         <aritcle class='card card-stat-refugee'>
-          <i class='card-image'>
+          <i class='card-image card-image-wide'>
+            <img class='card-image-bg' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/icon-globe.png'>
           </i>
           <header class='card-header'>
             20,000,000
@@ -170,6 +214,7 @@
         </aritcle>
         <aritcle class='card card-stat-refugee'>
           <i class='card-image'>
+            <img class='card-image-bg' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/icon-utah.png'>
           </i>
           <header class='card-header'>
             60,000
@@ -179,26 +224,27 @@
           </footer>
         </aritcle>
         <aritcle class='card card-stat-refugee'>
-          <i class='card-image'>
+          <i class='card-image card-image-wide'>
+            <img class='card-image-bg' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/icon-computer.png'>
           </i>
           <header class='card-header'>
             5,000
           </header>
           <footer class='card-footer'>
-            Open computer science jobs in Utah
+            Open computer  <br>science jobs in Utah
           </footer>
         </aritcle>
         <aritcle class='card card-stat-refugee'>
           <i class='card-image'>
+            <img class='card-image-bg' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/icon-calculator.png'>
           </i>
           <header class='card-header'>
             $75,538
           </header>
           <footer class='card-footer'>
-            Avg. computer science starting salary in Utah
+            Avg. computer science  <br>starting salary in Utah
           </footer>
         </aritcle>
-      </div>
     </footer>
   </div>
 </div>
@@ -206,48 +252,44 @@
   <header class='section-header'>
     Working in  conjunction  with
   </header>
-  <figure class='section-image'>
-  </figure>
+  <img class='section-image' src='/wearemakers.io/images/our-students/refugees/logo.png'>
 </div>
 <section class='section section-barriers'>
   <h3 class='section-header'>
-    Refugees face significant barriers to economic & educational success upon arrival.
+    Refugees face significant barriers to economic &amp; educational success upon arrival.
   </h3>
   <ul class='section-body'>
-    <li class='section-body-item item-barrier'>
-      <figure class='item-image'>
-      </figure>
+    <li class='section-body-item item item-barrier'>
+      <img src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/english.png' class='item-image'>
       <h6 class='item-body'>
-        Learning  English
+        Learning <br> English
       </h6>
     </li>
-    <li class='section-body-item item-barrier'>
-      <figure class='item-image'>
-      </figure>
+    <li class='section-body-item item item-barrier'>
+      <img src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/culture.png' class='item-image'>
       <h6 class='item-body'>
-        Navigating a  new culture
+        Navigating a <br> new culture
       </h6>
     </li>
-    <li class='section-body-item item-barrier'>
-      <figure class='item-image'>
-      </figure>
+    <li class='section-body-item item item-barrier'>
+      <img src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/us.png' class='item-image'>
       <h6 class='item-body'>
-        Understanding  American systems
+        Understanding <br> American systems
       </h6>
     </li>
-    <li class='section-body-item item-barrier'>
-      <figure class='item-image'>
-      </figure>
+    <li class='section-body-item item item-barrier'>
+      <img src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/tech.png' class='item-image'>
       <h6 class='item-body'>
-        Technical  skills barriers
+        Technical <br> skills barriers
       </h6>
     </li>
   </ul>
   <h2 class='section-footer'>
-    We empower refugees with our courses that set them up for success in the tech industry. 
+    <span class='section-footer-text'>
+      We empower refugees with our courses that set them up for success in the tech industry.
+    </span>
   </h2>
 </section>
-
 
 <footer class='row row-features row-features-refugees'>
   <article class='card card-highlight'>
@@ -265,72 +307,66 @@ skills-based corporate volunteers, who create an easy-to-learn visual curriculum
   </article>
 </footer>
 
-<a href='button button-ice'>View Courses</a>
-goals
+<div class='section section-button'>
+  <a href='https://jaydenanderson.github.io/wearemakers.io/courses' class='button button-ice'>View Courses</a>
+</div>
+
 <section class='section section-countries'>
   <div class='section-body'>
-    <article class='card card-countries'>
-      <header class='card-header'>
-        Students from
-      </header>
-      <div class='card-body'>
-        11
-      </div>
-      <footer class='card-footer'>
-        Countries
-      </footer>
+    <article class='card card-country card-countries'>
+     <img class='card-image' src='https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/countries.png'>
     </article>
-    <article class='card card-country-bhutan'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/bhutan.jpg");' class='card card-country card-country-bhutan'>
       <header class='card-header'>
         Bhutan
       </header>
     </article>
-    <article class='card card-country-iraq'>
-      <header class='card-header'>
-        Iraq
-      </header>
-    </article>
-    <article class='card card-country-congo'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/congo.jpg");' class='card card-country card-country-congo'>
       <header class='card-header'>
         Congo
       </header>
     </article>
-    <article class='card card-country-sudan'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/iraq.jpg");' class='card card-country card-country-iraq'>
+      <header class='card-header'>
+        Iraq
+      </header>
+    </article>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/sudan.jpg");' class='card card-country card-country-sudan'>
       <header class='card-header'>
         Sudan
       </header>
     </article>
-    <article class='card card-country-afghanistan'>
-      <header class='card-header'>
-        Afghanistan
-      </header>
-    </article>
-    <article class='card card-country-south-sudan'>
-      <header class='card-header'>
-        South Sudan
-      </header>
-    </article>
-    <article class='card card-country-liberia'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/liberia.jpg");' class='card card-country card-country-liberia'>
       <header class='card-header'>
         Liberia
       </header>
     </article>
-    <article class='card card-country-myanmar'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/myanmar.jpg");' class='card card-country card-country-myanmar'>
       <header class='card-header'>
         Myanmar
       </header>
     </article>
-    <article class='card card-country-somalia'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/somalia.jpg");' class='card card-country card-country-somalia'>
       <header class='card-header'>
         Somalia
       </header>
     </article>
-    <article class='card card-country-sierra-leone'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/south-sudan.jpg");' class='card card-country card-country-south-sudan'>
+      <header class='card-header'>
+        South Sudan
+      </header>
+    </article>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/afghanistan.jpg");' class='card card-country card-country-afghanistan'>
+      <header class='card-header'>
+        Afghanistan
+      </header>
+    </article>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/sierra-leone.jpg");' class='card card-country card-country-sierra-leone'>
       <header class='card-header'>
         Sierra Leone
       </header>
     </article>
-    <article class='card card-country-burundi'>
+    <article style='background-image: url("https://jaydenanderson.github.io/wearemakers.io/images/our-students/refugees/burundi.jpg");' class='card card-country card-country-burundi'>
       <header class='card-header'>
         Burundi
       </header>

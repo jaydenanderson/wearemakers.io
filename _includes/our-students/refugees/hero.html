@@ -1,20 +1,20 @@
 <section class="hero hero-student">
-  <section class='hero-bg' style='background-image: url("{{site.url}}/images/hero/1.jpg");'></section>
-  
-  <div class='grid grid-center-y'>
-    <div class='grid-item-4 grid-item-offset-1'>
-      <aside class='hero-text'>
-        <h1 class='hero-text-header'>
-          <span class='h h-short h3 text-rift'>We develop technical prowess for refugees from over ten countries</span>
-        </h1>
-        <h3 class='hero-text-body'>
-          <span class='h h-short h3 text-rift'>Across the spectrum, refugee communities have demonstrated a strong interest in technology and motivation to learn. However, limited access and opportunity, largely due to cost, location, transportation options and knowledge of resources often prevent full use of resources available.</span>
-        </h3>
-        <a class='hero-text-footer'>
-          <span href='' class='hero-text-footer-heading'>Watch a video</span>
-          <span href='' class='hero-text-footer-subheading''>2m 34s</span>
-        </a>
-      </aside>
-      </div>
-  </div>
+  <section class='hero-bg' style='background-image: url("{{site.url}}/images/our-students/refugees/hero.jpg");'></section>
+    <aside class='hero-text'>
+      <h1 class='hero-text-header h h3 text-rift h-short'>
+        We develop technical prowess for refugees from over ten countries
+      </h1>
+      <h3 class='hero-text-body'>
+        <span class=''>Across the spectrum, refugee communities have demonstrated a strong interest in technology and motivation to learn. However, limited access and opportunity, largely due to cost, location, transportation options and knowledge of resources often prevent full use of resources available. </span>
+      </h3>
+      <a class='hero-text-footer' data-modal-toggle='video' onClick='modalWindow(this);'>
+        <i class='hero-text-footer-icon'></i>
+        <span class='hero-class-footer-label'>
+          <span href='' class='hero-text-footer-label-heading'>Watch a video</span>
+          <span href='' class='hero-text-footer-label-subheading''>2m 34s</span>
+        </span>
+      </a>
+    </aside>
 </section>
+
+{% include our-students/refugees/video.html %}

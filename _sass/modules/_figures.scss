@@ -1,0 +1,46 @@
+.figure {
+  .figure-image {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.figure-refugee {
+  .figure-image {
+    padding-bottom: 140%;
+  }
+  .figure-heading {
+    font-size: 182px;
+    font-family: $fontFamilyHeading;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    line-height: 1em;
+    margin: 0 0 0 -3rem;
+    letter-spacing: .02em;
+    color: $golden;
+    top: -.3em;
+    mix-blend-mode: multiply;
+    @media (max-width: 1280px) {
+      font-size: 14.2vw;
+    }
+    @media (max-width: 900px) {
+      margin-left: -1.5rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .figure-image {
+      background-position: 0 23%;
+      padding-bottom: 66.666%;
+    }
+    .figure-heading {
+      top: auto;
+      font-size: 20vw;
+      position: relative;
+      margin-top: -10vw;
+      margin-left: -1rem;
+    }
+  }
+}

@@ -9,6 +9,8 @@ url: "https://jaydenanderson.github.io/wearemakers.io" # the base hostname & pro
 # Build settings
 markdown: kramdown
 gems: ['bourbon', 'github-pages']
+sass:
+  style: compressed
 
 navigation:
   - title: Courses

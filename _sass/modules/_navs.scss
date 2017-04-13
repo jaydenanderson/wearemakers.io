@@ -142,7 +142,6 @@
   height: 12rem;
   margin: 0 auto;
   max-width: 1280px;
-  background: rgba(255,255,255,.85);
   padding: 0 calc(#{$gridGutterHalfPX} + 8.33333%);
   &-wrapper {
     position: fixed;
@@ -153,6 +152,7 @@
 
   .is-scrolled & {
     height: 6rem;
+    background: rgba(255,255,255,.85);
   }
   .is-scrolled &,
   &.is-active {

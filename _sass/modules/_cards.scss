@@ -110,6 +110,22 @@
       padding: .5rem 1rem 1rem;
     }
   }
+  .row-features-refugees & {
+    background: transparent;
+    .card-header {
+      color: $black;
+    }
+    .card-header {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-left: 2px solid $golden;
+    }
+    .card-body {
+      padding-top: .5rem;
+      line-height: 1.5em;
+      padding-right: 2rem;
+    }
+  }
 }
 
 .card-event {
@@ -495,5 +511,107 @@
         }
       }
     }
+  }
+}
+
+.card-stat-refugee {
+  font-family: $fontFamilyHeading;
+  border: none;
+  width: 50%;
+  margin: 6rem 0 0 0;
+  position: relative;
+  @media (max-width: 900px) {
+    margin-top: 3rem;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-left: 4.5rem;
+  }
+  .card-image {
+    height: 44px;
+    width: 3rem;
+    position: relative;
+    display: block;
+    &-wide {
+      width: 4rem;
+    }
+    @media (max-width: 800px) {
+      margin-right: 1.5rem;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      height: auto;
+      width: 2rem !important;
+      &-wide {
+        width: 3rem !important;
+      }
+    }
+    &-bg {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      @media (max-width: 800px) {
+        position: relative;
+      }
+    }
+  }
+  .card-header {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 0;
+    margin: 1rem 0;
+    @media (max-width: 800px) {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 .5rem;
+    }
+  }
+  .card-footer {
+    line-height: 1em;
+    padding: 0;
+    opacity: .5;
+    width: 160px;
+  }
+}
+
+.card-country {
+  width: 25%;
+  position: relative;
+  font-weight: bold;
+  color: $white;
+  background: $black;
+  border: none;
+  text-align: center;
+  background-size: cover;
+  @media (max-width: 800px) {
+    width: 33.33333%
+  }
+  @media (max-width: 700px) {
+    width: 50%;
+  }
+  &:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+  .card-header {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font: 600 2rem/1em $fontFamily;
+    @media (max-width: 700px) {
+      font-size: 14px;
+    }
+  }
+}
+.card-countries {
+  .card-image {
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: calc(100% - 3rem);
+    margin: 1.5rem;
   }
 }

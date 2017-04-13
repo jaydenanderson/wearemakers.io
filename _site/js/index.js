@@ -11,7 +11,7 @@ window.onload = function() {
   });
 
   window.onscroll = function() {
-      if ( window.pageYOffset > 100 ) {
+      if ( window.pageYOffset > 20 ) {
           document.body.classList.add("is-scrolled");
       } else {
           document.body.classList.remove("is-scrolled");
