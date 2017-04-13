@@ -14,8 +14,11 @@
 <header class='nav nav-footer'>
   <ul class='nav-list'>
     {% for item in site.footer-navigation %}
+      {% if item.title contains 'Donate' %}
+        {% assign new-tab = 'target="_blank"'' %}
+      {% endif %}
       <li class='nav-list-item'>
-        <a href='{{ item.url }}' class='nav-list-item-link'>
+        <a href='{{ item.url }}' class='nav-list-item-link' {{ new-tab }}>
           {{ item.title }}
         </a>
       </li>

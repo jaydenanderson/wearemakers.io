@@ -16,6 +16,7 @@
         {% endif %}
         {% if item.title contains 'Donate' %}
           {% assign class = 'nav-list-item-link-primary' %}
+          {% assign new-tab = 'target="_blank"'' %}
         {% endif %}
         {% if page.url contains 'our-students' %}
           {% assign class-students = 'is-active' %}
@@ -39,7 +40,7 @@
           </li>
         {% else %}
           <li class='nav-list-item'>
-            <a href='{{ item.url }}' class='nav-list-item-link {{ primary }} {{ class }}'>
+            <a href='{{ item.url }}' class='nav-list-item-link {{ primary }} {{ class }}' {{ new-tab }}>
               {{ item.title }}
             </a>
           </li>

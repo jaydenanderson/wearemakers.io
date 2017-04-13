@@ -20,7 +20,7 @@ navigation:
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /donate/
+    url: 'https://www.paypal.com/donate/?token=lliHCj7KQR9OcFPPv0ZWNCqxhi-jv9IIR6fVh_IhXGN_yYgj3TmzDV5FesCedBe1xsBs8m'
 
 students:
   - title: Refugees
@@ -42,8 +42,6 @@ footer-navigation:
   - title: Get involved
     url: '#get-involved'
   - title: Donate
-    url: /donate/
+    url: 'https://www.paypal.com/donate/?token=lliHCj7KQR9OcFPPv0ZWNCqxhi-jv9IIR6fVh_IhXGN_yYgj3TmzDV5FesCedBe1xsBs8m'
   - title: Contact
     url: 'mailto:info@wearemakers.io'
-  - title: Colophon
-    url: /colophon/
