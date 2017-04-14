@@ -407,6 +407,7 @@
     }
     &-details {
       @include h9Cap();
+      max-width: 214px;
       &-item {
         padding: 8px 0 0;
         &:last-item {
