@@ -449,6 +449,8 @@
   margin-top: 6rem;
   background: #EDF7FE;
   padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
   @media (max-width: 800px) {
     padding: 1.5rem;
   }
