@@ -11,6 +11,7 @@ window.onload = function() {
 function modalWindow(modal, check) {
   var toggle = modal.getAttribute('data-modal-toggle'),
   modalSwitch = modal.getAttribute('data-modal-switch'),
+  modalLock = modal.getAttribute('data-modal-lock'),
   check = modal.getAttribute('data-modal-auto-check'),
   toggleBody = document.querySelector('[data-modal-window="' + toggle + '"]'),
   toggleClose = document.querySelector('[data-modal-close="' + toggle + '"]'),
@@ -26,7 +27,9 @@ function modalWindow(modal, check) {
   }
   else {
     toggleBody.classList.add('is-active');
-    document.body.classList.add('is-modal-active');
+    if(modalLock != 'false') {
+      document.body.classList.add('is-modal-active');
+    }
   };
 
   for(var i = 0; i < checkboxArray.length; i++){
