@@ -362,6 +362,7 @@
 
 .card-course {
   border-width: 3px;
+  width: 100%;
   border-color: initial;
   @include flex-direction(column);
   .card-header {
