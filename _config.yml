@@ -1,6 +1,6 @@
 # Site settings
 title: WeAreMakers
-description: 
+description:
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: 'http://www.wearemakers.io' # the base hostname & protocol for your site
 
